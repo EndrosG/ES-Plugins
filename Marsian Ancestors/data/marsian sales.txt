@@ -1,0 +1,209 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#
+# ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### #
+# THIS FILE							  #
+# Copyright (c) 2016-2017 by Endros Gunderberg, www.endros.de	  #
+# ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### #
+
+
+
+outfitter "Marsian Relicts: Tiny Outfits"
+	"Tiny Solar Panel"
+	"D01-AA Shield Generator"
+	"X0700 Ion Thruster"
+	"X0200 Ion Steering"
+
+	"Tiny Anti-Missile Turret"
+	"Small Anti-Missile Turret"
+	"Tiny Mining Laser"
+	"Tiny Pulse Laser"
+	"Tiny Pulse Laser Turret"
+
+
+
+outfitter "Marsian Relicts: Megaliner Outfits"
+	"Cargo Extension"
+	"Cargo Facility"
+	"Cargo Module"
+	"Stack Core"
+	"Stack Mega Core"
+	"Stack Metro Core"
+
+	"Marsian Anti-Missile Turret"
+	"Marsian Triple Electron Turret"
+
+	"Ramscoop"
+	"Catalytic Ramscoop"
+	"D94-YV Shield Generator"
+	"D95-EE Shield Generator"
+	"D96-FF Shield Generator"
+	"D97-GG Shield Generator"
+	"X5700 Ion Thruster"
+	"X5200 Ion Steering"
+	"X8700 Ion Thruster"
+	"X8200 Ion Steering"
+	"X8600 Reverse Ion Thruster"
+
+
+
+outfitter "Marsian Relicts: Military Outfits"
+	"Barracks"
+	"Bunk Hostel"
+	"Bunk Hotel"
+	"Bunk Resort"
+	"Cargo Extension"
+	"Stack Core"
+	"Stack Mega Core"
+	"Marsian Scanner"
+
+	"Marsian Anti-Missile Turret"
+	"Marsian Triple Electron Turret"
+
+	"Hull Expansion"
+	"Hull Extension"
+	"Defense Beam Turret LR1200"
+	"Defense Beam Turret LR1800"
+	"Defense Beam Turret LR2400"
+	"Attack Beam Turret LR2000"
+	"Attack Beam Turret LR3000"
+	"Attack Beam Turret LR4000"
+
+	"Small Pulse Laser"
+	"Medium Pulse Laser"
+	"Large Pulse Laser"
+	"Capital Pulse Laser"
+	"Capital EMP Blaster"
+	"Small Pulse Laser Turret"
+	"Medium Pulse Laser Turret"
+	"Large Pulse Laser Turret"
+	"Capital Pulse Laser Turret"
+	"Capital EMP Blaster Turret"
+
+	"D94-YV Shield Generator"
+	"Tyrant Plasma Thruster"
+	"Tyrant Plasma Steering"
+	"X5700 Ion Thruster"
+	"X5200 Ion Steering"
+	"Scram Drive"
+
+
+
+outfitter "Marsian Relicts: Military Outfits"
+	"Laser Cannon"
+	"Laser Drone"
+	"Laser Tank"
+	"Assault Tank"
+
+	"Laser Rifle"
+	"Fragmentation Grenades"
+	"Security Station"
+
+
+
+outfitter "Marsian Relicts: Cube Outfits"
+	"Stack Mega Core"
+	"Stack Metro Core"
+	"Standard Cube Core"
+	"Tactical Cube Core"
+	"Spheric Heatpump"
+	"Spheric Shield Generator"
+	"Marsian Scanner"
+
+	"Marsian Anti-Missile Turret"
+	"Marsian Triple Electron Turret"
+
+	"X8710 Ion Thruster"
+	"X8720 Ion Thruster"
+	"X8730 Ion Thruster"
+	"X8210 Ion Steering"
+	"X8220 Ion Steering"
+	"X8230 Ion Steering"
+
+
+
+shipyard "Marsian Relicts: Support Ships"
+	"AHD 20 Miner"
+	"ATV 960 Civil"
+	"ATV 960 Military"
+	"ATV 960 Hyper"
+
+
+
+shipyard "Marsian Relicts: Megaliner"
+	"Military Freighter"
+	"Hauler III-10"
+	"Hauler III-100"
+	"Maxx 11-0-4-1"
+	"Maxx 27-0-8-1"
+	"Maxx 38-0-10-1"
+	"Maxx 49-0-12-1"
+	"Freightliner"
+	"Megaliner"
+
+
+
+shipyard "Marsian Relicts: Metropolis"
+	"Metroliner"
+	"Metropolis"
+
+
+
+shipyard "Marsian Relicts: Military"
+	"Blackbird Assault Ship"
+	"Assault Cruiser"
+	"Light Cruiser"
+	"Marsian Carrier"
+	# "Marsian Carrier Mk I"
+	# "Marsian Carrier Mk II"
+	"MCD Classic"
+	"MCD Flivver"
+	"MCD Fury"
+	"MFi Fury"
+	"MFi Quicksilver"
+	"MFi Gunboat"
+	"MFi Frigate Mk I"
+	"MFi Frigate Mk II"
+	"MFi Corvette"
+
+
+
+shipyard "Marsian Tech: Human Freighters"
+	"MaFr Courier"
+	"MaFr Cargo Courier"
+	"MaFr Cargo Freighter"
+	"MaFr Catamaran"
+
+
+
+shipyard "Marsian Tech: Human Freighters Adv"
+	"MaFr Racer"
+	"MaFr Cruiseliner"
+	"MaFr Bulk Freighter"
+
+
+
+shipyard "Marsian Relicts: Cubes"
+	"MaCuFi Alpha"
+	"MaCuFi Alpha Scout"
+	"Freight Cube 37"
+	"Freight Cube 39"
+	"Freight Cube 83"
+	"Freight Cube 127"
+	"Tactical Cube  75"
+
+
+
+shipyard "Marsian Relicts: Cubes XXL"
+	"Tactical Cube 255"
+	"Freight Cube 255"
+	"Freight Cube 255 Ultra"
+	"Civil Freight Cube 255 Ultimate"
+	"Civil Freight Cube 511 Ultimate"
