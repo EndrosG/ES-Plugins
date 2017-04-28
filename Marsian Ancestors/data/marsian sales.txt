@@ -130,10 +130,55 @@ outfitter "Marsian Relicts: Cube Outfits"
 
 
 shipyard "Marsian Relicts: Support Ships"
+	"SS Fuel Tanker"
+	"SS Maintenance"
+
+
+
+shipyard "Marsian Relicts: Small Transport Ships"
+	"TS Cityliner"
+#	"TS Metroliner"
+
+shipyard "Marsian Relicts: Small Freight Ships"
+	"FS Village"
+	"FS Town"
+#	"FS City"
+
+
+
+shipyard "Marsian Relicts: Cargo Drones"
 	"AHD 20 Miner"
 	"ATV 960 Civil"
 	"ATV 960 Military"
 	"ATV 960 Hyper"
+
+shipyard "Marsian Relicts: Transport Ships"
+	"TS Cityliner"
+	"TS Metroliner"
+
+shipyard "Marsian Relicts: Freight Ships"
+	"FS Village"
+	"FS Town"
+	"FS City"
+
+
+
+shipyard "Marsian Relicts: Colony Ships (Small)"
+	"CS 1 Hamlet"
+	"CS 2 Village"
+	"CS 3 Town"
+
+shipyard "Marsian Relicts: Colony Ships (Medium)"
+	"CS 4 City"
+	"CS 5 Large City"
+
+shipyard "Marsian Relicts: Colony Ships (Heavy)"
+	"CS 6 Metropolis Segment"
+	"CS 7 Metropolis"
+
+shipyard "Marsian Relicts: Colony Ships (Capital)"
+	"CS 8 Conurbation"
+	"CS 9 Megalopolis"
 
 
 
@@ -181,8 +226,6 @@ shipyard "Marsian Tech: Human Freighters"
 	"MaFr Cargo Freighter"
 	"MaFr Catamaran"
 
-
-
 shipyard "Marsian Tech: Human Freighters Adv"
 	"MaFr Racer"
 	"MaFr Cruiseliner"
@@ -198,8 +241,6 @@ shipyard "Marsian Relicts: Cubes"
 	"Freight Cube 83"
 	"Freight Cube 127"
 	"Tactical Cube  75"
-
-
 
 shipyard "Marsian Relicts: Cubes XXL"
 	"Tactical Cube 255"

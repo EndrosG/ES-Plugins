@@ -1,0 +1,3679 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#
+# ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### #
+# THIS FILE							  #
+# Copyright (c) 2016-2017 by Endros Gunderberg, www.endros.de	  #
+# ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### #
+
+
+
+ship "AHD 20 Miner"
+	sprite "ship/atv_960_civil"
+	attributes
+		category Drone
+		cost 165000
+		shields 216
+		hull 64
+		automaton 1
+		mass 16
+		drag 0.4
+		"heat dissipation" 1
+		"cargo space" 20
+		"outfit space" 24
+		"weapon capacity" 10
+		"engine capacity" 10
+		weapon
+			"blast radius" 3
+			"shield damage" 30
+			"hull damage" 15
+			"hit force" 45
+	outfits
+		"Tiny Mining Laser" 2
+
+#		"nGVF-AA Fuel Cell"
+#		"Tiny Solar Panel" 4
+		"Small Collector Module"
+		"Supercapacitor"
+		"D01-AA Shield Generator"
+
+		"X0700 Ion Thruster" 2
+		"X0200 Ion Steering" 2
+
+	gun -2 -5
+	gun 2 -5
+	explode "tiny explosion" 10
+	description "The AHD 20 Miner drone is the smallest drone you have ever seen. While the AHD class does not need weapons for its automated harvesting designation, the mining version obviously needs some armament and thus comes with two tiny mining lasers."
+
+
+
+ship "ATV 960 Civil"
+	sprite "ship/atv_960_civil"
+	attributes
+		category Drone
+		cost 5620000
+		shields 7640
+		hull 3090
+		automaton 1
+		mass 350
+		drag 5.66
+		"heat dissipation" .82
+		"cargo space" 960
+		"outfit space" 96
+		"engine capacity" 80
+		weapon
+			"blast radius" 12
+			"shield damage" 120
+			"hull damage" 60
+			"hit force" 180
+	outfits
+		"nGVF-BB Fuel Cell"
+		"Supercapacitor"
+		"D01-AA Shield Generator"
+
+		"X2700 Ion Thruster"
+		"X3200 Ion Steering"
+
+	explode "tiny explosion" 10
+	description "The ATV 960 cargo drone is used by large freighters to unload their payloads on planets with too high gravity to land on. This is the unarmed, civil version."
+
+
+
+ship "ATV 960 Military"
+	sprite "ship/atv_960_military"
+	attributes
+		category Drone
+		cost 7089000
+		shields 9450
+		hull 3795
+		automaton 1
+		mass 435
+		drag 7.08
+		"heat dissipation" .8
+		"cargo space" 960
+		"outfit space" 288
+		"weapon capacity" 60
+		"engine capacity" 180
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		"Tiny Pulse Laser Turret" 2
+		
+		"NT-200 Nucleovoltaic"
+		"Supercapacitor"
+		"D23-QP Shield Generator"
+#		"D67-TM Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+
+	turret 0 -10
+	turret 0 5
+	explode "tiny explosion" 10
+	explode "small explosion" 10
+	description "The ATV 960 cargo drone is used by large freighters to unload their payloads on planets with too high gravity to land on."
+	description "	The military version comes with a larger engine and two turret mounts."
+
+
+
+ship "ATV 960 Hyper"
+	sprite "ship/atv_960_military"
+	attributes
+		category "Light Freighter"
+		cost 7410000
+		shields 9790
+		hull 3940
+		automaton 1
+		mass 450
+		drag 7.31
+		"heat dissipation" .8
+		"fuel capacity" 300
+		"cargo space" 960
+		"outfit space" 311
+		"weapon capacity" 60
+		"engine capacity" 180
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		"Tiny Pulse Laser Turret" 2
+		
+		"NT-200 Nucleovoltaic"
+		"Supercapacitor"
+		"D14-RN Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Hyperdrive"
+		"Ramscoop"
+
+	turret 0 -10
+	turret 0 5
+	explode "tiny explosion" 10
+	explode "small explosion" 10
+	description "The ATV 960 cargo drone is used by large freighters to unload their payloads on planets with too high gravity to land on."
+	description "	The military version comes with a larger engine and two turret mounts."
+	description "	The ship version has its own hyperdrive and serves as autonomous supply transport."
+
+
+
+# new classification as of 24.04.17
+# Light Freighter
+# SS Fuel Tanker : Support Ship Fuel Tanker
+	# 6x 1000 fuel
+# SS Maintenance
+	# small support ship with 1000 extra fuel, some cargo space for repair equipment
+
+# Heavy Freighter
+# FS Village : Freight Ship
+# FS Town
+# FS City
+
+# Transport Ships : ferrying passengers between cities / colonies, i.e. good speed
+# TS Cityliner : Transport Ship Cityliner : 1.000 bunks
+# TS Metroliner : 10.000 bunks / 20.000 bunks
+
+# City Ships / Colony Ships : very high number of bunks, low speed, slow turning
+# approx. 2-3 tons cargo space per bunk for small cities, 4-5 (or more?) for large cities
+# CS Hamlet : 160 bunks
+# CS Village : 800 bunks
+# CS Town : 4.000 bunks
+# CS City : 20.000 bunks
+# CS Large City : 100.000 bunks
+# CS Metropolis Segment : 500.000 bunks
+# CS Metropolis 3.000.000 bunks
+# CS Conurbation: 10.000.000 bunks
+# CS Megalopolis: 30.000.000 bunks
+
+
+
+ship "SS Fuel Tanker"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		cost 3095000
+		shields 5107
+		hull 1783
+		"required crew" 4
+		bunks 10
+		mass 387
+		drag 8.97
+		"heat dissipation" .75
+		"fuel capacity" 6300
+		"cargo space" 20
+		"outfit space" 371
+		"weapon capacity" 60
+		"engine capacity" 210
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Heavy Anti-Missile Turret" 2
+
+		"Fission Reactor"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The SS Fuel Tanker is a dedicated support ship roughly at the size of a Hauler III. Its only purpose is to transport fuel and refuel ships on the fly. It does not have excessive bunks, cargo space or armament."
+
+
+
+ship "SS Maintenance"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		cost 3449000
+		shields 5447
+		hull 2343
+		"required crew" 6
+		bunks 10
+		mass 427
+		drag 8.77
+		"heat dissipation" .75
+		"fuel capacity" 1300
+		"cargo space" 500
+		"outfit space" 371
+		"weapon capacity" 60
+		"engine capacity" 210
+		weapon
+			"blast radius" 78
+			"shield damage" 780
+			"hull damage" 390
+			"hit force" 1170
+
+	outfits
+		"Heavy Anti-Missile Turret" 2
+
+		"Fission Reactor"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The SS Maintenance is a dedicated support ship similar to the SS Fuel Tanker but slightly larger. It typically performs maintenance tasks, repairing stranded ships, satellites or damaged stations and can also refuel each of them. Its cargo space holds mainly spare parts."
+	description "	Despite its still large fuel capacity, it also makes a good tiny freighter offering an entry point beneath the FS Village."
+
+
+
+ship "FS Village"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		cost 6511000
+		shields 10989
+		hull 4651
+		"required crew" 8
+		bunks 10
+		mass 859
+		drag 17.83
+		"heat dissipation" .7
+		"fuel capacity" 300
+		"cargo space" 1700
+		"outfit space" 371
+		"weapon capacity" 60
+		"engine capacity" 210
+		weapon
+			"blast radius" 156
+			"shield damage" 1560
+			"hull damage" 780
+			"hit force" 2340
+
+	outfits
+		"Heavy Anti-Missile Turret" 2
+
+		"Fission Reactor"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The FS Village is the smallest member of the dedicated freight ship class. Together with the FS Town and the FS City, this ship class probably built the backbone of the supply network. Similar to the support ship class, the freight ship class has almost no free passenger bunks and only minimal armament."
+
+
+
+ship "FS Town"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		cost 37235000
+		shields 53248
+		hull 28998
+		"required crew" 43
+		bunks 50
+		mass 4370
+		drag 74.77
+		"heat dissipation" .7
+		"fuel capacity" 500
+		"cargo space" 8435
+		"outfit space" 1183
+		"weapon capacity" 120
+		"engine capacity" 810
+		weapon
+			"blast radius" 800
+			"shield damage" 8000
+			"hull damage" 4000
+			"hit force" 12000
+
+	outfits
+		"Heavy Anti-Missile Turret" 4
+
+		"Stack Core"
+		"Breeder Reactor"
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator"
+		"D41-HY Shield Generator"
+
+		"X5700 Ion Thruster" 3
+		"X5200 Ion Steering" 3
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The FS Town is member of the dedicated freight ship class. Together with the FS Village and the FS City, this ship class probably built the backbone of the supply network. Similar to the support ship class, the freight ship class has almost no free passenger bunks and only minimal armament."
+
+
+
+ship "FS City"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		cost 216419000
+		shields 295918
+		hull 170950
+		"required crew" 219
+		bunks 225
+		mass 24606
+		drag 397.57
+		"heat dissipation" .69
+		"fuel capacity" 1700
+		"cargo space" 48060
+		"outfit space" 5088
+		"weapon capacity" 420
+		"engine capacity" 3690
+		weapon
+			"blast radius" 4600
+			"shield damage" 46000
+			"hull damage" 23000
+			"hit force" 69000
+
+	outfits
+		"Marsian Anti-Missile Turret" 7
+
+		"Stack Mega Core"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator"
+		"D41-HY Shield Generator"
+
+		"X8700 Ion Thruster"
+		"X8200 Ion Steering" 2
+		"X5700 Ion Thruster" 2
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret 0 0
+	drone 0 0 under
+	drone 0 0 under
+	drone 0 0 under
+	drone 0 0 under
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The FS City is the largest member of the dedicated freight ship class. Together with the FS Village and the FS Town, this ship class probably built the backbone of the supply network. Similar to the support ship class, the freight ship class has almost no free passenger bunks and only minimal armament."
+	description "	This ship can carry up to four ATV 960 drones to exchange cargo without landing or docking directly. Given its impressive fuel tank capacity it might have relied mainly on those ATV drones."
+
+
+
+ship "TS Cityliner"
+	sprite "ship/freighter"
+	attributes
+		category "Transport"
+		cost 29431000
+		shields 36083
+		hull 16983
+		"required crew" 59
+		bunks 1010
+		mass 2875
+		drag 55.50
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 220
+		"outfit space" 1491
+		"weapon capacity" 120
+		"engine capacity" 750
+		weapon
+			"blast radius" 530
+			"shield damage" 5300
+			"hull damage" 2650
+			"hit force" 7950
+
+	outfits
+		"Heavy Anti-Missile Turret" 4
+
+		"Stack Core"
+		"Breeder Reactor"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator" 6
+
+		"X5700 Ion Thruster" 3
+		"X5200 Ion Steering" 3
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The TS Cityliner is one of two dedicated transport ships which could be recovered. Together with the TS Metroliner, both seem to have served as commuters between smaller and larger cities or colonies. Similar to the support ship class, these transport ships have only minimal cargo space and armament."
+
+
+
+ship "TS Metroliner"
+	sprite "ship/freighter"
+	attributes
+		category "Transport"
+		cost 451274000
+		shields 537160
+		hull 264105
+		"required crew" 880
+		bunks 16025
+		mass 43175
+		drag 805.16
+		"heat dissipation" .68
+		"fuel capacity" 3900
+		"cargo space" 3220
+		"outfit space" 18200
+		"weapon capacity" 360
+		"engine capacity" 9410
+		weapon
+			"blast radius" 8000
+			"shield damage" 80000
+			"hull damage" 40000
+			"hit force" 120000
+
+	outfits
+		"Marsian Anti-Missile Turret" 6
+
+		"Stack Mega Core" 3
+		"LP288a Battery Pack"
+		"D94-YV Shield Generator" 51
+
+		"X8700 Ion Thruster" 4
+		"X8200 Ion Steering" 4
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The TS Metroliner is one of two dedicated transport ships which could be recovered. Together with the TS Cityliner, both seem to have served as commuters between smaller and larger cities or colonies. Similar to the support ship class, these transport ships have only minimal cargo space and armament."
+	description "	The impressive fuel tank gives this ship an enormous range."
+
+
+
+ship "CS 1 Hamlet"
+	sprite "ship/Marsian CS Hamlet"
+	attributes
+		category "Transport"
+		cost 2609000
+		shields 1854
+		hull 3938
+		"required crew" 11
+		bunks 155
+		mass 521
+		drag 13.72
+		"heat dissipation" .75
+		"fuel capacity" 700
+		"cargo space" 305
+		"outfit space" 265
+		"weapon capacity" 60
+		"engine capacity" 50
+		weapon
+			"blast radius" 58
+			"shield damage" 580
+			"hull damage" 290
+			"hit force" 870
+
+	outfits
+		"Heavy Anti-Missile Turret" 2
+
+#		"S3 Thermionic"
+#		"LP036a Battery Pack"
+		"Fission Reactor"
+		"Supercapacitor"
+		"D94-YV Shield Generator"
+
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The CS Hamlet is the smallest of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer some comfortable living rooms and enough cargo space to store supplies for several weeks."
+
+
+
+ship "CS 2 Village"
+	sprite "ship/Marsian CS Village"
+	attributes
+		category "Transport"
+		cost 14043000
+		shields 10424
+		hull 20788
+		"required crew" 52
+		bunks 795
+		mass 2591
+		drag 64.60
+		"heat dissipation" .7
+		"fuel capacity" 800
+		"cargo space" 1965
+		"outfit space" 797
+		"weapon capacity" 120
+		"engine capacity" 250
+		weapon
+			"blast radius" 312
+			"shield damage" 3120
+			"hull damage" 1560
+			"hit force" 4680
+
+	outfits
+		"Heavy Anti-Missile Turret" 4
+
+		"Stack Core"
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator" 4
+
+		"X5700 Ion Thruster"
+		"X5200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The CS Village is the second of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer some comfortable living rooms and enough cargo space to store supplies for a few months."
+	description "	This village has roughly half the size of a Korath World-Ship."
+
+
+
+ship "CS 3 Town"
+	sprite "ship/Marsian CS Town"
+	attributes
+		category "Transport"
+		cost 85858000
+		shields 64460
+		hull 118700
+		"required crew" 262
+		bunks 4060
+		mass 13560
+		drag 308.34
+		"heat dissipation" .7
+		"fuel capacity" 1000
+		"cargo space" 11060
+		"outfit space" 3048
+		"weapon capacity" 360
+		"engine capacity" 1250
+		weapon
+			"blast radius" 1800
+			"shield damage" 18000
+			"hull damage" 9000
+			"hit force" 27000
+
+	outfits
+		"Marsian Anti-Missile Turret" 6
+
+		"Stack Core" 4
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator" 13
+
+		"X5700 Ion Thruster" 5
+		"X5200 Ion Steering" 5
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The CS Town is the third of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer comfortable living rooms and enough cargo space to store supplies for a few months."
+	description "	It seems that the cargo space per resident as well as the fuel capacity increase with each generation of these colony ships."
+	description "	This town has roughly the capacity of two to three Korath World-Ships."
+
+
+
+ship "CS 4 City"
+	sprite "ship/Marsian CS City"
+	attributes
+		category "Transport"
+		cost 498155000
+		shields 386580
+		hull 678980
+		"required crew" 1339
+		bunks 20390
+		mass 73100
+		drag 1544.96
+		"heat dissipation" .68
+		"fuel capacity" 1500
+		"cargo space" 64140
+		"outfit space" 11288
+		"weapon capacity" 480
+		"engine capacity" 6450
+		weapon
+			"blast radius" 10600
+			"shield damage" 106000
+			"hull damage" 53000
+			"hit force" 159000
+
+	outfits
+		"Marsian Anti-Missile Turret" 8
+
+		"Stack Mega Core" 2
+		"LP288a Battery Pack"
+		"D94-YV Shield Generator" 32
+
+		"X8700 Ion Thruster" 3
+		"X8200 Ion Steering" 2
+		"X5200 Ion Steering" 4
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The CS City is the fourth of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer comfortable living rooms and enough cargo space to store supplies for a few months."
+	description "	While this city is just slightly bigger than the Metroliner transport ship, its residents can really live here comfortable for months."
+
+
+
+ship "CS 5 Large City"
+	sprite "ship/Marsian CS Large City"
+	attributes
+		category "Transport"
+		cost 3056094000
+		shields 2367500
+		hull 3922220
+		"required crew" 6742
+		bunks 102045
+		mass 388680
+		drag 7278.66
+		"heat dissipation" .67
+		"fuel capacity" 2400
+		"cargo space" 341940
+		"outfit space" 44352
+		"weapon capacity" 600
+		"engine capacity" 31300
+		weapon
+			"blast radius" 62000
+			"shield damage" 620000
+			"hull damage" 310000
+			"hit force" 930000
+
+	outfits
+		"Marsian Anti-Missile Turret" 10
+
+		"Stack Metro Core" 3
+		"LP288a Battery Pack" 3
+		"D94-YV Shield Generator" 102
+
+		"X8710 Ion Thruster"
+		"X8210 Ion Steering"
+		"X8700 Ion Thruster" 3
+		"X8200 Ion Steering" 4
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	turret -5 0
+	turret 5 0
+	fighter 0 0 under
+	fighter 0 0 under
+	fighter 0 0 under
+	fighter 0 0 under
+	drone 0 0 under
+	drone 0 0 under
+	drone 0 0 under
+	drone 0 0 under
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The CS Large City is the fifth of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer many comfortable living rooms and enough cargo space to store supplies for several months."
+	description "	It seems that general comfort, the cargo space per resident, as well as the fuel capacity increase with each generation of these colony ships."
+
+
+
+ship "CS 6 Metropolis Segment"
+	sprite "ship/Marsian CS Metropolis Segment vB"
+	attributes
+		category "Transport"
+		cost 19195487000
+		shields 14918710
+		hull 23350090
+		"required crew" 33951
+		bunks 506465
+		mass 2107845
+		drag 33879.14
+		"heat dissipation" .66
+		"fuel capacity" 4200
+		"cargo space" 1843080
+		"outfit space" 193980
+		"weapon capacity" 1200
+		"engine capacity" 151400
+		weapon
+			"blast radius" 38e+4
+			"shield damage" 38e+5
+			"hull damage" 19e+5
+			"hit force" 57e+5
+	outfits
+		"Marsian Triple Electron Turret" 2
+		"Marsian Anti-Missile Turret" 10
+
+		"Stack Metro Core" 13
+		"LP288a Battery Pack" 13
+		"D94-YV Shield Generator" 257
+
+		"X8710 Ion Thruster" 6
+		"X8210 Ion Steering" 7
+		Hyperdrive 4
+		Ramscoop
+
+#	engine 53 345
+#	engine 0 345
+#	engine -53 345
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	fighter -28 -177 left
+	fighter 28 -177 right
+	fighter -28 -177 left
+	fighter 28 -177 right
+	drone -19 -159 left
+	drone 19 -159 right
+	drone -13 -146 left
+	drone 13 -146 right
+	drone -19 -159 left
+	drone 19 -159 right
+
+	explode "big explosion" 10
+	explode "huge explosion" 90
+
+	description "The CS Metropois Segment is one of the largest yet recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have light armament. But they offer many comfortable living rooms and enough cargo space to store supplies for several months."
+	description "	With a total capacity of half a million people, this is truely a flying colony in space. It can easily fly from Tarazed to Valhalla nonstop while being larger than some of the human planetary settlements on that way."
+	description "	Colonies of that size usually have several Jump Drives installed."
+
+
+
+ship "CS 7 Metropolis"
+	sprite "ship/Marsian CS Metropolis Segment vA"
+	attributes
+		category "Transport"
+		cost 119624922000
+		shields 93644780
+		hull 145950220
+		"required crew" 205674
+		bunks 3000080
+		mass 13076360
+		drag 207190.98
+		"heat dissipation" .65
+		"fuel capacity" 14000
+		"cargo space" 11992080
+		"outfit space" 1175560
+		"weapon capacity" 4800
+		"engine capacity" 921800
+		weapon
+			"blast radius" 240e+4
+			"shield damage" 240e+5
+			"hull damage" 120e+5
+			"hit force" 360e+5
+	outfits
+		"Marsian Triple Electron Turret" 6
+		"Marsian Anti-Missile Turret" 30
+
+		"Stack Metro Core" 80
+		"LP288a Battery Pack" 80
+		"D94-YV Shield Generator" 1275 # 257
+
+		"X8720 Ion Thruster" 4
+		"X8220 Ion Steering" 4
+		Hyperdrive 24
+		Ramscoop
+
+#	engine 53 345
+#	engine 0 345
+#	engine -53 345
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	fighter -28 -177 left
+	fighter 28 -177 right
+	fighter -28 -177 left
+	fighter 28 -177 right
+	drone -19 -159 left
+	drone 19 -159 right
+	drone -13 -146 left
+	drone 13 -146 right
+	drone -19 -159 left
+	drone 19 -159 right
+
+	explode "big explosion" 10
+	explode "huge explosion" 90
+	description "The CS Metropois is one of the largest yet recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have light armament. But they offer many comfortable living rooms and enough cargo space to store supplies for several months."
+	description "	With a total capacity of three million people, this is truely worth being called a metropolis. It is clearly visible that the design relies on a modular concept consisting of multiple smaller segments attached to a core hub. Eventually this simplified the construction process."
+	description "	Colonies of that size usually have several Jump Drives installed."
+#	description "	Funny fact: This ship has a slightly better cargo space per required crew ratio than the Star Barge."
+
+
+
+ship "CS 8 Conurbation"
+	sprite "ship/Marsian CS Metropolis Segment vA"
+	attributes
+		category "Transport"
+		cost 415446164000
+		shields 329114900
+		hull 511183020
+		"required crew" 702214
+		bunks 10060135
+		mass 45517030
+		drag 716135.41
+		"heat dissipation" .64
+		"fuel capacity" 42400
+		"cargo space" 43715120
+		"outfit space" 3659180
+		"weapon capacity" 12000
+		"engine capacity" 2880300
+		weapon
+			"blast radius" 840e+4
+			"shield damage" 840e+5
+			"hull damage" 420e+5
+			"hit force" 1260e+5
+	outfits
+		"Marsian Triple Electron Turret" 10
+		"Marsian Anti-Missile Turret" 50
+
+		"Stack Metro Core" 240
+		"LP288a Battery Pack" 240
+		"D94-YV Shield Generator" 3825 # 1275
+
+		"X8730 Ion Thruster"
+		"X8230 Ion Steering"
+		"X8720 Ion Thruster" 3
+		"X8220 Ion Steering" 2
+		Hyperdrive 60
+		Ramscoop
+
+#	engine 53 345
+#	engine 0 345
+#	engine -53 345
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	fighter -28 -177 left
+	fighter 28 -177 right
+	fighter -28 -177 left
+	fighter 28 -177 right
+	drone -19 -159 left
+	drone 19 -159 right
+	drone -13 -146 left
+	drone 13 -146 right
+	drone -19 -159 left
+	drone 19 -159 right
+
+	explode "big explosion" 10
+	explode "huge explosion" 90
+	description "The CS Conurbation is one of the largest yet recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have light armament. But they offer many comfortable living rooms and enough cargo space to store supplies for several months."
+	description "	A conurbation is a group of large cities and their suburbs, and so is this ship: a combination of many smaller colony ships attached to some central colony hub structure as administration center. The central hub allows this ship to act as capital city ship."
+	description "	With a regular capacity of ten million people, this 'ship' could probably evacuate not less than fifty million. You finally get a slight idea what it takes to build a ringworld like the Quarg do."
+	description "	Colonies of that size usually have several Jump Drives installed."
+
+
+
+ship "CS 9 Megalopolis"
+	sprite "ship/Marsian CS Metropolis Segment vB"
+	attributes
+		category "Transport"
+		cost 1280356826000
+		shields 1014639480
+		hull 1569703800
+		"required crew" 2113406
+		bunks 30020190
+		mass 138766080
+		drag 2150626.52
+		"heat dissipation" .63
+		"fuel capacity" 117600
+		"cargo space" 135595160
+		"outfit space" 10404440
+		"weapon capacity" 19800
+		"engine capacity" 8208400
+		weapon
+			"blast radius" 240e+4
+			"shield damage" 240e+5
+			"hull damage" 120e+5
+			"hit force" 360e+5
+	outfits
+		"Marsian Triple Electron Turret" 16
+		"Marsian Anti-Missile Turret" 80
+
+		"Stack Metro Core" 700
+		"LP288a Battery Pack" 700
+		"D94-YV Shield Generator" 12750
+
+		"X8730 Ion Thruster" 3
+		"X8230 Ion Steering" 4
+		"X8720 Ion Thruster" 2
+		Hyperdrive 120
+		Ramscoop
+
+#	engine 53 345
+#	engine 0 345
+#	engine -53 345
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	turret -4 -206 "Marsian Triple Electron Turret"
+	turret 4 -206 "Marsian Triple Electron Turret"
+	turret -56 -192 "Marsian Anti-Missile Turret"
+	turret 56 -192 "Marsian Anti-Missile Turret"
+	turret -47 -71 "Marsian Anti-Missile Turret"
+	turret 47 -71 "Marsian Anti-Missile Turret"
+	turret -47 62 "Marsian Anti-Missile Turret"
+	turret 47 62 "Marsian Anti-Missile Turret"
+	turret -47 196 "Marsian Anti-Missile Turret"
+	turret 47 196 "Marsian Anti-Missile Turret"
+	turret -56 320 "Marsian Anti-Missile Turret"
+	turret 56 320 "Marsian Anti-Missile Turret"
+	fighter -28 -177 left
+	fighter 28 -177 right
+	fighter -28 -177 left
+	fighter 28 -177 right
+	drone -19 -159 left
+	drone 19 -159 right
+	drone -13 -146 left
+	drone 13 -146 right
+	drone -19 -159 left
+	drone 19 -159 right
+
+	explode "big explosion" 10
+	explode "huge explosion" 90
+	description "The CS Megalopolis is the largest yet recovered colony ship blueprint. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have light armament. But they offer many comfortable living rooms and enough cargo space to store supplies for several months."
+	description "	A megalopolis is a group of conurbations, and so is this ship: a cluster of smaller colony ships connected through some bridging structure."
+	description "	With a regular capacity of ten million people, this 'ship' could probably evacuate not less than fifty million. You finally get a slight idea what it takes to build a ringworld like the Quarg do."
+	description "	Colonies of that size usually have several Jump Drives installed."
+
+
+
+ship "MaCuFi Alpha"
+	sprite "ship/cube_fighter_19x29"
+	attributes
+		category Fighter
+		cost 31513500
+		shields 37970
+		hull 13953
+		"required crew" 59
+		bunks 100
+		mass 1848
+		drag 32.24
+		"heat dissipation" .82
+		"fuel capacity" 0
+		"cargo space" 20
+		"outfit space" 4875
+		"weapon capacity" 1610
+		"engine capacity" 2400
+		weapon
+			"blast radius" 240
+			"shield damage" 2400
+			"hull damage" 1200
+			"hit force" 3600
+	outfits
+		"Small Pulse Laser Turret" 4
+		"Marsian Triple Electron Turret" 2
+		"Capital EMP Blaster Turret" 2
+		"Marsian Anti-Missile Turret" 4
+		"Defense Beam Turret LR1200"
+
+		"Triple Plasma Core"
+		"Spheric Shield Generator"
+		"Spheric Heatpump"
+
+		"X8700 Ion Thruster"
+		"X8200 Ion Steering"
+
+		"Marsian Scanner"
+
+	turret -6 -11 "Marsian Triple Electron Turret"
+	turret 6 -11 "Marsian Triple Electron Turret"
+
+	turret 0 -13 "Small Pulse Laser Turret"
+	turret 0 -9 "Small Pulse Laser Turret"
+	turret -2 -5 "Small Pulse Laser Turret"
+	turret 2 -5 "Small Pulse Laser Turret"
+
+	turret -7 -4 "Marsian Anti-Missile Turret"
+	turret 7 -4 "Marsian Anti-Missile Turret"
+	turret -7 2 "Marsian Anti-Missile Turret"
+	turret 7 2 "Marsian Anti-Missile Turret"
+
+	turret 0 1 "Defense Beam Turret LR1200"
+
+	turret -5 10 "Capital EMP Blaster Turret"
+	turret 5 10 "Capital EMP Blaster Turret"
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	description "This is the third generation of strong fighters based purely on Marsian. It is much stronger than the regular Marsian fighters."
+	description "Please use it only on large Marsian cubes and not on regular human carrier ships or Marsian ships which are much smaller by design."
+
+ship "MaCuFi Alpha Scout"
+	sprite "ship/cube_fighter_19x29"
+	attributes
+		category "Light Warship"
+		cost 41573500
+		shields 50695
+		hull 20243
+		"required crew" 94
+		bunks 200
+		mass 2343
+		drag 38.32
+		"heat dissipation" .81
+		"fuel capacity" 1400
+		"cargo space" 640
+		"outfit space" 4915
+		"weapon capacity" 1610
+		"engine capacity" 2400
+		weapon
+			"blast radius" 240
+			"shield damage" 2400
+			"hull damage" 1200
+			"hit force" 3600
+	outfits
+		"Small Pulse Laser Turret" 4
+		"Marsian Triple Electron Turret" 2
+		"Capital EMP Blaster Turret" 2
+		"Marsian Anti-Missile Turret" 4
+		"Defense Beam Turret LR1200"
+
+		"Triple Plasma Core"
+		"Spheric Shield Generator"
+		"Spheric Heatpump"
+
+		"X8700 Ion Thruster"
+		"X8200 Ion Steering"
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -6 -11 "Marsian Triple Electron Turret"
+	turret 6 -11 "Marsian Triple Electron Turret"
+
+	turret 0 -13 "Small Pulse Laser Turret"
+	turret 0 -9 "Small Pulse Laser Turret"
+	turret -2 -5 "Small Pulse Laser Turret"
+	turret 2 -5 "Small Pulse Laser Turret"
+
+	turret -7 -4 "Marsian Anti-Missile Turret"
+	turret 7 -4 "Marsian Anti-Missile Turret"
+	turret -7 2 "Marsian Anti-Missile Turret"
+	turret 7 2 "Marsian Anti-Missile Turret"
+
+	turret 0 1 "Defense Beam Turret LR1200"
+
+	turret -5 10 "Capital EMP Blaster Turret"
+	turret 5 10 "Capital EMP Blaster Turret"
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	description "This long range scout was derived from the third generation of Marsian fighters. Two major modifications were applied in order to adjust it to its mission profile:"
+	description "	1. It received different engine mount with larger fuel capacity."
+	description "	2. The hull was slightly modified to make room for a hyperdrive and to extend the cargo capacity in order to make room for various mission equipment."
+	description "These modifications resulted in a larger crew size which required another adjustment, a larger crew area."
+
+
+
+ship "Freight Cube 37"
+	sprite "ship/cube_37_civil"
+	attributes
+		category "Light Freighter"
+		cost 9730200
+		shields 126185
+		hull 53970
+		"required crew" 183
+		bunks 424
+		mass 5555
+		drag 84.91
+		"heat dissipation" .69
+		"fuel capacity" 900
+		"cargo space" 10000
+		"outfit space" 3436
+		"weapon capacity" 240
+		"engine capacity" 2370
+		weapon
+			"blast radius" 220
+			"shield damage" 2200
+			"hull damage" 1100
+			"hit force" 3300
+	outfits
+		"Electron Turret" 2
+		"Marsian Anti-Missile Turret" 2
+
+		"Stack Core" 5
+		"D94-YV Shield Generator" 2
+
+		"X8700 Ion Thruster"
+		"X8200 Ion Steering"
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -16 -16 "Electron Turret"
+	turret 16 -16 "Electron Turret"
+	turret -16 16 "Marsian Anti-Missile Turret"
+	turret 16 16 "Marsian Anti-Missile Turret"
+	explode "tiny explosion" 30
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	description "The Freight Cube 37 is one of the smaller Marsian cubes. Be sure to check out its heavier armed sister cube 39."
+
+ship "Freight Cube 39"
+	sprite "ship/cube_39_medium"
+	attributes
+		category "Light Freighter"
+		cost 109406000
+		shields 137390
+		hull 58350
+		"required crew" 234
+		bunks 424
+		mass 6080
+		drag 93.65
+		"heat dissipation" .69
+		"fuel capacity" 1000
+		"cargo space" 10000
+		"outfit space" 4324
+		"weapon capacity" 820
+		"engine capacity" 2630
+		weapon
+			"blast radius" 240
+			"shield damage" 2400
+			"hull damage" 1200
+			"hit force" 3600
+	outfits
+		"Marsian Triple Electron Turret" 2
+		"Marsian Anti-Missile Turret" 4
+
+		"Stack Mega Core"
+		"D94-YV Shield Generator" 5
+
+		"X8700 Ion Thruster"
+		"X8200 Ion Steering"
+		"X5700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -16 -16 "Marsian Anti-Missile Turret"
+	turret 16 -16 "Marsian Anti-Missile Turret"
+	turret -16 16 "Marsian Anti-Missile Turret"
+	turret 16 16 "Marsian Anti-Missile Turret"
+	turret -8 0 "Marsian Triple Electron Turret"
+	turret 8 0 "Marsian Triple Electron Turret"
+	fighter -5 17
+	fighter 5 -17
+	drone -10 -17
+	drone 10 -17
+	drone -17 -9 left
+	drone -17 -5 left
+	drone -17 5 left
+	drone -17 9 left
+	drone 17 -9 right
+	drone 17 -5 right
+	drone 17 5 right
+	drone 17 9 right
+	explode "tiny explosion" 30
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	description "The Freight Cube 39 is one of the smaller Marsian cubes. This is the heavier armed sister of cube 38."
+
+ship "Freight Cube 83"
+	sprite "ship/cube_83_medium"
+	attributes
+		category "Light Freighter"
+		cost 1058100000
+		shields 1345465
+		hull 579440
+		"required crew" 2083
+		bunks 4400
+		mass 58925
+		drag 893.69
+		"heat dissipation" .68
+		"fuel capacity" 2400
+		"cargo space" 100000
+		"outfit space" 38752
+		"weapon capacity" 7120
+		"engine capacity" 23660
+		weapon
+			"blast radius" 440
+			"shield damage" 4400
+			"hull damage" 2200
+			"hit force" 6600
+	outfits
+		"Marsian Triple Electron Turret" 4
+		"Large Pulse Laser Turret" 2
+		"Capital Pulse Laser Turret" 14
+		"Marsian Anti-Missile Turret" 8
+
+		"Stack Metro Core" 2
+		"Stack Mega Core"
+		"D95-EE Shield Generator" 20
+
+		"X8700 Ion Thruster" 10
+		"X8200 Ion Steering" 10
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -38 -38 "Marsian Triple Electron Turret"
+	turret 38 -38 "Marsian Triple Electron Turret"
+	turret -38 38 "Marsian Triple Electron Turret"
+	turret 38 38 "Marsian Triple Electron Turret"
+
+	turret -23 -32 "Marsian Anti-Missile Turret"
+	turret -32 -23 "Marsian Anti-Missile Turret"
+	turret 23 -32 "Marsian Anti-Missile Turret"
+	turret 32 -23 "Marsian Anti-Missile Turret"
+	turret -32 23 "Marsian Anti-Missile Turret"
+	turret -23 32 "Marsian Anti-Missile Turret"
+	turret 32 23 "Marsian Anti-Missile Turret"
+	turret 23 32 "Marsian Anti-Missile Turret"
+
+	turret -15 -30 "Capital Pulse Laser Turret"
+	turret -5 -30 "Capital Pulse Laser Turret"
+	turret 5 -30 "Capital Pulse Laser Turret"
+	turret 15 -30 "Capital Pulse Laser Turret"
+
+	turret -30 -15 "Capital Pulse Laser Turret"
+	turret -30 -5 "Capital Pulse Laser Turret"
+	turret -30 5 "Capital Pulse Laser Turret"
+	turret -30 15 "Capital Pulse Laser Turret"
+
+	turret 30 -15 "Capital Pulse Laser Turret"
+	turret 30 -5 "Capital Pulse Laser Turret"
+	turret 30 5 "Capital Pulse Laser Turret"
+	turret 30 15 "Capital Pulse Laser Turret"
+
+	turret -15 30 "Large Pulse Laser Turret"
+	turret -5 30 "Capital Pulse Laser Turret"
+	turret 5 30 "Capital Pulse Laser Turret"
+	turret 15 30 "Large Pulse Laser Turret"
+
+	fighter -27 -39
+	fighter -17 -39
+	fighter -7 -39
+	fighter 7 -39
+	fighter 17 -39
+	fighter 27 -39
+
+	fighter -39 -27 left
+	fighter -39 -17 left
+	fighter -39 -7 left
+	fighter -39 7 left
+	fighter -39 17 left
+	fighter -39 27 left
+
+	fighter 39 -27 right
+	fighter 39 -17 right
+	fighter 39 -7 right
+	fighter 39 7 right
+	fighter 39 17 right
+	fighter 39 27 right
+
+	fighter -27 39 back
+	fighter -17 39 back
+	fighter -7 39 back
+	fighter 7 39 back
+	fighter 17 39 back
+	fighter 27 39 back
+
+	drone -32 -39
+	drone -22 -39
+	drone -12 -39
+	drone -2 -39
+	drone 2 -39
+	drone 12 -39
+	drone 22 -39
+	drone 32 -39
+
+	drone -39 -32 left
+	drone -39 -22 left
+	drone -39 -12 left
+	drone -39 -2 left
+	drone -39 2 left
+	drone -39 12 left
+	drone -39 22 left
+	drone -39 32 left
+
+	drone 39 -32 right
+	drone 39 -22 right
+	drone 39 -12 right
+	drone 39 -2 right
+	drone 39 2 right
+	drone 39 12 right
+	drone 39 22 right
+	drone 39 32 right
+
+	drone -32 39 back
+	drone -22 39 back
+	drone -12 39 back
+	drone -2 39 back
+	drone 2 39 back
+	drone 12 39 back
+	drone 22 39 back
+	drone 32 39 back
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	description "The Freight Cube 83 is one of the smaller Marsian cubes."
+
+ship "Freight Cube 127"
+	sprite "ship/cube_127_medium"
+	attributes
+		category "Heavy Freighter"
+		cost 3739794000
+		shields 4883235
+		hull 2109295
+		"required crew" 7123
+		bunks 11000
+		mass 213380
+		drag 3225.21
+		"heat dissipation" .67
+		"fuel capacity" 3600
+		"cargo space" 400000
+		"outfit space" 134300
+		"weapon capacity" 14080
+		"engine capacity" 94120
+		weapon
+			"blast radius" 660
+			"shield damage" 8800
+			"hull damage" 4400
+			"hit force" 13200
+	outfits
+		"Marsian Triple Electron Turret" 4
+		"Capital EMP Blaster Turret" 4
+		"Capital Pulse Laser Turret" 24
+		"Marsian Anti-Missile Turret" 8
+		"Defense Beam Turret LR2400" 8
+
+		"Stack Metro Core" 9
+		"D96-FF Shield Generator" 50
+
+		"X8700 Ion Thruster" 40
+		"X8200 Ion Steering" 40
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -60 -60 "Marsian Triple Electron Turret"
+	turret 60 -60 "Marsian Triple Electron Turret"
+	turret -60 60 "Marsian Triple Electron Turret"
+	turret 60 60 "Marsian Triple Electron Turret"
+
+	turret -44 -54 "Marsian Anti-Missile Turret"
+	turret -54 -44 "Marsian Anti-Missile Turret"
+	turret 44 -54 "Marsian Anti-Missile Turret"
+	turret 54 -44 "Marsian Anti-Missile Turret"
+	turret -44 54 "Marsian Anti-Missile Turret"
+	turret -54 44 "Marsian Anti-Missile Turret"
+	turret 44 54 "Marsian Anti-Missile Turret"
+	turret 54 44 "Marsian Anti-Missile Turret"
+
+	turret -14 -53 "Defense Beam Turret LR2400"
+	turret 14 -53 "Defense Beam Turret LR2400"
+	turret -53 -14 "Defense Beam Turret LR2400"
+	turret -53 14 "Defense Beam Turret LR2400"
+	turret 53 -14 "Defense Beam Turret LR2400"
+	turret 53 14 "Defense Beam Turret LR2400"
+	turret -14 53 "Defense Beam Turret LR2400"
+	turret 14 53 "Defense Beam Turret LR2400"
+
+
+	turret -46 -46 "Capital EMP Blaster Turret"
+	turret 46 -46 "Capital EMP Blaster Turret"
+	turret -46 46 "Capital EMP Blaster Turret"
+	turret 46 46 "Capital EMP Blaster Turret"
+
+	turret -36 -52 "Capital Pulse Laser Turret"
+	turret -26 -52 "Capital Pulse Laser Turret"
+	turret -5 -52 "Capital Pulse Laser Turret"
+	turret 5 -52 "Capital Pulse Laser Turret"
+	turret 26 -52 "Capital Pulse Laser Turret"
+	turret 36 -52 "Capital Pulse Laser Turret"
+
+	turret -52 -36 "Capital Pulse Laser Turret"
+	turret -52 -26 "Capital Pulse Laser Turret"
+	turret -52 -5 "Capital Pulse Laser Turret"
+	turret -52 5 "Capital Pulse Laser Turret"
+	turret -52 26 "Capital Pulse Laser Turret"
+	turret -52 36 "Capital Pulse Laser Turret"
+
+	turret 52 -36 "Capital Pulse Laser Turret"
+	turret 52 -26 "Capital Pulse Laser Turret"
+	turret 52 -5 "Capital Pulse Laser Turret"
+	turret 52 5 "Capital Pulse Laser Turret"
+	turret 52 26 "Capital Pulse Laser Turret"
+	turret 52 36 "Capital Pulse Laser Turret"
+
+	turret -36 52 "Capital Pulse Laser Turret"
+	turret -26 52 "Capital Pulse Laser Turret"
+	turret -5 52 "Capital Pulse Laser Turret"
+	turret 5 52 "Capital Pulse Laser Turret"
+	turret 26 52 "Capital Pulse Laser Turret"
+	turret 36 52 "Capital Pulse Laser Turret"
+
+	fighter -49 -61
+	fighter -39 -61
+	fighter -29 -61
+	fighter -10 -61
+	fighter 0 -61
+	fighter 10 -61
+	fighter 29 -61
+	fighter 39 -61
+	fighter 49 -61
+
+	fighter -61 -49 left
+	fighter -61 -39 left
+	fighter -61 -29 left
+	fighter -61 -10 left
+	fighter -61 0 left
+	fighter -61 10 left
+	fighter -61 29 left
+	fighter -61 39 left
+	fighter -61 49 left
+
+	fighter 61 -49 right
+	fighter 61 -39 right
+	fighter 61 -29 right
+	fighter 61 -10 right
+	fighter 61 0 right
+	fighter 61 10 right
+	fighter 61 29 right
+	fighter 61 39 right
+	fighter 61 49 right
+
+	fighter -49 61 back
+	fighter -39 61 back
+	fighter -29 61 back
+	fighter -10 61 back
+	fighter 0 61 back
+	fighter 10 61 back
+	fighter 29 61 back
+	fighter 39 61 back
+	fighter 49 61 back
+
+	drone -54 -61
+	drone -44 -61
+	drone -34 -61
+	drone -24 -61
+	drone -15 -61
+	drone -5 -61
+	drone 5 -61
+	drone 15 -61
+	drone 24 -61
+	drone 34 -61
+	drone 44 -61
+	drone 54 -61
+
+	drone -61 -54 left
+	drone -61 -44 left
+	drone -61 -34 left
+	drone -61 -24 left
+	drone -61 -15 left
+	drone -61 -5 left
+	drone -61 5 left
+	drone -61 15 left
+	drone -61 24 left
+	drone -61 34 left
+	drone -61 44 left
+	drone -61 54 left
+
+	drone 61 -54 right
+	drone 61 -44 right
+	drone 61 -34 right
+	drone 61 -24 right
+	drone 61 -15 right
+	drone 61 -5 right
+	drone 61 5 right
+	drone 61 15 right
+	drone 61 24 right
+	drone 61 34 right
+	drone 61 44 right
+	drone 61 54 right
+
+	drone -54 61 back
+	drone -44 61 back
+	drone -34 61 back
+	drone -24 61 back
+	drone -15 61 back
+	drone -5 61 back
+	drone 5 61 back
+	drone 15 61 back
+	drone 24 61 back
+	drone 34 61 back
+	drone 44 61 back
+	drone 54 61 back
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion huge"
+	description "The Freight Cube 127 is a medium sized Marsian cube."
+
+ship "Freight Cube 255"
+	sprite "ship/cube_255_medium"
+	attributes
+		category "Heavy Freighter"
+		cost 30999404000
+		shields 38862105
+		hull 16630740
+		"required crew" 62461
+		bunks 240000
+		mass 1710105
+		drag 26121.89
+		"heat dissipation" .66
+		"fuel capacity" 4500
+		"cargo space" 2.1e+6
+		"outfit space" 1493556
+		"weapon capacity" 19280
+		"engine capacity" 1145300
+		weapon
+			"blast radius" 1300
+			"shield damage" 40000
+			"hull damage" 20000
+			"hit force" 60000
+	outfits
+		"Small Pulse Laser Turret" 120
+		"Marsian Triple Electron Turret" 4
+		# "Capital Pulse Laser Turret" 32
+		"Capital EMP Blaster Turret" 32
+		"Marsian Anti-Missile Turret" 28
+		"Defense Beam Turret LR1200" 8
+
+		"Stack Metro Core" 100
+		"Stack Mega Core" 0
+		"Supercapacitor"
+		"D97-GG Shield Generator" 625
+		"D95-EE Shield Generator" 1
+		"Liquid Helium Cooler" 100
+
+		"X8720 Ion Thruster" 5
+		"X8220 Ion Steering" 5
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -124 -124 "Marsian Triple Electron Turret"
+	turret 124 -124 "Marsian Triple Electron Turret"
+	turret -124 124 "Marsian Triple Electron Turret"
+	turret 124 124 "Marsian Triple Electron Turret"
+
+	turret -104 -116 "Defense Beam Turret LR1200"
+	turret 104 -116 "Defense Beam Turret LR1200"
+	turret -116 -104 "Defense Beam Turret LR1200"
+	turret 116 -104 "Defense Beam Turret LR1200"
+
+	turret -116 104 "Defense Beam Turret LR1200"
+	turret 116 104 "Defense Beam Turret LR1200"
+	turret -104 116 "Defense Beam Turret LR1200"
+	turret 104 116 "Defense Beam Turret LR1200"
+
+
+	turret -117 -117 "Marsian Anti-Missile Turret"
+	turret -111 -117 "Marsian Anti-Missile Turret"
+	turret -117 -111 "Marsian Anti-Missile Turret"
+	turret -111 -111 "Marsian Anti-Missile Turret"
+	turret -103 -109 "Marsian Anti-Missile Turret"
+	turret -109 -103 "Marsian Anti-Missile Turret"
+	turret -103 -103 "Marsian Anti-Missile Turret"
+
+	turret 117 -117 "Marsian Anti-Missile Turret"
+	turret 111 -117 "Marsian Anti-Missile Turret"
+	turret 117 -111 "Marsian Anti-Missile Turret"
+	turret 111 -111 "Marsian Anti-Missile Turret"
+	turret 103 -109 "Marsian Anti-Missile Turret"
+	turret 109 -103 "Marsian Anti-Missile Turret"
+	turret 103 -103 "Marsian Anti-Missile Turret"
+
+	turret -117 117 "Marsian Anti-Missile Turret"
+	turret -111 117 "Marsian Anti-Missile Turret"
+	turret -117 111 "Marsian Anti-Missile Turret"
+	turret -111 111 "Marsian Anti-Missile Turret"
+	turret -103 109 "Marsian Anti-Missile Turret"
+	turret -109 103 "Marsian Anti-Missile Turret"
+	turret -103 103 "Marsian Anti-Missile Turret"
+
+	turret 117 117 "Marsian Anti-Missile Turret"
+	turret 111 117 "Marsian Anti-Missile Turret"
+	turret 117 111 "Marsian Anti-Missile Turret"
+	turret 111 111 "Marsian Anti-Missile Turret"
+	turret 103 109 "Marsian Anti-Missile Turret"
+	turret 109 103 "Marsian Anti-Missile Turret"
+	turret 103 103 "Marsian Anti-Missile Turret"
+
+
+	turret -95 -115 "Capital EMP Blaster Turret"
+	turret -85 -115 "Capital EMP Blaster Turret"
+	turret -75 -115 "Capital EMP Blaster Turret"
+	turret -65 -115 "Capital EMP Blaster Turret"
+	turret 65 -115 "Capital EMP Blaster Turret"
+	turret 75 -115 "Capital EMP Blaster Turret"
+	turret 85 -115 "Capital EMP Blaster Turret"
+	turret 95 -115 "Capital EMP Blaster Turret"
+
+	turret -115 -95 "Capital EMP Blaster Turret"
+	turret -115 -85 "Capital EMP Blaster Turret"
+	turret -115 -75 "Capital EMP Blaster Turret"
+	turret -115 -65 "Capital EMP Blaster Turret"
+	turret -115 65 "Capital EMP Blaster Turret"
+	turret -115 75 "Capital EMP Blaster Turret"
+	turret -115 85 "Capital EMP Blaster Turret"
+	turret -115 95 "Capital EMP Blaster Turret"
+
+	turret 115 -95 "Capital EMP Blaster Turret"
+	turret 115 -85 "Capital EMP Blaster Turret"
+	turret 115 -75 "Capital EMP Blaster Turret"
+	turret 115 -65 "Capital EMP Blaster Turret"
+	turret 115 65 "Capital EMP Blaster Turret"
+	turret 115 75 "Capital EMP Blaster Turret"
+	turret 115 85 "Capital EMP Blaster Turret"
+	turret 115 95 "Capital EMP Blaster Turret"
+
+	turret -95 115 "Capital EMP Blaster Turret"
+	turret -85 115 "Capital EMP Blaster Turret"
+	turret -75 115 "Capital EMP Blaster Turret"
+	turret -65 115 "Capital EMP Blaster Turret"
+	turret 65 115 "Capital EMP Blaster Turret"
+	turret 75 115 "Capital EMP Blaster Turret"
+	turret 85 115 "Capital EMP Blaster Turret"
+	turret 95 115 "Capital EMP Blaster Turret"
+
+
+	turret -118 -122 "Small Pulse Laser Turret"
+	turret -114 -122 "Small Pulse Laser Turret"
+	turret -110 -122 "Small Pulse Laser Turret"
+	turret -106 -122 "Small Pulse Laser Turret"
+	turret -102 -122 "Small Pulse Laser Turret"
+	turret -98 -122 "Small Pulse Laser Turret"
+	turret -94 -122 "Small Pulse Laser Turret"
+	turret -90 -122 "Small Pulse Laser Turret"
+	turret -86 -122 "Small Pulse Laser Turret"
+	turret -82 -122 "Small Pulse Laser Turret"
+	turret -78 -122 "Small Pulse Laser Turret"
+	turret -74 -122 "Small Pulse Laser Turret"
+	turret -70 -122 "Small Pulse Laser Turret"
+	turret -66 -122 "Small Pulse Laser Turret"
+	turret -62 -122 "Small Pulse Laser Turret"
+	turret 62 -122 "Small Pulse Laser Turret"
+	turret 66 -122 "Small Pulse Laser Turret"
+	turret 70 -122 "Small Pulse Laser Turret"
+	turret 74 -122 "Small Pulse Laser Turret"
+	turret 78 -122 "Small Pulse Laser Turret"
+	turret 82 -122 "Small Pulse Laser Turret"
+	turret 86 -122 "Small Pulse Laser Turret"
+	turret 90 -122 "Small Pulse Laser Turret"
+	turret 94 -122 "Small Pulse Laser Turret"
+	turret 98 -122 "Small Pulse Laser Turret"
+	turret 102 -122 "Small Pulse Laser Turret"
+	turret 106 -122 "Small Pulse Laser Turret"
+	turret 110 -122 "Small Pulse Laser Turret"
+	turret 114 -122 "Small Pulse Laser Turret"
+	turret 118 -122 "Small Pulse Laser Turret"
+
+	turret -122 -118 "Small Pulse Laser Turret"
+	turret -122 -114 "Small Pulse Laser Turret"
+	turret -122 -110 "Small Pulse Laser Turret"
+	turret -122 -106 "Small Pulse Laser Turret"
+	turret -122 -102 "Small Pulse Laser Turret"
+	turret -122 -98 "Small Pulse Laser Turret"
+	turret -122 -94 "Small Pulse Laser Turret"
+	turret -122 -90 "Small Pulse Laser Turret"
+	turret -122 -86 "Small Pulse Laser Turret"
+	turret -122 -82 "Small Pulse Laser Turret"
+	turret -122 -78 "Small Pulse Laser Turret"
+	turret -122 -74 "Small Pulse Laser Turret"
+	turret -122 -70 "Small Pulse Laser Turret"
+	turret -122 -66 "Small Pulse Laser Turret"
+	turret -122 -62 "Small Pulse Laser Turret"
+	turret -122 62 "Small Pulse Laser Turret"
+	turret -122 66 "Small Pulse Laser Turret"
+	turret -122 70 "Small Pulse Laser Turret"
+	turret -122 74 "Small Pulse Laser Turret"
+	turret -122 78 "Small Pulse Laser Turret"
+	turret -122 82 "Small Pulse Laser Turret"
+	turret -122 86 "Small Pulse Laser Turret"
+	turret -122 90 "Small Pulse Laser Turret"
+	turret -122 94 "Small Pulse Laser Turret"
+	turret -122 98 "Small Pulse Laser Turret"
+	turret -122 102 "Small Pulse Laser Turret"
+	turret -122 106 "Small Pulse Laser Turret"
+	turret -122 110 "Small Pulse Laser Turret"
+	turret -122 114 "Small Pulse Laser Turret"
+	turret -122 118 "Small Pulse Laser Turret"
+
+	turret 122 -118 "Small Pulse Laser Turret"
+	turret 122 -114 "Small Pulse Laser Turret"
+	turret 122 -110 "Small Pulse Laser Turret"
+	turret 122 -106 "Small Pulse Laser Turret"
+	turret 122 -102 "Small Pulse Laser Turret"
+	turret 122 -98 "Small Pulse Laser Turret"
+	turret 122 -94 "Small Pulse Laser Turret"
+	turret 122 -90 "Small Pulse Laser Turret"
+	turret 122 -86 "Small Pulse Laser Turret"
+	turret 122 -82 "Small Pulse Laser Turret"
+	turret 122 -78 "Small Pulse Laser Turret"
+	turret 122 -74 "Small Pulse Laser Turret"
+	turret 122 -70 "Small Pulse Laser Turret"
+	turret 122 -66 "Small Pulse Laser Turret"
+	turret 122 -62 "Small Pulse Laser Turret"
+	turret 122 62 "Small Pulse Laser Turret"
+	turret 122 66 "Small Pulse Laser Turret"
+	turret 122 70 "Small Pulse Laser Turret"
+	turret 122 74 "Small Pulse Laser Turret"
+	turret 122 78 "Small Pulse Laser Turret"
+	turret 122 82 "Small Pulse Laser Turret"
+	turret 122 86 "Small Pulse Laser Turret"
+	turret 122 90 "Small Pulse Laser Turret"
+	turret 122 94 "Small Pulse Laser Turret"
+	turret 122 98 "Small Pulse Laser Turret"
+	turret 122 102 "Small Pulse Laser Turret"
+	turret 122 106 "Small Pulse Laser Turret"
+	turret 122 110 "Small Pulse Laser Turret"
+	turret 122 114 "Small Pulse Laser Turret"
+	turret 122 118 "Small Pulse Laser Turret"
+
+	turret -118 122 "Small Pulse Laser Turret"
+	turret -114 122 "Small Pulse Laser Turret"
+	turret -110 122 "Small Pulse Laser Turret"
+	turret -106 122 "Small Pulse Laser Turret"
+	turret -102 122 "Small Pulse Laser Turret"
+	turret -98 122 "Small Pulse Laser Turret"
+	turret -94 122 "Small Pulse Laser Turret"
+	turret -90 122 "Small Pulse Laser Turret"
+	turret -86 122 "Small Pulse Laser Turret"
+	turret -82 122 "Small Pulse Laser Turret"
+	turret -78 122 "Small Pulse Laser Turret"
+	turret -74 122 "Small Pulse Laser Turret"
+	turret -70 122 "Small Pulse Laser Turret"
+	turret -66 122 "Small Pulse Laser Turret"
+	turret -62 122 "Small Pulse Laser Turret"
+	turret 62 122 "Small Pulse Laser Turret"
+	turret 66 122 "Small Pulse Laser Turret"
+	turret 70 122 "Small Pulse Laser Turret"
+	turret 74 122 "Small Pulse Laser Turret"
+	turret 78 122 "Small Pulse Laser Turret"
+	turret 82 122 "Small Pulse Laser Turret"
+	turret 86 122 "Small Pulse Laser Turret"
+	turret 90 122 "Small Pulse Laser Turret"
+	turret 94 122 "Small Pulse Laser Turret"
+	turret 98 122 "Small Pulse Laser Turret"
+	turret 102 122 "Small Pulse Laser Turret"
+	turret 106 122 "Small Pulse Laser Turret"
+	turret 110 122 "Small Pulse Laser Turret"
+	turret 114 122 "Small Pulse Laser Turret"
+	turret 118 122 "Small Pulse Laser Turret"
+
+
+	fighter -109 -125
+	fighter -105 -125
+	fighter -101 -125
+	fighter -79 -125
+	fighter -75 -125
+	fighter -71 -125
+	fighter 71 -125
+	fighter 75 -125
+	fighter 79 -125
+	fighter 101 -125
+	fighter 105 -125
+	fighter 109 -125
+
+	fighter -125 -109 left
+	fighter -125 -105 left
+	fighter -125 -101 left
+	fighter -125 -79 left
+	fighter -125 -75 left
+	fighter -125 -71 left
+	fighter -125 71 left
+	fighter -125 75 left
+	fighter -125 79 left
+	fighter -125 101 left
+	fighter -125 105 left
+	fighter -125 109 left
+
+	fighter 125 -109 right
+	fighter 125 -105 right
+	fighter 125 -101 right
+	fighter 125 -79 right
+	fighter 125 -75 right
+	fighter 125 -71 right
+	fighter 125 71 right
+	fighter 125 75 right
+	fighter 125 79 right
+	fighter 125 101 right
+	fighter 125 105 right
+	fighter 125 109 right
+
+	fighter -109 125 back
+	fighter -105 125 back
+	fighter -101 125 back
+	fighter -79 125 back
+	fighter -75 125 back
+	fighter -71 125 back
+	fighter 71 125 back
+	fighter 75 125 back
+	fighter 79 125 back
+	fighter 101 125 back
+	fighter 105 125 back
+	fighter 109 125 back
+
+
+	drone -118 -125
+	drone -114 -125
+	drone -96 -125
+	drone -92 -125
+	drone -88 -125
+	drone -84 -125
+	drone -66 -125
+	drone -62 -125
+	drone 62 -125
+	drone 64 -125
+	drone 84 -125
+	drone 88 -125
+	drone 92 -125
+	drone 96 -125
+	drone 114 -125
+	drone 118 -125
+
+	drone -125 -118 left
+	drone -125 -114 left
+	drone -125 -96 left
+	drone -125 -92 left
+	drone -125 -88 left
+	drone -125 -84 left
+	drone -125 -66 left
+	drone -125 -62 left
+	drone -125 62 left
+	drone -125 64 left
+	drone -125 84 left
+	drone -125 88 left
+	drone -125 92 left
+	drone -125 96 left
+	drone -125 114 left
+	drone -125 118 left
+
+	drone 125 -118 right
+	drone 125 -114 right
+	drone 125 -96 right
+	drone 125 -92 right
+	drone 125 -88 right
+	drone 125 -84 right
+	drone 125 -66 right
+	drone 125 -62 right
+	drone 125 62 right
+	drone 125 64 right
+	drone 125 84 right
+	drone 125 88 right
+	drone 125 92 right
+	drone 125 96 right
+	drone 125 114 right
+	drone 125 118 right
+
+	drone -118 125 back
+	drone -114 125 back
+	drone -96 125 back
+	drone -92 125 back
+	drone -88 125 back
+	drone -84 125 back
+	drone -66 125 back
+	drone -62 125 back
+	drone 62 125 back
+	drone 64 125 back
+	drone 84 125 back
+	drone 88 125 back
+	drone 92 125 back
+	drone 96 125 back
+	drone 114 125 back
+	drone 118 125 back
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion huge"
+	description "The Freight Cube 255 is one of the large Marsian cubes. Compared to the other 255 series cubes, the armament of this one could be classified as 'medium'."
+#	description "The Borg would use this cube as assimilation cube because of its high crew capacity."
+
+ship "Freight Cube 255 Ultra"
+	sprite "ship/cube_255_light"
+	attributes
+		category "Heavy Freighter"
+		cost 29905522000
+		shields 39029150
+		hull 16834770
+		"required crew" 57402
+		bunks 120000
+		mass 1707260
+		drag 25846.73
+		"heat dissipation" .66
+		"fuel capacity" 4200
+		"cargo space" 3e+6
+		"outfit space" 1162860
+		"weapon capacity" 11200
+		"engine capacity" 917800
+		weapon
+			"blast radius" 1300
+			"shield damage" 40000
+			"hull damage" 20000
+			"hit force" 60000
+	outfits
+		"Small Pulse Laser Turret" 64
+		"Marsian Triple Electron Turret" 4
+		# "Capital Pulse Laser Turret" 8
+		"Capital EMP Blaster Turret" 8
+		"Attack Beam Turret LR4000" 8
+		"Marsian Anti-Missile Turret" 28
+		"Defense Beam Turret LR1200" 8
+
+		"Tactical Cube Core" 5
+		"Spheric Shield Generator" 204
+		"Spheric Heatpump" 60
+
+		"X8720 Ion Thruster" 4
+		"X8220 Ion Steering" 4
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -124 -124 "Marsian Triple Electron Turret"
+	turret 124 -124 "Marsian Triple Electron Turret"
+	turret -124 124 "Marsian Triple Electron Turret"
+	turret 124 124 "Marsian Triple Electron Turret"
+
+	turret -104 -116 "Defense Beam Turret LR1200"
+	turret 104 -116 "Defense Beam Turret LR1200"
+	turret -116 -104 "Defense Beam Turret LR1200"
+	turret 116 -104 "Defense Beam Turret LR1200"
+
+	turret -116 104 "Defense Beam Turret LR1200"
+	turret 116 104 "Defense Beam Turret LR1200"
+	turret -104 116 "Defense Beam Turret LR1200"
+	turret 104 116 "Defense Beam Turret LR1200"
+
+	turret -117 -117 "Marsian Anti-Missile Turret"
+	turret -111 -117 "Marsian Anti-Missile Turret"
+	turret -117 -111 "Marsian Anti-Missile Turret"
+	turret -111 -111 "Marsian Anti-Missile Turret"
+	turret -103 -109 "Marsian Anti-Missile Turret"
+	turret -109 -103 "Marsian Anti-Missile Turret"
+	turret -103 -103 "Marsian Anti-Missile Turret"
+
+	turret 117 -117 "Marsian Anti-Missile Turret"
+	turret 111 -117 "Marsian Anti-Missile Turret"
+	turret 117 -111 "Marsian Anti-Missile Turret"
+	turret 111 -111 "Marsian Anti-Missile Turret"
+	turret 103 -109 "Marsian Anti-Missile Turret"
+	turret 109 -103 "Marsian Anti-Missile Turret"
+	turret 103 -103 "Marsian Anti-Missile Turret"
+
+	turret -117 117 "Marsian Anti-Missile Turret"
+	turret -111 117 "Marsian Anti-Missile Turret"
+	turret -117 111 "Marsian Anti-Missile Turret"
+	turret -111 111 "Marsian Anti-Missile Turret"
+	turret -103 109 "Marsian Anti-Missile Turret"
+	turret -109 103 "Marsian Anti-Missile Turret"
+	turret -103 103 "Marsian Anti-Missile Turret"
+
+	turret 117 117 "Marsian Anti-Missile Turret"
+	turret 111 117 "Marsian Anti-Missile Turret"
+	turret 117 111 "Marsian Anti-Missile Turret"
+	turret 111 111 "Marsian Anti-Missile Turret"
+	turret 103 109 "Marsian Anti-Missile Turret"
+	turret 109 103 "Marsian Anti-Missile Turret"
+	turret 103 103 "Marsian Anti-Missile Turret"
+
+
+	turret -95 -115 "Attack Beam Turret LR4000"
+	turret 95 -115 "Attack Beam Turret LR4000"
+
+	turret -115 -95 "Attack Beam Turret LR4000"
+	turret -115 95 "Attack Beam Turret LR4000"
+
+	turret 115 -95 "Attack Beam Turret LR4000"
+	turret 115 95 "Attack Beam Turret LR4000"
+
+	turret -95 115 "Attack Beam Turret LR4000"
+	turret 95 115 "Attack Beam Turret LR4000"
+
+
+	turret -95 -105 "Capital EMP Blaster Turret"
+	turret 95 -105 "Capital EMP Blaster Turret"
+
+	turret -105 -95 "Capital EMP Blaster Turret"
+	turret -105 95 "Capital EMP Blaster Turret"
+
+	turret 105 -95 "Capital EMP Blaster Turret"
+	turret 105 95 "Capital EMP Blaster Turret"
+
+	turret -95 105 "Capital EMP Blaster Turret"
+	turret 95 105 "Capital EMP Blaster Turret"
+
+
+	turret -118 -122 "Small Pulse Laser Turret"
+	turret -114 -122 "Small Pulse Laser Turret"
+	turret -110 -122 "Small Pulse Laser Turret"
+	turret -106 -122 "Small Pulse Laser Turret"
+	turret -102 -122 "Small Pulse Laser Turret"
+	turret -98 -122 "Small Pulse Laser Turret"
+	turret -94 -122 "Small Pulse Laser Turret"
+	turret -90 -122 "Small Pulse Laser Turret"
+	turret 90 -122 "Small Pulse Laser Turret"
+	turret 94 -122 "Small Pulse Laser Turret"
+	turret 98 -122 "Small Pulse Laser Turret"
+	turret 102 -122 "Small Pulse Laser Turret"
+	turret 106 -122 "Small Pulse Laser Turret"
+	turret 110 -122 "Small Pulse Laser Turret"
+	turret 114 -122 "Small Pulse Laser Turret"
+	turret 118 -122 "Small Pulse Laser Turret"
+
+	turret -122 -118 "Small Pulse Laser Turret"
+	turret -122 -114 "Small Pulse Laser Turret"
+	turret -122 -110 "Small Pulse Laser Turret"
+	turret -122 -106 "Small Pulse Laser Turret"
+	turret -122 -102 "Small Pulse Laser Turret"
+	turret -122 -98 "Small Pulse Laser Turret"
+	turret -122 -94 "Small Pulse Laser Turret"
+	turret -122 -90 "Small Pulse Laser Turret"
+	turret -122 90 "Small Pulse Laser Turret"
+	turret -122 94 "Small Pulse Laser Turret"
+	turret -122 98 "Small Pulse Laser Turret"
+	turret -122 102 "Small Pulse Laser Turret"
+	turret -122 106 "Small Pulse Laser Turret"
+	turret -122 110 "Small Pulse Laser Turret"
+	turret -122 114 "Small Pulse Laser Turret"
+	turret -122 118 "Small Pulse Laser Turret"
+
+	turret 122 -118 "Small Pulse Laser Turret"
+	turret 122 -114 "Small Pulse Laser Turret"
+	turret 122 -110 "Small Pulse Laser Turret"
+	turret 122 -106 "Small Pulse Laser Turret"
+	turret 122 -102 "Small Pulse Laser Turret"
+	turret 122 -98 "Small Pulse Laser Turret"
+	turret 122 -94 "Small Pulse Laser Turret"
+	turret 122 -90 "Small Pulse Laser Turret"
+	turret 122 90 "Small Pulse Laser Turret"
+	turret 122 94 "Small Pulse Laser Turret"
+	turret 122 98 "Small Pulse Laser Turret"
+	turret 122 102 "Small Pulse Laser Turret"
+	turret 122 106 "Small Pulse Laser Turret"
+	turret 122 110 "Small Pulse Laser Turret"
+	turret 122 114 "Small Pulse Laser Turret"
+	turret 122 118 "Small Pulse Laser Turret"
+
+	turret -118 122 "Small Pulse Laser Turret"
+	turret -114 122 "Small Pulse Laser Turret"
+	turret -110 122 "Small Pulse Laser Turret"
+	turret -106 122 "Small Pulse Laser Turret"
+	turret -102 122 "Small Pulse Laser Turret"
+	turret -98 122 "Small Pulse Laser Turret"
+	turret -94 122 "Small Pulse Laser Turret"
+	turret -90 122 "Small Pulse Laser Turret"
+	turret 90 122 "Small Pulse Laser Turret"
+	turret 94 122 "Small Pulse Laser Turret"
+	turret 98 122 "Small Pulse Laser Turret"
+	turret 102 122 "Small Pulse Laser Turret"
+	turret 106 122 "Small Pulse Laser Turret"
+	turret 110 122 "Small Pulse Laser Turret"
+	turret 114 122 "Small Pulse Laser Turret"
+	turret 118 122 "Small Pulse Laser Turret"
+
+	fighter -109 -125
+	fighter -105 -125
+	fighter -101 -125
+	fighter 101 -125
+	fighter 105 -125
+	fighter 109 -125
+
+	fighter -125 -109 left
+	fighter -125 -105 left
+	fighter -125 -101 left
+	fighter -125 101 left
+	fighter -125 105 left
+	fighter -125 109 left
+
+	fighter 125 -109 right
+	fighter 125 -105 right
+	fighter 125 -101 right
+	fighter 125 101 right
+	fighter 125 105 right
+	fighter 125 109 right
+
+	fighter -109 125 back
+	fighter -105 125 back
+	fighter -101 125 back
+	fighter 101 125 back
+	fighter 105 125 back
+	fighter 109 125 back
+
+
+	drone -118 -125
+	drone -114 -125
+	drone -96 -125
+	drone -92 -125
+	drone 92 -125
+	drone 96 -125
+	drone 114 -125
+	drone 118 -125
+
+	drone -125 -118 left
+	drone -125 -114 left
+	drone -125 -96 left
+	drone -125 -92 left
+	drone -125 92 left
+	drone -125 96 left
+	drone -125 114 left
+	drone -125 118 left
+
+	drone 125 -118 right
+	drone 125 -114 right
+	drone 125 -96 right
+	drone 125 -92 right
+	drone 125 92 right
+	drone 125 96 right
+	drone 125 114 right
+	drone 125 118 right
+
+	drone -118 125 back
+	drone -114 125 back
+	drone -96 125 back
+	drone -92 125 back
+	drone 92 125 back
+	drone 96 125 back
+	drone 114 125 back
+	drone 118 125 back
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion huge"
+	description "The Freight Cube 255 Ultra is one of the large Marsian cubes. It is the weakest of the 255 military series cubes but has the largest cargo capacity. Though it is the weakest of the 255 military series cubes it is still more powerfull than any smaller cube."
+#	description "This cube is strong enough to protect valuable cargo against most attacks."
+
+ship "Civil Freight Cube 255 Ultimate"
+	sprite "ship/cube_255_civil"
+	attributes
+		category "Heavy Freighter"
+		cost 17622200000
+		shields 24151370
+		hull 14025908
+		"required crew" 17212
+		bunks 19000
+		mass 2010595
+		drag 32314.90
+		"heat dissipation" .66
+		"fuel capacity" 4100
+		"cargo space" 3.8e+6
+		"outfit space" 560823
+		"weapon capacity" 2880
+		"engine capacity" 458120
+		weapon
+			"blast radius" 1300
+			"shield damage" 40000
+			"hull damage" 20000
+			"hit force" 60000
+	outfits
+		"Tiny Pulse Laser Turret" 16
+		"Marsian Triple Electron Turret" 4
+		"Medium Pulse Laser Turret" 2
+		"Marsian Anti-Missile Turret" 16
+		"Defense Beam Turret LR1200" 8
+
+		"Tactical Cube Core" 2
+		"Standard Cube Core"
+		"Spheric Shield Generator" 102
+		"Spheric Heatpump" 30
+
+		"X8720 Ion Thruster" 2
+		"X8220 Ion Steering" 2
+		"Hyperdrive"
+		"Ramscoop"
+
+	turret -124 -124 "Marsian Triple Electron Turret"
+	turret 124 -124 "Marsian Triple Electron Turret"
+	turret -124 124 "Marsian Triple Electron Turret"
+	turret 124 124 "Marsian Triple Electron Turret"
+
+	turret -112 -124 "Defense Beam Turret LR1200"
+	turret -124 -112 "Defense Beam Turret LR1200"
+	turret 112 -124 "Defense Beam Turret LR1200"
+	turret 124 -112 "Defense Beam Turret LR1200"
+	turret -112 124 "Defense Beam Turret LR1200"
+	turret -124 112 "Defense Beam Turret LR1200"
+	turret 112 124 "Defense Beam Turret LR1200"
+	turret 124 112 "Defense Beam Turret LR1200"
+
+	turret -117 -117 "Marsian Anti-Missile Turret"
+	turret -111 -117 "Marsian Anti-Missile Turret"
+	turret -117 -111 "Marsian Anti-Missile Turret"
+	turret -111 -111 "Marsian Anti-Missile Turret"
+
+	turret 117 -117 "Marsian Anti-Missile Turret"
+	turret 111 -117 "Marsian Anti-Missile Turret"
+	turret 117 -111 "Marsian Anti-Missile Turret"
+	turret 111 -111 "Marsian Anti-Missile Turret"
+
+	turret -117 117 "Marsian Anti-Missile Turret"
+	turret -111 117 "Marsian Anti-Missile Turret"
+	turret -117 111 "Marsian Anti-Missile Turret"
+	turret -111 111 "Marsian Anti-Missile Turret"
+
+	turret 117 117 "Marsian Anti-Missile Turret"
+	turret 111 117 "Marsian Anti-Missile Turret"
+	turret 117 111 "Marsian Anti-Missile Turret"
+	turret 111 111 "Marsian Anti-Missile Turret"
+
+	turret -4 -117 "Medium Pulse Laser Turret"
+	turret 4 -117 "Medium Pulse Laser Turret"
+
+	turret -118 -126 "Tiny Pulse Laser Turret"
+	turret -118 -122 "Tiny Pulse Laser Turret"
+	turret -126 -118 "Tiny Pulse Laser Turret"
+	turret -122 -118 "Tiny Pulse Laser Turret"
+
+	turret 118 -126 "Tiny Pulse Laser Turret"
+	turret 118 -122 "Tiny Pulse Laser Turret"
+	turret 126 -118 "Tiny Pulse Laser Turret"
+	turret 122 -118 "Tiny Pulse Laser Turret"
+
+	turret -118 126 "Tiny Pulse Laser Turret"
+	turret -118 122 "Tiny Pulse Laser Turret"
+	turret -126 118 "Tiny Pulse Laser Turret"
+	turret -122 118 "Tiny Pulse Laser Turret"
+
+	turret 118 126 "Tiny Pulse Laser Turret"
+	turret 118 122 "Tiny Pulse Laser Turret"
+	turret 126 118 "Tiny Pulse Laser Turret"
+	turret 122 118 "Tiny Pulse Laser Turret"
+
+	fighter -109 -125
+	fighter -6 -125
+	fighter -2 -125
+	fighter 2 -125
+	fighter 6 -125
+
+	drone -19 -125
+	drone -15 -125
+	drone -11 -125
+	drone 11 -125
+	drone 15 -125
+	drone 19 -125
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion huge"
+	description "The Civil Freight Cube 255 Ultimate is one of the large Marsian cubes. It relies on civil verions of hull components which make it slower but much cheaper."
+	description "Being part of the civil series, it has still strong anti missile defenses but only relatively small offensive capacities with shorter weapon range."
+#	description "With only few bunks left empty, this cube is clearly no transport ship. Contrary, it currently offers the best cargo space per bunk available, making it an excellent freighter."
+
+ship "Civil Freight Cube 511 Ultimate"
+	sprite "ship/cube_255_civil"
+	attributes
+		category "Heavy Freighter"
+		cost 140590489000
+		shields 192456830
+		hull 111685310
+		"required crew" 141124
+		bunks 190000
+		mass 16019310
+		drag 257659.62
+		"heat dissipation" .66
+		"fuel capacity" 9000
+		"cargo space" 29e+6
+		"outfit space" 5540016
+		"weapon capacity" 3300
+		"engine capacity" 4550000
+		weapon
+			"blast radius" 3200
+			"shield damage" 640000
+			"hull damage" 320000
+			"hit force" 960000
+	outfits
+		"Small Pulse Laser Turret" 16
+		"Marsian Triple Electron Turret" 4
+		"Large Pulse Laser Turret" 2
+		"Marsian Anti-Missile Turret" 16
+		"Defense Beam Turret LR1200" 8
+
+		"Tactical Cube Core" 27
+		"Spheric Shield Generator" 814
+		"Spheric Heatpump" 100
+
+		"X8730 Ion Thruster" 2
+		"X8230 Ion Steering" 2
+		"Hyperdrive"
+		"Ramscoop"
+
+	turret -124 -124 "Marsian Triple Electron Turret"
+	turret 124 -124 "Marsian Triple Electron Turret"
+	turret -124 124 "Marsian Triple Electron Turret"
+	turret 124 124 "Marsian Triple Electron Turret"
+
+	turret -112 -124 "Defense Beam Turret LR1200"
+	turret -124 -112 "Defense Beam Turret LR1200"
+	turret 112 -124 "Defense Beam Turret LR1200"
+	turret 124 -112 "Defense Beam Turret LR1200"
+	turret -112 124 "Defense Beam Turret LR1200"
+	turret -124 112 "Defense Beam Turret LR1200"
+	turret 112 124 "Defense Beam Turret LR1200"
+	turret 124 112 "Defense Beam Turret LR1200"
+
+	turret -117 -117 "Marsian Anti-Missile Turret"
+	turret -111 -117 "Marsian Anti-Missile Turret"
+	turret -117 -111 "Marsian Anti-Missile Turret"
+	turret -111 -111 "Marsian Anti-Missile Turret"
+
+	turret 117 -117 "Marsian Anti-Missile Turret"
+	turret 111 -117 "Marsian Anti-Missile Turret"
+	turret 117 -111 "Marsian Anti-Missile Turret"
+	turret 111 -111 "Marsian Anti-Missile Turret"
+
+	turret -117 117 "Marsian Anti-Missile Turret"
+	turret -111 117 "Marsian Anti-Missile Turret"
+	turret -117 111 "Marsian Anti-Missile Turret"
+	turret -111 111 "Marsian Anti-Missile Turret"
+
+	turret 117 117 "Marsian Anti-Missile Turret"
+	turret 111 117 "Marsian Anti-Missile Turret"
+	turret 117 111 "Marsian Anti-Missile Turret"
+	turret 111 111 "Marsian Anti-Missile Turret"
+
+	turret -4 -117 "Large Pulse Laser Turret"
+	turret 4 -117 "Large Pulse Laser Turret"
+
+	turret -118 -126 "Small Pulse Laser Turret"
+	turret -118 -122 "Small Pulse Laser Turret"
+	turret -126 -118 "Small Pulse Laser Turret"
+	turret -122 -118 "Small Pulse Laser Turret"
+
+	turret 118 -126 "Small Pulse Laser Turret"
+	turret 118 -122 "Small Pulse Laser Turret"
+	turret 126 -118 "Small Pulse Laser Turret"
+	turret 122 -118 "Small Pulse Laser Turret"
+
+	turret -118 126 "Small Pulse Laser Turret"
+	turret -118 122 "Small Pulse Laser Turret"
+	turret -126 118 "Small Pulse Laser Turret"
+	turret -122 118 "Small Pulse Laser Turret"
+
+	turret 118 126 "Small Pulse Laser Turret"
+	turret 118 122 "Small Pulse Laser Turret"
+	turret 126 118 "Small Pulse Laser Turret"
+	turret 122 118 "Small Pulse Laser Turret"
+
+	fighter -109 -125
+	fighter -6 -125
+	fighter -2 -125
+	fighter 2 -125
+	fighter 6 -125
+
+	drone -19 -125
+	drone -15 -125
+	drone -11 -125
+	drone 11 -125
+	drone 15 -125
+	drone 19 -125
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion huge"
+	description "The Civil Freight Cube 511 Ultimate is one of the large Marsian cubes. It relies on civil verions of hull components which make it slower but much cheaper."
+	description "Being part of the civil series, it has still strong anti missile defenses but only relatively small offensive capacities with shorter weapon range."
+
+ship "Tactical Cube  75"
+	sprite "ship/cube_75_tactical"
+	attributes
+		category "Heavy Warship"
+		cost 798685000
+		shields 1005700
+		hull 429020
+		"required crew" 1990
+		bunks 3000
+		mass 44360
+		drag 679.98
+		"heat dissipation" .67
+		"fuel capacity" 3600
+		"cargo space" 3000
+		"outfit space" 98436
+		"weapon capacity" 11300
+		"engine capacity" 69680
+		weapon
+			"blast radius" 550
+			"shield damage" 5500
+			"hull damage" 2750
+			"hit force" 9900
+	outfits
+		"Small Pulse Laser Turret" 60
+		"Marsian Triple Electron Turret" 4
+		# "Capital Pulse Laser Turret" 8
+		"Capital EMP Blaster Turret" 16
+		"Marsian Anti-Missile Turret" 28
+		"Defense Beam Turret LR1200" 8
+
+		"Standard Cube Core" 1
+		"Spheric Shield Generator" 21
+		"Spheric Heatpump" 7
+
+		"X8710 Ion Thruster" 3
+		"X8210 Ion Steering" 3
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -34 -34 "Marsian Triple Electron Turret"
+	turret 34 -34 "Marsian Triple Electron Turret"
+	turret -34 34 "Marsian Triple Electron Turret"
+	turret 34 34 "Marsian Triple Electron Turret"
+
+	turret -14 -26 "Defense Beam Turret LR1200"
+	turret 14 -26 "Defense Beam Turret LR1200"
+	turret -26 -14 "Defense Beam Turret LR1200"
+	turret 26 -14 "Defense Beam Turret LR1200"
+
+	turret -26 14 "Defense Beam Turret LR1200"
+	turret 26 14 "Defense Beam Turret LR1200"
+	turret -14 26 "Defense Beam Turret LR1200"
+	turret 14 26 "Defense Beam Turret LR1200"
+
+	turret -27 -27 "Marsian Anti-Missile Turret"
+	turret -21 -27 "Marsian Anti-Missile Turret"
+	turret -27 -21 "Marsian Anti-Missile Turret"
+	turret -21 -21 "Marsian Anti-Missile Turret"
+	turret -13 -19 "Marsian Anti-Missile Turret"
+	turret -19 -13 "Marsian Anti-Missile Turret"
+	turret -13 -13 "Marsian Anti-Missile Turret"
+
+	turret 27 -27 "Marsian Anti-Missile Turret"
+	turret 21 -27 "Marsian Anti-Missile Turret"
+	turret 27 -21 "Marsian Anti-Missile Turret"
+	turret 21 -21 "Marsian Anti-Missile Turret"
+	turret 13 -19 "Marsian Anti-Missile Turret"
+	turret 19 -13 "Marsian Anti-Missile Turret"
+	turret 13 -13 "Marsian Anti-Missile Turret"
+
+	turret -27 27 "Marsian Anti-Missile Turret"
+	turret -21 27 "Marsian Anti-Missile Turret"
+	turret -27 21 "Marsian Anti-Missile Turret"
+	turret -21 21 "Marsian Anti-Missile Turret"
+	turret -13 19 "Marsian Anti-Missile Turret"
+	turret -19 13 "Marsian Anti-Missile Turret"
+	turret -13 13 "Marsian Anti-Missile Turret"
+
+	turret 27 27 "Marsian Anti-Missile Turret"
+	turret 21 27 "Marsian Anti-Missile Turret"
+	turret 27 21 "Marsian Anti-Missile Turret"
+	turret 21 21 "Marsian Anti-Missile Turret"
+	turret 13 19 "Marsian Anti-Missile Turret"
+	turret 19 13 "Marsian Anti-Missile Turret"
+	turret 13 13 "Marsian Anti-Missile Turret"
+
+
+	turret -5 -25 "Capital EMP Blaster Turret"
+	turret 5 -25 "Capital EMP Blaster Turret"
+
+	turret -25 -5 "Capital EMP Blaster Turret"
+	turret -25 5 "Capital EMP Blaster Turret"
+
+	turret 25 -5 "Capital EMP Blaster Turret"
+	turret 25 5 "Capital EMP Blaster Turret"
+
+	turret -5 25 "Capital EMP Blaster Turret"
+	turret 5 25 "Capital EMP Blaster Turret"
+
+
+	turret -5 -15 "Capital EMP Blaster Turret"
+	turret 5 -15 "Capital EMP Blaster Turret"
+
+	turret -15 -5 "Capital EMP Blaster Turret"
+	turret -15 5 "Capital EMP Blaster Turret"
+
+	turret 15 -5 "Capital EMP Blaster Turret"
+	turret 15 5 "Capital EMP Blaster Turret"
+
+	turret -5 15 "Capital EMP Blaster Turret"
+	turret 5 15 "Capital EMP Blaster Turret"
+
+
+	turret -28 -32 "Small Pulse Laser Turret"
+	turret -24 -32 "Small Pulse Laser Turret"
+	turret -20 -32 "Small Pulse Laser Turret"
+	turret -16 -32 "Small Pulse Laser Turret"
+	turret -12 -32 "Small Pulse Laser Turret"
+	turret -8 -32 "Small Pulse Laser Turret"
+	turret -4 -32 "Small Pulse Laser Turret"
+	turret 0 -32 "Small Pulse Laser Turret"
+	turret 4 -32 "Small Pulse Laser Turret"
+	turret 8 -32 "Small Pulse Laser Turret"
+	turret 12 -32 "Small Pulse Laser Turret"
+	turret 16 -32 "Small Pulse Laser Turret"
+	turret 20 -32 "Small Pulse Laser Turret"
+	turret 24 -32 "Small Pulse Laser Turret"
+	turret 28 -32 "Small Pulse Laser Turret"
+
+	turret -32 -28 "Small Pulse Laser Turret"
+	turret -32 -24 "Small Pulse Laser Turret"
+	turret -32 -20 "Small Pulse Laser Turret"
+	turret -32 -16 "Small Pulse Laser Turret"
+	turret -32 -12 "Small Pulse Laser Turret"
+	turret -32 -8 "Small Pulse Laser Turret"
+	turret -32 -4 "Small Pulse Laser Turret"
+	turret -32 0 "Small Pulse Laser Turret"
+	turret -32 4 "Small Pulse Laser Turret"
+	turret -32 8 "Small Pulse Laser Turret"
+	turret -32 12 "Small Pulse Laser Turret"
+	turret -32 16 "Small Pulse Laser Turret"
+	turret -32 20 "Small Pulse Laser Turret"
+	turret -32 24 "Small Pulse Laser Turret"
+	turret -32 28 "Small Pulse Laser Turret"
+
+	turret 32 -28 "Small Pulse Laser Turret"
+	turret 32 -24 "Small Pulse Laser Turret"
+	turret 32 -20 "Small Pulse Laser Turret"
+	turret 32 -16 "Small Pulse Laser Turret"
+	turret 32 -12 "Small Pulse Laser Turret"
+	turret 32 -8 "Small Pulse Laser Turret"
+	turret 32 -4 "Small Pulse Laser Turret"
+	turret 32 0 "Small Pulse Laser Turret"
+	turret 32 4 "Small Pulse Laser Turret"
+	turret 32 8 "Small Pulse Laser Turret"
+	turret 32 12 "Small Pulse Laser Turret"
+	turret 32 16 "Small Pulse Laser Turret"
+	turret 32 20 "Small Pulse Laser Turret"
+	turret 32 24 "Small Pulse Laser Turret"
+	turret 32 28 "Small Pulse Laser Turret"
+
+	turret -28 32 "Small Pulse Laser Turret"
+	turret -24 32 "Small Pulse Laser Turret"
+	turret -20 32 "Small Pulse Laser Turret"
+	turret -16 32 "Small Pulse Laser Turret"
+	turret -12 32 "Small Pulse Laser Turret"
+	turret -8 32 "Small Pulse Laser Turret"
+	turret -4 32 "Small Pulse Laser Turret"
+	turret 0 32 "Small Pulse Laser Turret"
+	turret 4 32 "Small Pulse Laser Turret"
+	turret 8 32 "Small Pulse Laser Turret"
+	turret 12 32 "Small Pulse Laser Turret"
+	turret 16 32 "Small Pulse Laser Turret"
+	turret 20 32 "Small Pulse Laser Turret"
+	turret 24 32 "Small Pulse Laser Turret"
+	turret 28 32 "Small Pulse Laser Turret"
+
+	fighter -19 -35
+	fighter -15 -35
+	fighter -11 -35
+	fighter 11 -35
+	fighter 15 -35
+	fighter 19 -35
+
+	fighter -35 -19 left
+	fighter -35 -15 left
+	fighter -35 -11 left
+	fighter -35 11 left
+	fighter -35 15 left
+	fighter -35 19 left
+
+	fighter 35 -19 right
+	fighter 35 -15 right
+	fighter 35 -11 right
+	fighter 35 11 right
+	fighter 35 15 right
+	fighter 35 19 right
+
+	fighter -19 35 back
+	fighter -15 35 back
+	fighter -11 35 back
+	fighter 11 35 back
+	fighter 15 35 back
+	fighter 19 35 back
+
+
+	drone -28 -35
+	drone -24 -35
+	drone -6 -35
+	drone -2 -35
+	drone 2 -35
+	drone 6 -35
+	drone 24 -35
+	drone 28 -35
+
+	drone -35 -28 left
+	drone -35 -24 left
+	drone -35 -6 left
+	drone -35 -2 left
+	drone -35 2 left
+	drone -35 6 left
+	drone -35 24 left
+	drone -35 28 left
+
+	drone 35 -28 right
+	drone 35 -24 right
+	drone 35 -6 right
+	drone 35 -2 right
+	drone 35 2 right
+	drone 35 6 right
+	drone 35 24 right
+	drone 35 28 right
+
+	drone -28 35 back
+	drone -24 35 back
+	drone -6 35 back
+	drone -2 35 back
+	drone 2 35 back
+	drone 6 35 back
+	drone 24 35 back
+	drone 28 35 back
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion large"
+	description "The Tactical Cube 75 is one of the medium sized Marsian cubes but it is as strong as the largest freighter cubes and one of the fastest cubes at all."
+
+ship "Tactical Cube 255"
+	sprite "ship/cube_255_tactical"
+	attributes
+		category "Heavy Warship"
+		cost 31157356000
+		shields 38774110
+		hull 16566210
+		"required crew" 70906
+		bunks 260000
+		mass 1708300
+		drag 26141.29
+		"heat dissipation" .66
+		"fuel capacity" 6300
+		"cargo space" 0.52e+6
+		"outfit space" 2921948
+		"weapon capacity" 73240
+		"engine capacity" 2275000
+		weapon
+			"blast radius" 1400
+			"shield damage" 44000
+			"hull damage" 22000
+			"hit force" 66000
+	outfits
+		"Small Pulse Laser Turret" 240
+		"Marsian Triple Electron Turret" 4
+		# "Capital Pulse Laser Turret" 80
+		"Capital EMP Blaster Turret" 160
+		"Marsian Anti-Missile Turret" 28
+		"Defense Beam Turret LR1200" 8
+
+		"Tactical Cube Core" 12
+		"Spheric Shield Generator" 407
+		"Spheric Heatpump" 160
+
+		"X8730 Ion Thruster"
+		"X8230 Ion Steering"
+		"Hyperdrive"
+		"Ramscoop"
+
+		"Marsian Scanner"
+
+	turret -124 -124 "Marsian Triple Electron Turret"
+	turret 124 -124 "Marsian Triple Electron Turret"
+	turret -124 124 "Marsian Triple Electron Turret"
+	turret 124 124 "Marsian Triple Electron Turret"
+
+	turret -104 -116 "Defense Beam Turret LR1200"
+	turret 104 -116 "Defense Beam Turret LR1200"
+	turret -116 -104 "Defense Beam Turret LR1200"
+	turret 116 -104 "Defense Beam Turret LR1200"
+
+	turret -116 104 "Defense Beam Turret LR1200"
+	turret 116 104 "Defense Beam Turret LR1200"
+	turret -104 116 "Defense Beam Turret LR1200"
+	turret 104 116 "Defense Beam Turret LR1200"
+
+
+	turret -117 -117 "Marsian Anti-Missile Turret"
+	turret -111 -117 "Marsian Anti-Missile Turret"
+	turret -117 -111 "Marsian Anti-Missile Turret"
+	turret -111 -111 "Marsian Anti-Missile Turret"
+	turret -103 -109 "Marsian Anti-Missile Turret"
+	turret -109 -103 "Marsian Anti-Missile Turret"
+	turret -103 -103 "Marsian Anti-Missile Turret"
+
+	turret 117 -117 "Marsian Anti-Missile Turret"
+	turret 111 -117 "Marsian Anti-Missile Turret"
+	turret 117 -111 "Marsian Anti-Missile Turret"
+	turret 111 -111 "Marsian Anti-Missile Turret"
+	turret 103 -109 "Marsian Anti-Missile Turret"
+	turret 109 -103 "Marsian Anti-Missile Turret"
+	turret 103 -103 "Marsian Anti-Missile Turret"
+
+	turret -117 117 "Marsian Anti-Missile Turret"
+	turret -111 117 "Marsian Anti-Missile Turret"
+	turret -117 111 "Marsian Anti-Missile Turret"
+	turret -111 111 "Marsian Anti-Missile Turret"
+	turret -103 109 "Marsian Anti-Missile Turret"
+	turret -109 103 "Marsian Anti-Missile Turret"
+	turret -103 103 "Marsian Anti-Missile Turret"
+
+	turret 117 117 "Marsian Anti-Missile Turret"
+	turret 111 117 "Marsian Anti-Missile Turret"
+	turret 117 111 "Marsian Anti-Missile Turret"
+	turret 111 111 "Marsian Anti-Missile Turret"
+	turret 103 109 "Marsian Anti-Missile Turret"
+	turret 109 103 "Marsian Anti-Missile Turret"
+	turret 103 103 "Marsian Anti-Missile Turret"
+
+
+	turret -95 -115 "Capital EMP Blaster Turret"
+	turret -85 -115 "Capital EMP Blaster Turret"
+	turret -75 -115 "Capital EMP Blaster Turret"
+	turret -65 -115 "Capital EMP Blaster Turret"
+	turret -55 -115 "Capital EMP Blaster Turret"
+	turret -45 -115 "Capital EMP Blaster Turret"
+	turret -35 -115 "Capital EMP Blaster Turret"
+	turret -25 -115 "Capital EMP Blaster Turret"
+	turret -15 -115 "Capital EMP Blaster Turret"
+	turret -5 -115 "Capital EMP Blaster Turret"
+	turret 5 -115 "Capital EMP Blaster Turret"
+	turret 15 -115 "Capital EMP Blaster Turret"
+	turret 25 -115 "Capital EMP Blaster Turret"
+	turret 35 -115 "Capital EMP Blaster Turret"
+	turret 45 -115 "Capital EMP Blaster Turret"
+	turret 55 -115 "Capital EMP Blaster Turret"
+	turret 65 -115 "Capital EMP Blaster Turret"
+	turret 75 -115 "Capital EMP Blaster Turret"
+	turret 85 -115 "Capital EMP Blaster Turret"
+	turret 95 -115 "Capital EMP Blaster Turret"
+
+	turret -115 -95 "Capital EMP Blaster Turret"
+	turret -115 -85 "Capital EMP Blaster Turret"
+	turret -115 -75 "Capital EMP Blaster Turret"
+	turret -115 -65 "Capital EMP Blaster Turret"
+	turret -115 -55 "Capital EMP Blaster Turret"
+	turret -115 -45 "Capital EMP Blaster Turret"
+	turret -115 -35 "Capital EMP Blaster Turret"
+	turret -115 -25 "Capital EMP Blaster Turret"
+	turret -115 -15 "Capital EMP Blaster Turret"
+	turret -115 -5 "Capital EMP Blaster Turret"
+	turret -115 5 "Capital EMP Blaster Turret"
+	turret -115 15 "Capital EMP Blaster Turret"
+	turret -115 25 "Capital EMP Blaster Turret"
+	turret -115 35 "Capital EMP Blaster Turret"
+	turret -115 45 "Capital EMP Blaster Turret"
+	turret -115 55 "Capital EMP Blaster Turret"
+	turret -115 65 "Capital EMP Blaster Turret"
+	turret -115 75 "Capital EMP Blaster Turret"
+	turret -115 85 "Capital EMP Blaster Turret"
+	turret -115 95 "Capital EMP Blaster Turret"
+
+	turret 115 -95 "Capital EMP Blaster Turret"
+	turret 115 -85 "Capital EMP Blaster Turret"
+	turret 115 -75 "Capital EMP Blaster Turret"
+	turret 115 -65 "Capital EMP Blaster Turret"
+	turret 115 -55 "Capital EMP Blaster Turret"
+	turret 115 -45 "Capital EMP Blaster Turret"
+	turret 115 -35 "Capital EMP Blaster Turret"
+	turret 115 -25 "Capital EMP Blaster Turret"
+	turret 115 -15 "Capital EMP Blaster Turret"
+	turret 115 -5 "Capital EMP Blaster Turret"
+	turret 115 5 "Capital EMP Blaster Turret"
+	turret 115 15 "Capital EMP Blaster Turret"
+	turret 115 25 "Capital EMP Blaster Turret"
+	turret 115 35 "Capital EMP Blaster Turret"
+	turret 115 45 "Capital EMP Blaster Turret"
+	turret 115 55 "Capital EMP Blaster Turret"
+	turret 115 65 "Capital EMP Blaster Turret"
+	turret 115 75 "Capital EMP Blaster Turret"
+	turret 115 85 "Capital EMP Blaster Turret"
+	turret 115 95 "Capital EMP Blaster Turret"
+
+	turret -95 115 "Capital EMP Blaster Turret"
+	turret -85 115 "Capital EMP Blaster Turret"
+	turret -75 115 "Capital EMP Blaster Turret"
+	turret -65 115 "Capital EMP Blaster Turret"
+	turret -55 115 "Capital EMP Blaster Turret"
+	turret -45 115 "Capital EMP Blaster Turret"
+	turret -35 115 "Capital EMP Blaster Turret"
+	turret -25 115 "Capital EMP Blaster Turret"
+	turret -15 115 "Capital EMP Blaster Turret"
+	turret -5 115 "Capital EMP Blaster Turret"
+	turret 5 115 "Capital EMP Blaster Turret"
+	turret 15 115 "Capital EMP Blaster Turret"
+	turret 25 115 "Capital EMP Blaster Turret"
+	turret 35 115 "Capital EMP Blaster Turret"
+	turret 45 115 "Capital EMP Blaster Turret"
+	turret 55 115 "Capital EMP Blaster Turret"
+	turret 65 115 "Capital EMP Blaster Turret"
+	turret 75 115 "Capital EMP Blaster Turret"
+	turret 85 115 "Capital EMP Blaster Turret"
+	turret 95 115 "Capital EMP Blaster Turret"
+
+
+	turret -95 -105 "Capital EMP Blaster Turret"
+	turret -85 -105 "Capital EMP Blaster Turret"
+	turret -75 -105 "Capital EMP Blaster Turret"
+	turret -65 -105 "Capital EMP Blaster Turret"
+	turret -55 -105 "Capital EMP Blaster Turret"
+	turret -45 -105 "Capital EMP Blaster Turret"
+	turret -35 -105 "Capital EMP Blaster Turret"
+	turret -25 -105 "Capital EMP Blaster Turret"
+	turret -15 -105 "Capital EMP Blaster Turret"
+	turret -5 -105 "Capital EMP Blaster Turret"
+	turret 5 -105 "Capital EMP Blaster Turret"
+	turret 15 -105 "Capital EMP Blaster Turret"
+	turret 25 -105 "Capital EMP Blaster Turret"
+	turret 35 -105 "Capital EMP Blaster Turret"
+	turret 45 -105 "Capital EMP Blaster Turret"
+	turret 55 -105 "Capital EMP Blaster Turret"
+	turret 65 -105 "Capital EMP Blaster Turret"
+	turret 75 -105 "Capital EMP Blaster Turret"
+	turret 85 -105 "Capital EMP Blaster Turret"
+	turret 95 -105 "Capital EMP Blaster Turret"
+
+	turret -105 -95 "Capital EMP Blaster Turret"
+	turret -105 -85 "Capital EMP Blaster Turret"
+	turret -105 -75 "Capital EMP Blaster Turret"
+	turret -105 -65 "Capital EMP Blaster Turret"
+	turret -105 -55 "Capital EMP Blaster Turret"
+	turret -105 -45 "Capital EMP Blaster Turret"
+	turret -105 -35 "Capital EMP Blaster Turret"
+	turret -105 -25 "Capital EMP Blaster Turret"
+	turret -105 -15 "Capital EMP Blaster Turret"
+	turret -105 -5 "Capital EMP Blaster Turret"
+	turret -105 5 "Capital EMP Blaster Turret"
+	turret -105 15 "Capital EMP Blaster Turret"
+	turret -105 25 "Capital EMP Blaster Turret"
+	turret -105 35 "Capital EMP Blaster Turret"
+	turret -105 45 "Capital EMP Blaster Turret"
+	turret -105 55 "Capital EMP Blaster Turret"
+	turret -105 65 "Capital EMP Blaster Turret"
+	turret -105 75 "Capital EMP Blaster Turret"
+	turret -105 85 "Capital EMP Blaster Turret"
+	turret -105 95 "Capital EMP Blaster Turret"
+
+	turret 105 -95 "Capital EMP Blaster Turret"
+	turret 105 -85 "Capital EMP Blaster Turret"
+	turret 105 -75 "Capital EMP Blaster Turret"
+	turret 105 -65 "Capital EMP Blaster Turret"
+	turret 105 -55 "Capital EMP Blaster Turret"
+	turret 105 -45 "Capital EMP Blaster Turret"
+	turret 105 -35 "Capital EMP Blaster Turret"
+	turret 105 -25 "Capital EMP Blaster Turret"
+	turret 105 -15 "Capital EMP Blaster Turret"
+	turret 105 -5 "Capital EMP Blaster Turret"
+	turret 105 5 "Capital EMP Blaster Turret"
+	turret 105 15 "Capital EMP Blaster Turret"
+	turret 105 25 "Capital EMP Blaster Turret"
+	turret 105 35 "Capital EMP Blaster Turret"
+	turret 105 45 "Capital EMP Blaster Turret"
+	turret 105 55 "Capital EMP Blaster Turret"
+	turret 105 65 "Capital EMP Blaster Turret"
+	turret 105 75 "Capital EMP Blaster Turret"
+	turret 105 85 "Capital EMP Blaster Turret"
+	turret 105 95 "Capital EMP Blaster Turret"
+
+	turret -95 105 "Capital EMP Blaster Turret"
+	turret -85 105 "Capital EMP Blaster Turret"
+	turret -75 105 "Capital EMP Blaster Turret"
+	turret -65 105 "Capital EMP Blaster Turret"
+	turret -55 105 "Capital EMP Blaster Turret"
+	turret -45 105 "Capital EMP Blaster Turret"
+	turret -35 105 "Capital EMP Blaster Turret"
+	turret -25 105 "Capital EMP Blaster Turret"
+	turret -15 105 "Capital EMP Blaster Turret"
+	turret -5 105 "Capital EMP Blaster Turret"
+	turret 5 105 "Capital EMP Blaster Turret"
+	turret 15 105 "Capital EMP Blaster Turret"
+	turret 25 105 "Capital EMP Blaster Turret"
+	turret 35 105 "Capital EMP Blaster Turret"
+	turret 45 105 "Capital EMP Blaster Turret"
+	turret 55 105 "Capital EMP Blaster Turret"
+	turret 65 105 "Capital EMP Blaster Turret"
+	turret 75 105 "Capital EMP Blaster Turret"
+	turret 85 105 "Capital EMP Blaster Turret"
+	turret 95 105 "Capital EMP Blaster Turret"
+
+
+	turret -118 -122 "Small Pulse Laser Turret"
+	turret -114 -122 "Small Pulse Laser Turret"
+	turret -110 -122 "Small Pulse Laser Turret"
+	turret -106 -122 "Small Pulse Laser Turret"
+	turret -102 -122 "Small Pulse Laser Turret"
+	turret -98 -122 "Small Pulse Laser Turret"
+	turret -94 -122 "Small Pulse Laser Turret"
+	turret -90 -122 "Small Pulse Laser Turret"
+	turret -86 -122 "Small Pulse Laser Turret"
+	turret -82 -122 "Small Pulse Laser Turret"
+	turret -78 -122 "Small Pulse Laser Turret"
+	turret -74 -122 "Small Pulse Laser Turret"
+	turret -70 -122 "Small Pulse Laser Turret"
+	turret -66 -122 "Small Pulse Laser Turret"
+	turret -62 -122 "Small Pulse Laser Turret"
+	turret -58 -122 "Small Pulse Laser Turret"
+	turret -54 -122 "Small Pulse Laser Turret"
+	turret -50 -122 "Small Pulse Laser Turret"
+	turret -46 -122 "Small Pulse Laser Turret"
+	turret -42 -122 "Small Pulse Laser Turret"
+	turret -38 -122 "Small Pulse Laser Turret"
+	turret -34 -122 "Small Pulse Laser Turret"
+	turret -30 -122 "Small Pulse Laser Turret"
+	turret -26 -122 "Small Pulse Laser Turret"
+	turret -22 -122 "Small Pulse Laser Turret"
+	turret -18 -122 "Small Pulse Laser Turret"
+	turret -14 -122 "Small Pulse Laser Turret"
+	turret -10 -122 "Small Pulse Laser Turret"
+	turret -6 -122 "Small Pulse Laser Turret"
+	turret -2 -122 "Small Pulse Laser Turret"
+	turret 2 -122 "Small Pulse Laser Turret"
+	turret 6 -122 "Small Pulse Laser Turret"
+	turret 10 -122 "Small Pulse Laser Turret"
+	turret 14 -122 "Small Pulse Laser Turret"
+	turret 18 -122 "Small Pulse Laser Turret"
+	turret 22 -122 "Small Pulse Laser Turret"
+	turret 26 -122 "Small Pulse Laser Turret"
+	turret 30 -122 "Small Pulse Laser Turret"
+	turret 34 -122 "Small Pulse Laser Turret"
+	turret 38 -122 "Small Pulse Laser Turret"
+	turret 42 -122 "Small Pulse Laser Turret"
+	turret 46 -122 "Small Pulse Laser Turret"
+	turret 50 -122 "Small Pulse Laser Turret"
+	turret 54 -122 "Small Pulse Laser Turret"
+	turret 58 -122 "Small Pulse Laser Turret"
+	turret 62 -122 "Small Pulse Laser Turret"
+	turret 66 -122 "Small Pulse Laser Turret"
+	turret 70 -122 "Small Pulse Laser Turret"
+	turret 74 -122 "Small Pulse Laser Turret"
+	turret 78 -122 "Small Pulse Laser Turret"
+	turret 82 -122 "Small Pulse Laser Turret"
+	turret 86 -122 "Small Pulse Laser Turret"
+	turret 90 -122 "Small Pulse Laser Turret"
+	turret 94 -122 "Small Pulse Laser Turret"
+	turret 98 -122 "Small Pulse Laser Turret"
+	turret 102 -122 "Small Pulse Laser Turret"
+	turret 106 -122 "Small Pulse Laser Turret"
+	turret 110 -122 "Small Pulse Laser Turret"
+	turret 114 -122 "Small Pulse Laser Turret"
+	turret 118 -122 "Small Pulse Laser Turret"
+
+	turret -122 -118 "Small Pulse Laser Turret"
+	turret -122 -114 "Small Pulse Laser Turret"
+	turret -122 -110 "Small Pulse Laser Turret"
+	turret -122 -106 "Small Pulse Laser Turret"
+	turret -122 -102 "Small Pulse Laser Turret"
+	turret -122 -98 "Small Pulse Laser Turret"
+	turret -122 -94 "Small Pulse Laser Turret"
+	turret -122 -90 "Small Pulse Laser Turret"
+	turret -122 -86 "Small Pulse Laser Turret"
+	turret -122 -82 "Small Pulse Laser Turret"
+	turret -122 -78 "Small Pulse Laser Turret"
+	turret -122 -74 "Small Pulse Laser Turret"
+	turret -122 -70 "Small Pulse Laser Turret"
+	turret -122 -66 "Small Pulse Laser Turret"
+	turret -122 -62 "Small Pulse Laser Turret"
+	turret -122 -58 "Small Pulse Laser Turret"
+	turret -122 -54 "Small Pulse Laser Turret"
+	turret -122 -50 "Small Pulse Laser Turret"
+	turret -122 -46 "Small Pulse Laser Turret"
+	turret -122 -42 "Small Pulse Laser Turret"
+	turret -122 -38 "Small Pulse Laser Turret"
+	turret -122 -34 "Small Pulse Laser Turret"
+	turret -122 -30 "Small Pulse Laser Turret"
+	turret -122 -26 "Small Pulse Laser Turret"
+	turret -122 -22 "Small Pulse Laser Turret"
+	turret -122 -18 "Small Pulse Laser Turret"
+	turret -122 -14 "Small Pulse Laser Turret"
+	turret -122 -10 "Small Pulse Laser Turret"
+	turret -122 -6 "Small Pulse Laser Turret"
+	turret -122 -2 "Small Pulse Laser Turret"
+	turret -122 2 "Small Pulse Laser Turret"
+	turret -122 6 "Small Pulse Laser Turret"
+	turret -122 10 "Small Pulse Laser Turret"
+	turret -122 14 "Small Pulse Laser Turret"
+	turret -122 18 "Small Pulse Laser Turret"
+	turret -122 22 "Small Pulse Laser Turret"
+	turret -122 26 "Small Pulse Laser Turret"
+	turret -122 30 "Small Pulse Laser Turret"
+	turret -122 34 "Small Pulse Laser Turret"
+	turret -122 38 "Small Pulse Laser Turret"
+	turret -122 42 "Small Pulse Laser Turret"
+	turret -122 46 "Small Pulse Laser Turret"
+	turret -122 50 "Small Pulse Laser Turret"
+	turret -122 54 "Small Pulse Laser Turret"
+	turret -122 58 "Small Pulse Laser Turret"
+	turret -122 62 "Small Pulse Laser Turret"
+	turret -122 66 "Small Pulse Laser Turret"
+	turret -122 70 "Small Pulse Laser Turret"
+	turret -122 74 "Small Pulse Laser Turret"
+	turret -122 78 "Small Pulse Laser Turret"
+	turret -122 82 "Small Pulse Laser Turret"
+	turret -122 86 "Small Pulse Laser Turret"
+	turret -122 90 "Small Pulse Laser Turret"
+	turret -122 94 "Small Pulse Laser Turret"
+	turret -122 98 "Small Pulse Laser Turret"
+	turret -122 102 "Small Pulse Laser Turret"
+	turret -122 106 "Small Pulse Laser Turret"
+	turret -122 110 "Small Pulse Laser Turret"
+	turret -122 114 "Small Pulse Laser Turret"
+	turret -122 118 "Small Pulse Laser Turret"
+
+	turret 122 -118 "Small Pulse Laser Turret"
+	turret 122 -114 "Small Pulse Laser Turret"
+	turret 122 -110 "Small Pulse Laser Turret"
+	turret 122 -106 "Small Pulse Laser Turret"
+	turret 122 -102 "Small Pulse Laser Turret"
+	turret 122 -98 "Small Pulse Laser Turret"
+	turret 122 -94 "Small Pulse Laser Turret"
+	turret 122 -90 "Small Pulse Laser Turret"
+	turret 122 -86 "Small Pulse Laser Turret"
+	turret 122 -82 "Small Pulse Laser Turret"
+	turret 122 -78 "Small Pulse Laser Turret"
+	turret 122 -74 "Small Pulse Laser Turret"
+	turret 122 -70 "Small Pulse Laser Turret"
+	turret 122 -66 "Small Pulse Laser Turret"
+	turret 122 -62 "Small Pulse Laser Turret"
+	turret 122 -58 "Small Pulse Laser Turret"
+	turret 122 -54 "Small Pulse Laser Turret"
+	turret 122 -50 "Small Pulse Laser Turret"
+	turret 122 -46 "Small Pulse Laser Turret"
+	turret 122 -42 "Small Pulse Laser Turret"
+	turret 122 -38 "Small Pulse Laser Turret"
+	turret 122 -34 "Small Pulse Laser Turret"
+	turret 122 -30 "Small Pulse Laser Turret"
+	turret 122 -26 "Small Pulse Laser Turret"
+	turret 122 -22 "Small Pulse Laser Turret"
+	turret 122 -18 "Small Pulse Laser Turret"
+	turret 122 -14 "Small Pulse Laser Turret"
+	turret 122 -10 "Small Pulse Laser Turret"
+	turret 122 -6 "Small Pulse Laser Turret"
+	turret 122 -2 "Small Pulse Laser Turret"
+	turret 122 2 "Small Pulse Laser Turret"
+	turret 122 6 "Small Pulse Laser Turret"
+	turret 122 10 "Small Pulse Laser Turret"
+	turret 122 14 "Small Pulse Laser Turret"
+	turret 122 18 "Small Pulse Laser Turret"
+	turret 122 22 "Small Pulse Laser Turret"
+	turret 122 26 "Small Pulse Laser Turret"
+	turret 122 30 "Small Pulse Laser Turret"
+	turret 122 34 "Small Pulse Laser Turret"
+	turret 122 38 "Small Pulse Laser Turret"
+	turret 122 42 "Small Pulse Laser Turret"
+	turret 122 46 "Small Pulse Laser Turret"
+	turret 122 50 "Small Pulse Laser Turret"
+	turret 122 54 "Small Pulse Laser Turret"
+	turret 122 58 "Small Pulse Laser Turret"
+	turret 122 62 "Small Pulse Laser Turret"
+	turret 122 66 "Small Pulse Laser Turret"
+	turret 122 70 "Small Pulse Laser Turret"
+	turret 122 74 "Small Pulse Laser Turret"
+	turret 122 78 "Small Pulse Laser Turret"
+	turret 122 82 "Small Pulse Laser Turret"
+	turret 122 86 "Small Pulse Laser Turret"
+	turret 122 90 "Small Pulse Laser Turret"
+	turret 122 94 "Small Pulse Laser Turret"
+	turret 122 98 "Small Pulse Laser Turret"
+	turret 122 102 "Small Pulse Laser Turret"
+	turret 122 106 "Small Pulse Laser Turret"
+	turret 122 110 "Small Pulse Laser Turret"
+	turret 122 114 "Small Pulse Laser Turret"
+	turret 122 118 "Small Pulse Laser Turret"
+
+	turret -118 122 "Small Pulse Laser Turret"
+	turret -114 122 "Small Pulse Laser Turret"
+	turret -110 122 "Small Pulse Laser Turret"
+	turret -106 122 "Small Pulse Laser Turret"
+	turret -102 122 "Small Pulse Laser Turret"
+	turret -98 122 "Small Pulse Laser Turret"
+	turret -94 122 "Small Pulse Laser Turret"
+	turret -90 122 "Small Pulse Laser Turret"
+	turret -86 122 "Small Pulse Laser Turret"
+	turret -82 122 "Small Pulse Laser Turret"
+	turret -78 122 "Small Pulse Laser Turret"
+	turret -74 122 "Small Pulse Laser Turret"
+	turret -70 122 "Small Pulse Laser Turret"
+	turret -66 122 "Small Pulse Laser Turret"
+	turret -62 122 "Small Pulse Laser Turret"
+	turret -58 122 "Small Pulse Laser Turret"
+	turret -54 122 "Small Pulse Laser Turret"
+	turret -50 122 "Small Pulse Laser Turret"
+	turret -46 122 "Small Pulse Laser Turret"
+	turret -42 122 "Small Pulse Laser Turret"
+	turret -38 122 "Small Pulse Laser Turret"
+	turret -34 122 "Small Pulse Laser Turret"
+	turret -30 122 "Small Pulse Laser Turret"
+	turret -26 122 "Small Pulse Laser Turret"
+	turret -22 122 "Small Pulse Laser Turret"
+	turret -18 122 "Small Pulse Laser Turret"
+	turret -14 122 "Small Pulse Laser Turret"
+	turret -10 122 "Small Pulse Laser Turret"
+	turret -6 122 "Small Pulse Laser Turret"
+	turret -2 122 "Small Pulse Laser Turret"
+	turret 2 122 "Small Pulse Laser Turret"
+	turret 6 122 "Small Pulse Laser Turret"
+	turret 10 122 "Small Pulse Laser Turret"
+	turret 14 122 "Small Pulse Laser Turret"
+	turret 18 122 "Small Pulse Laser Turret"
+	turret 22 122 "Small Pulse Laser Turret"
+	turret 26 122 "Small Pulse Laser Turret"
+	turret 30 122 "Small Pulse Laser Turret"
+	turret 34 122 "Small Pulse Laser Turret"
+	turret 38 122 "Small Pulse Laser Turret"
+	turret 42 122 "Small Pulse Laser Turret"
+	turret 46 122 "Small Pulse Laser Turret"
+	turret 50 122 "Small Pulse Laser Turret"
+	turret 54 122 "Small Pulse Laser Turret"
+	turret 58 122 "Small Pulse Laser Turret"
+	turret 62 122 "Small Pulse Laser Turret"
+	turret 66 122 "Small Pulse Laser Turret"
+	turret 70 122 "Small Pulse Laser Turret"
+	turret 74 122 "Small Pulse Laser Turret"
+	turret 78 122 "Small Pulse Laser Turret"
+	turret 82 122 "Small Pulse Laser Turret"
+	turret 86 122 "Small Pulse Laser Turret"
+	turret 90 122 "Small Pulse Laser Turret"
+	turret 94 122 "Small Pulse Laser Turret"
+	turret 98 122 "Small Pulse Laser Turret"
+	turret 102 122 "Small Pulse Laser Turret"
+	turret 106 122 "Small Pulse Laser Turret"
+	turret 110 122 "Small Pulse Laser Turret"
+	turret 114 122 "Small Pulse Laser Turret"
+	turret 118 122 "Small Pulse Laser Turret"
+
+
+	fighter -109 -125
+	fighter -105 -125
+	fighter -101 -125
+	fighter -79 -125
+	fighter -75 -125
+	fighter -71 -125
+	fighter -49 -125
+	fighter -45 -125
+	fighter -41 -125
+	fighter -19 -125
+	fighter -15 -125
+	fighter -11 -125
+	fighter 11 -125
+	fighter 15 -125
+	fighter 19 -125
+	fighter 41 -125
+	fighter 45 -125
+	fighter 49 -125
+	fighter 71 -125
+	fighter 75 -125
+	fighter 79 -125
+	fighter 101 -125
+	fighter 105 -125
+	fighter 109 -125
+
+	fighter -125 -109 left
+	fighter -125 -105 left
+	fighter -125 -101 left
+	fighter -125 -79 left
+	fighter -125 -75 left
+	fighter -125 -71 left
+	fighter -125 -49 left
+	fighter -125 -45 left
+	fighter -125 -41 left
+	fighter -125 -19 left
+	fighter -125 -15 left
+	fighter -125 -11 left
+	fighter -125 11 left
+	fighter -125 15 left
+	fighter -125 19 left
+	fighter -125 41 left
+	fighter -125 45 left
+	fighter -125 49 left
+	fighter -125 71 left
+	fighter -125 75 left
+	fighter -125 79 left
+	fighter -125 101 left
+	fighter -125 105 left
+	fighter -125 109 left
+
+	fighter 125 -109 right
+	fighter 125 -105 right
+	fighter 125 -101 right
+	fighter 125 -79 right
+	fighter 125 -75 right
+	fighter 125 -71 right
+	fighter 125 -49 right
+	fighter 125 -45 right
+	fighter 125 -41 right
+	fighter 125 -19 right
+	fighter 125 -15 right
+	fighter 125 -11 right
+	fighter 125 11 right
+	fighter 125 15 right
+	fighter 125 19 right
+	fighter 125 41 right
+	fighter 125 45 right
+	fighter 125 49 right
+	fighter 125 71 right
+	fighter 125 75 right
+	fighter 125 79 right
+	fighter 125 101 right
+	fighter 125 105 right
+	fighter 125 109 right
+
+	fighter -109 125 back
+	fighter -105 125 back
+	fighter -101 125 back
+	fighter -79 125 back
+	fighter -75 125 back
+	fighter -71 125 back
+	fighter -49 125 back
+	fighter -45 125 back
+	fighter -41 125 back
+	fighter -19 125 back
+	fighter -15 125 back
+	fighter -11 125 back
+	fighter 11 125 back
+	fighter 15 125 back
+	fighter 19 125 back
+	fighter 41 125 back
+	fighter 45 125 back
+	fighter 49 125 back
+	fighter 71 125 back
+	fighter 75 125 back
+	fighter 79 125 back
+	fighter 101 125 back
+	fighter 105 125 back
+	fighter 109 125 back
+
+
+	drone -118 -125
+	drone -114 -125
+	drone -96 -125
+	drone -92 -125
+	drone -88 -125
+	drone -84 -125
+	drone -66 -125
+	drone -62 -125
+	drone -58 -125
+	drone -54 -125
+	drone -36 -125
+	drone -32 -125
+	drone -28 -125
+	drone -24 -125
+	drone -6 -125
+	drone -2 -125
+	drone 2 -125
+	drone 6 -125
+	drone 24 -125
+	drone 28 -125
+	drone 32 -125
+	drone 36 -125
+	drone 54 -125
+	drone 58 -125
+	drone 62 -125
+	drone 64 -125
+	drone 84 -125
+	drone 88 -125
+	drone 92 -125
+	drone 96 -125
+	drone 114 -125
+	drone 118 -125
+
+	drone -125 -118 left
+	drone -125 -114 left
+	drone -125 -96 left
+	drone -125 -92 left
+	drone -125 -88 left
+	drone -125 -84 left
+	drone -125 -66 left
+	drone -125 -62 left
+	drone -125 -58 left
+	drone -125 -54 left
+	drone -125 -36 left
+	drone -125 -32 left
+	drone -125 -28 left
+	drone -125 -24 left
+	drone -125 -6 left
+	drone -125 -2 left
+	drone -125 2 left
+	drone -125 6 left
+	drone -125 24 left
+	drone -125 28 left
+	drone -125 32 left
+	drone -125 36 left
+	drone -125 54 left
+	drone -125 58 left
+	drone -125 62 left
+	drone -125 64 left
+	drone -125 84 left
+	drone -125 88 left
+	drone -125 92 left
+	drone -125 96 left
+	drone -125 114 left
+	drone -125 118 left
+
+	drone 125 -118 right
+	drone 125 -114 right
+	drone 125 -96 right
+	drone 125 -92 right
+	drone 125 -88 right
+	drone 125 -84 right
+	drone 125 -66 right
+	drone 125 -62 right
+	drone 125 -58 right
+	drone 125 -54 right
+	drone 125 -36 right
+	drone 125 -32 right
+	drone 125 -28 right
+	drone 125 -24 right
+	drone 125 -6 right
+	drone 125 -2 right
+	drone 125 2 right
+	drone 125 6 right
+	drone 125 24 right
+	drone 125 28 right
+	drone 125 32 right
+	drone 125 36 right
+	drone 125 54 right
+	drone 125 58 right
+	drone 125 62 right
+	drone 125 64 right
+	drone 125 84 right
+	drone 125 88 right
+	drone 125 92 right
+	drone 125 96 right
+	drone 125 114 right
+	drone 125 118 right
+
+	drone -118 125 back
+	drone -114 125 back
+	drone -96 125 back
+	drone -92 125 back
+	drone -88 125 back
+	drone -84 125 back
+	drone -66 125 back
+	drone -62 125 back
+	drone -58 125 back
+	drone -54 125 back
+	drone -36 125 back
+	drone -32 125 back
+	drone -28 125 back
+	drone -24 125 back
+	drone -6 125 back
+	drone -2 125 back
+	drone 2 125 back
+	drone 6 125 back
+	drone 24 125 back
+	drone 28 125 back
+	drone 32 125 back
+	drone 36 125 back
+	drone 54 125 back
+	drone 58 125 back
+	drone 62 125 back
+	drone 64 125 back
+	drone 84 125 back
+	drone 88 125 back
+	drone 92 125 back
+	drone 96 125 back
+	drone 114 125 back
+	drone 118 125 back
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion huge"
+	description "The Tactical Cube 255 is one of the large Marsian cubes."

@@ -19,13 +19,13 @@ ship "MaFr Courier"
 	sprite "ship/MaFr_courier"
 	attributes
 		category Transport
-		cost 7973250
-		shields 10880
-		hull 4280
+		cost 7124000
+		shields 10898
+		hull 4263
 		"required crew" 18
 		bunks 110
 		mass 840
-		drag 18.24
+		drag 18.35
 		"heat dissipation" .79
 		"fuel capacity" 800
 		"cargo space" 160
@@ -71,13 +71,13 @@ ship "MaFr Cargo Courier"
 	sprite "ship/MaFr_courier_cargo"
 	attributes
 		category "Light Freighter"
-		cost 11163750
-		shields 15519
-		hull 6395
+		cost 9956000
+		shields 15548
+		hull 6366
 		"required crew" 22
 		bunks 110
 		mass 1208
-		drag 25.49
+		drag 25.67
 		"heat dissipation" .76
 		"fuel capacity" 800
 		"cargo space" 1000
@@ -123,13 +123,13 @@ ship "MaFr Cargo Freighter"
 	sprite "ship/MaFr_courier_freighter"
 	attributes
 		category "Light Freighter"
-		cost 12136500
-		shields 16599
-		hull 7180
+		cost 10833000
+		shields 16639
+		hull 7140
 		"required crew" 21
 		bunks 110
 		mass 1303
-		drag 26.65
+		drag 26.89
 		"heat dissipation" .71
 		"fuel capacity" 400
 		"cargo space" 1840
@@ -175,13 +175,13 @@ ship "MaFr Catamaran"
 	sprite "ship/MaFr_courier_catamaran"
 	attributes
 		category "Heavy Freighter"
-		cost 16578000
-		shields 21775
-		hull 9305
+		cost 14850000
+		shields 21833
+		hull 8248
 		"required crew" 32
 		bunks 220
 		mass 1705
-		drag 35.17
+		drag 35.52
 		"heat dissipation" .66
 		"fuel capacity" 600
 		"cargo space" 1880
@@ -232,13 +232,13 @@ ship "MaFr Racer"
 	sprite "ship/MaFr_courier_racer"
 	attributes
 		category Transport
-		cost 4746375
-		shields 6184
-		hull 2737
+		cost 4247250
+		shields 6218
+		hull 2703
 		"required crew" 10
 		bunks 35
 		mass 487
-		drag 9.82
+		drag 10.02
 		"heat dissipation" .82
 		"fuel capacity" 400
 		"cargo space" 85
@@ -286,13 +286,13 @@ ship "MaFr Cruiseliner"
 	sprite "ship/MaFr_courier_cruiseliner"
 	attributes
 		category Transport
-		cost 17918250
-		shields 22988
-		hull 9205
+		cost 16094000
+		shields 23040
+		hull 9153
 		"required crew" 40
 		bunks 330
 		mass 1780
-		drag 38.25
+		drag 38.56
 		"heat dissipation" .7
 		"fuel capacity" 1200
 		"cargo space" 480
@@ -352,13 +352,13 @@ ship "MaFr Bulk Freighter"
 	sprite "ship/MaFr_courier_bulk"
 	attributes
 		category "Heavy Freighter"
-		cost 22505250
-		shields 32360
-		hull 13865
+		cost 20012000
+		shields 32423
+		hull 13803
 		"required crew" 34
 		bunks 110
 		mass 2535
-		drag 52.2
+		drag 52.58
 		"heat dissipation" .7
 		"fuel capacity" 800
 		"cargo space" 4000
