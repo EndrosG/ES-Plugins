@@ -137,7 +137,6 @@ ship "MaRe G1 Light Interceptor"
 		"X3200 Ion Steering"
 #		"Greyhound Plasma Steering"
 		Hyperdrive
-		# Ramscoop
 
 #	engine -18 75
 #	engine 18 75
@@ -188,7 +187,6 @@ ship "MaRe G1 Heavy Interceptor"
 		"X3200 Ion Steering"
 #		"Greyhound Plasma Steering"
 		Hyperdrive
-		# Ramscoop
 
 #	engine -18 85
 #	engine 18 85
@@ -201,6 +199,260 @@ ship "MaRe G1 Heavy Interceptor"
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description `The Marsian Relict "G1 Heavy Interceptor" belongs to the oldest ship series you have yet recovered. These interceptors are just slightly larger than the drones and fighters. Just enough to accomodate a hyperdrive with some fuel, two turret mounts and a few more bunks for the larger crew. While these ships may reach the fire power of human light or medium warships, they dont reach their hull or shield strength. These are very lightweight ships.`
+
+
+
+ship "MaRe G1 Light Warship"
+	sprite "ship/Marsian G1 Light Warship"
+	attributes
+		category "Light Warship"
+		cost 3847500
+		shields 4560
+		hull 1700
+		"required crew" 9
+		bunks 12
+		mass 220
+		drag 3.80
+		"heat dissipation" .77
+		"fuel capacity" 300
+		"cargo space" 25
+		"outfit space" 461
+		"weapon capacity" 220
+		"engine capacity" 135
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 4
+		"Heavy Anti-Missile Turret" 2
+
+#		"Mini Core" 3
+		"Breeder Reactor"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"D94-YV Shield Generator"
+
+		"X4700 Ion Thruster"
+#		"X4200 Ion Steering"
+		"Impala Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine 0 79
+	gun -77 -82
+	gun 77 -82
+	gun -103.5 -67
+	gun 103.5 -67
+	turret -30 34
+	turret 30 34
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Light Warship" is slightly larger than the heavy interceptor. Larger turret hardpoints, more fuel capacity and a bigger engine on a separate tail, and a bit more cargo space. That's it.`
+	description `While these ships reach the fire power of human medium warships, they dont reach their hull or shield strength. These are still lightweight ships.`
+
+
+
+ship "MaRe G1 Medium Warship"
+	sprite "ship/Marsian G1 Medium Warship"
+	attributes
+		category "Medium Warship"
+		cost 6224000
+		shields 7350
+		hull 2670
+		"required crew" 15
+		bunks 24
+		mass 360
+		drag 6.33
+		"heat dissipation" .76
+		"fuel capacity" 300
+		"cargo space" 50
+		"outfit space" 731
+		"weapon capacity" 340
+		"engine capacity" 230
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 6
+#		"Electron Turret" 2
+		"Heavy Anti-Missile Turret" 4
+
+		"Fusion Reactor"
+		"LP072a Battery Pack"
+#		"D41-HY Shield Generator"
+		"D94-YV Shield Generator" 2
+
+		"X5700 Ion Thruster"
+#		"X5200 Ion Steering"
+		"Orca Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -47 93
+#	engine 47 93
+	gun -77 -107
+	gun 77 -107
+	gun -104 -92
+	gun 104 -92
+	gun -130 -78
+	gun 130 -78
+	turret -45 -56
+	turret 45 -56
+	turret -12 59
+	turret 12 59
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Medium Warship" still follows a minimalistic concept. Two more front guns and two additional turret mounts increased the mass and thus another engine port was added. This resulted in a larger crew and thus more bunks had to be added, together with some more cargo space again. This ship still has nothing what it doesn't need.`
+	description `While this ship has the same internal armament as a Navy Cruiser, it is still weaker due to the lack of drone bays and the overall smaller and thus weaker hull.`
+
+
+
+ship "MaRe G1 Large Warship"
+	sprite "ship/Marsian G1 Large Warship"
+	attributes
+		category "Medium Warship"
+		cost 12147000
+		shields 14360
+		hull 5390
+		"required crew" 32
+		bunks 64
+		mass 690
+		drag 11.86
+		"heat dissipation" .75
+		"fuel capacity" 500
+		"cargo space" 65
+		"outfit space" 1480
+		"weapon capacity" 680
+		"engine capacity" 470
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 8
+		"Electron Turret" 4
+		"Marsian Anti-Missile Turret" 2
+
+#		"Mini Core" 3
+#		"Fission Reactor"
+		"Stack Core" 2
+		"LP036a Battery Pack"
+		"D41-HY Shield Generator"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 3
+
+		"X5700 Ion Thruster" 2
+		"X5200 Ion Steering"
+		"Orca Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -24 109
+#	engine 24 109
+#	engine -73 118
+#	engine 73 118
+	gun -83 -126
+	gun 83 -126
+	gun -110 -117
+	gun 110 -117
+	gun -136 -109
+	gun 136 -109
+	gun -162 -101
+	gun 162 -101
+	turret -45 -58 "Electron Turret"
+	turret 45 -58 "Electron Turret"
+	turret -45 -10 "Electron Turret"
+	turret 45 -10 "Electron Turret"
+	turret -119 20 "Marsian Anti-Missile Turret"
+	turret 119 20 "Marsian Anti-Missile Turret"
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Large Warship" introduces new, visibly larger gun ports, and a bunch of larger turret mounts, resulting in twice the internal armament of its predecessor. Again, the engine section had to be adapted, and overall this ship seems pretty much like a doubled version of its predecessor.`
+	description `While you can get human ships with stronger shields and hull for the same price, you wont even come close to the firepower of this ship.`
+
+
+
+ship "MaRe G1 Heavy Warship"
+	sprite "ship/Marsian G1 Heavy Warship"
+	attributes
+		category "Heavy Warship"
+		cost 28092000
+		shields 32680
+		hull 12920
+		"required crew" 70
+		bunks 136
+		mass 1520
+		drag 25.08
+		"heat dissipation" .74
+		"fuel capacity" 700
+		"cargo space" 100
+		"outfit space" 3176
+		"weapon capacity" 1620
+		"engine capacity" 930
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 10
+#		"Electron Turret" 4
+		"Marsian Anti-Missile Turret" 2
+#		"Capital EMP Blaster Turret" 2
+		"Marsian Triple Electron Turret" 6
+
+		"Stack Core" 3
+		"LP144a Battery Pack"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 8
+
+		"X5700 Ion Thruster" 2
+		"Orca Plasma Thruster" 2
+		"X5200 Ion Steering" 2
+		"Tyrant Plasma Steering" 2
+		Hyperdrive
+		Ramscoop
+
+#	engine -53 149
+#	engine 53 149
+#	engine -126 135
+#	engine 126 135
+	gun -18 -163
+	gun 18 -163
+	gun -44 -163
+	gun 44 -163
+	gun -95 -163
+	gun 95 -163
+	gun -134 -155
+	gun 134 -155
+	gun -174 -147
+	gun 174 -147
+	turret -53 -65 "Marsian Triple Electron Turret"
+	turret 53 -65 "Marsian Triple Electron Turret"
+	turret -53 -30 "Marsian Triple Electron Turret"
+	turret 53 -30 "Marsian Triple Electron Turret"
+	turret -53 6 "Marsian Anti-Missile Turret"
+	turret 53 6 "Marsian Anti-Missile Turret"
+	turret -104 -42 "Marsian Triple Electron Turret"
+	turret 104 -42 "Marsian Triple Electron Turret"
+
+# theoretically, the bays are at -82 and +8, but it looks better with the G1 drone if they are offset by +10 pixels
+	drone -252 -72 over
+	drone 252 -72 over
+	drone -252 18 over
+	drone 252 18 over
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Heavy Warship" comes with even much bigger gun ports, capable to carry a 100-ton weapon each, and two 250-ton turret mounts. overall resulting some 1600 tons of internal armament. It also has 4 docking clamps for drones, making it the oldest known carrier craft.`
 
 
 
