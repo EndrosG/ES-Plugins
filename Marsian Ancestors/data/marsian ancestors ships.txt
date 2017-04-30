@@ -15,6 +15,318 @@
 
 
 
+ship "MaRe G1 Drone"
+	sprite "ship/Marsian G1 Drone"
+	attributes
+		category Drone
+		automaton 1
+		cost 1010000
+		shields 1300
+		hull 455
+		mass 65
+		drag 1.17
+		"heat dissipation" .81
+		"outfit space" 168
+		"weapon capacity" 60
+		"engine capacity" 80
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 2
+
+		"Mini Core"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+
+		"X3700 Ion Thruster"
+#		"X3200 Ion Steering"
+		"Greyhound Plasma Steering"
+
+#	engine -29 23
+#	engine 29 23
+	gun -77 -40
+	gun 77 -40
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Combat Drone" belongs to the oldest ship series you have yet recovered. Capable to carry two large front guns, it is stronger than any human drone.`
+
+
+
+ship "MaRe G1 Fighter"
+	sprite "ship/Marsian G1 Fighter"
+	attributes
+		category Fighter
+		cost 1857500
+		shields 2315
+		hull 820
+		"required crew" 4
+		bunks 6
+		mass 115
+		drag 2.06
+		"heat dissipation" .8
+		"cargo space" 5
+		"outfit space" 255
+		"weapon capacity" 120
+		"engine capacity" 88
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 4
+
+#		"Mini Core" 2
+		"NT-200 Nucleovoltaic"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+#		"Greyhound Plasma Steering"
+
+#	engine -42 32
+#	engine 42 32
+	gun -77 -38
+	gun 77 -38
+	gun -98 -31
+	gun 98 -31
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Fighter" belongs to the oldest ship series you have yet recovered. Capable to carry four large front guns, this fighter easily outperforms the human interceptors and can eventually compete with a Quicksilver.`
+
+
+
+ship "MaRe G1 Light Interceptor"
+	sprite "ship/Marsian G1 Light Interceptor"
+	attributes
+		category Interceptor
+		cost 2625000
+		shields 3030
+		hull 1080
+		"required crew" 6
+		bunks 12
+		mass 150
+		drag 2.67
+		"heat dissipation" .79
+		"fuel capacity" 200
+		"cargo space" 10
+		"outfit space" 293
+		"weapon capacity" 120
+		"engine capacity" 95
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 2
+		"Heavy Anti-Missile Turret" 2
+
+		"Mini Core" 2
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+#		"Greyhound Plasma Steering"
+		Hyperdrive
+		# Ramscoop
+
+#	engine -18 75
+#	engine 18 75
+	gun -77 -83
+	gun 77 -83
+	turret -36 26
+	turret 36 26
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Light Interceptor" belongs to the oldest ship series you have yet recovered. These interceptors are just slightly larger than the drones and fighters. Just enough to accomodate a hyperdrive with some fuel, two turret mounts and a few more bunks for the larger crew. While these ships may reach the fire power of human light or medium warships, they dont reach their hull or shield strength. These are very lightweight ships.`
+
+
+
+ship "MaRe G1 Heavy Interceptor"
+	sprite "ship/Marsian G1 Heavy Interceptor"
+	attributes
+		category Interceptor
+		cost 3175000
+		shields 3730
+		hull 1325
+		"required crew" 7
+		bunks 12
+		mass 185
+		drag 3.30
+		"heat dissipation" .78
+		"fuel capacity" 200
+		"cargo space" 10
+		"outfit space" 365
+		"weapon capacity" 180
+		"engine capacity" 95
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 4
+		"Heavy Anti-Missile Turret" 2
+
+#		"Mini Core" 3
+		"Fission Reactor"
+		"LP036a Battery Pack"
+#		"D23-QP Shield Generator" 2
+		"D67-TM Shield Generator"
+
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+#		"Greyhound Plasma Steering"
+		Hyperdrive
+		# Ramscoop
+
+#	engine -18 85
+#	engine 18 85
+	gun -77 -73
+	gun 77 -73
+	gun -98 -95
+	gun 98 -95
+	turret -36 36
+	turret 36 36
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Heavy Interceptor" belongs to the oldest ship series you have yet recovered. These interceptors are just slightly larger than the drones and fighters. Just enough to accomodate a hyperdrive with some fuel, two turret mounts and a few more bunks for the larger crew. While these ships may reach the fire power of human light or medium warships, they dont reach their hull or shield strength. These are very lightweight ships.`
+
+
+
+# new classification as of 24.04.17 - defined as generation 2 afterwards
+# Light Freighter
+# SS Fuel Tanker : Support Ship Fuel Tanker
+	# 6x 1000 fuel
+# SS Maintenance
+	# small support ship with 1000 extra fuel, some cargo space for repair equipment
+
+# Heavy Freighter
+# FS Village : Freight Ship
+# FS Town
+# FS City
+
+# Transport Ships : ferrying passengers between cities / colonies, i.e. good speed
+# TS Cityliner : Transport Ship Cityliner : 1.000 bunks
+# TS Metroliner : 10.000 bunks / 20.000 bunks
+
+# City Ships / Colony Ships : very high number of bunks, low speed, slow turning
+# approx. 2-3 tons cargo space per bunk for small cities, 4-5 (or more?) for large cities
+# CS Hamlet : 160 bunks
+# CS Village : 800 bunks
+# CS Town : 4.000 bunks
+# CS City : 20.000 bunks
+# CS Large City : 100.000 bunks
+# CS Metropolis Segment : 500.000 bunks
+# CS Metropolis 3.000.000 bunks
+# CS Conurbation: 10.000.000 bunks
+# CS Megalopolis: 30.000.000 bunks
+
+
+
+# this ship belongs to generation 1
+ship "SS Fuel Tanker"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		cost 3095000
+		shields 5107
+		hull 1783
+		"required crew" 4
+		bunks 10
+		mass 387
+		drag 8.97
+		"heat dissipation" .75
+		"fuel capacity" 6300
+		"cargo space" 20
+		"outfit space" 371
+		"weapon capacity" 60
+		"engine capacity" 210
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Heavy Anti-Missile Turret" 2
+
+		"Fission Reactor"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The SS Fuel Tanker is a dedicated support ship roughly at the size of a Hauler III. Its only purpose is to transport fuel and refuel ships on the fly. It does not have excessive bunks, cargo space or armament."
+
+
+
+# this ship belongs to generation 1
+ship "SS Maintenance"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		cost 3449000
+		shields 5447
+		hull 2343
+		"required crew" 6
+		bunks 10
+		mass 427
+		drag 8.77
+		"heat dissipation" .75
+		"fuel capacity" 1300
+		"cargo space" 500
+		"outfit space" 371
+		"weapon capacity" 60
+		"engine capacity" 210
+		weapon
+			"blast radius" 78
+			"shield damage" 780
+			"hull damage" 390
+			"hit force" 1170
+
+	outfits
+		"Heavy Anti-Missile Turret" 2
+
+		"Fission Reactor"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -22 198
+#	engine 22 198
+	turret -5 0
+	turret 5 0
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description "The SS Maintenance is a dedicated support ship similar to the SS Fuel Tanker but slightly larger. It typically performs maintenance tasks, repairing stranded ships, satellites or damaged stations and can also refuel each of them. Its cargo space holds mainly spare parts."
+	description "	Despite its still large fuel capacity, it also makes a good tiny freighter offering an entry point beneath the FS Village."
+
+
+
 ship "AHD 20 Miner"
 	sprite "ship/atv_960_civil"
 	attributes
@@ -166,127 +478,6 @@ ship "ATV 960 Hyper"
 	description "The ATV 960 cargo drone is used by large freighters to unload their payloads on planets with too high gravity to land on."
 	description "	The military version comes with a larger engine and two turret mounts."
 	description "	The ship version has its own hyperdrive and serves as autonomous supply transport."
-
-
-
-# new classification as of 24.04.17
-# Light Freighter
-# SS Fuel Tanker : Support Ship Fuel Tanker
-	# 6x 1000 fuel
-# SS Maintenance
-	# small support ship with 1000 extra fuel, some cargo space for repair equipment
-
-# Heavy Freighter
-# FS Village : Freight Ship
-# FS Town
-# FS City
-
-# Transport Ships : ferrying passengers between cities / colonies, i.e. good speed
-# TS Cityliner : Transport Ship Cityliner : 1.000 bunks
-# TS Metroliner : 10.000 bunks / 20.000 bunks
-
-# City Ships / Colony Ships : very high number of bunks, low speed, slow turning
-# approx. 2-3 tons cargo space per bunk for small cities, 4-5 (or more?) for large cities
-# CS Hamlet : 160 bunks
-# CS Village : 800 bunks
-# CS Town : 4.000 bunks
-# CS City : 20.000 bunks
-# CS Large City : 100.000 bunks
-# CS Metropolis Segment : 500.000 bunks
-# CS Metropolis 3.000.000 bunks
-# CS Conurbation: 10.000.000 bunks
-# CS Megalopolis: 30.000.000 bunks
-
-
-
-ship "SS Fuel Tanker"
-	sprite "ship/freighter"
-	attributes
-		category "Light Freighter"
-		cost 3095000
-		shields 5107
-		hull 1783
-		"required crew" 4
-		bunks 10
-		mass 387
-		drag 8.97
-		"heat dissipation" .75
-		"fuel capacity" 6300
-		"cargo space" 20
-		"outfit space" 371
-		"weapon capacity" 60
-		"engine capacity" 210
-		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
-
-	outfits
-		"Heavy Anti-Missile Turret" 2
-
-		"Fission Reactor"
-		"LP036a Battery Pack"
-		"D23-QP Shield Generator"
-
-		"X4700 Ion Thruster"
-		"X5200 Ion Steering"
-		Hyperdrive
-		Ramscoop
-
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	explode "small explosion" 10
-	explode "medium explosion" 20
-	description "The SS Fuel Tanker is a dedicated support ship roughly at the size of a Hauler III. Its only purpose is to transport fuel and refuel ships on the fly. It does not have excessive bunks, cargo space or armament."
-
-
-
-ship "SS Maintenance"
-	sprite "ship/freighter"
-	attributes
-		category "Light Freighter"
-		cost 3449000
-		shields 5447
-		hull 2343
-		"required crew" 6
-		bunks 10
-		mass 427
-		drag 8.77
-		"heat dissipation" .75
-		"fuel capacity" 1300
-		"cargo space" 500
-		"outfit space" 371
-		"weapon capacity" 60
-		"engine capacity" 210
-		weapon
-			"blast radius" 78
-			"shield damage" 780
-			"hull damage" 390
-			"hit force" 1170
-
-	outfits
-		"Heavy Anti-Missile Turret" 2
-
-		"Fission Reactor"
-		"LP036a Battery Pack"
-		"D23-QP Shield Generator"
-
-		"X4700 Ion Thruster"
-		"X5200 Ion Steering"
-		Hyperdrive
-		Ramscoop
-
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	explode "small explosion" 10
-	explode "medium explosion" 20
-	description "The SS Maintenance is a dedicated support ship similar to the SS Fuel Tanker but slightly larger. It typically performs maintenance tasks, repairing stranded ships, satellites or damaged stations and can also refuel each of them. Its cargo space holds mainly spare parts."
-	description "	Despite its still large fuel capacity, it also makes a good tiny freighter offering an entry point beneath the FS Village."
 
 
 
@@ -539,6 +730,7 @@ ship "TS Metroliner"
 
 
 
+# ship "Hamlet" "CS 1 Hamlet"
 ship "CS 1 Hamlet"
 	sprite "ship/Marsian CS Hamlet"
 	attributes
@@ -576,16 +768,16 @@ ship "CS 1 Hamlet"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
+#	engine 0 72
+	turret -29 -1
+	turret 29 -1
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The CS Hamlet is the smallest of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer some comfortable living rooms and enough cargo space to store supplies for several weeks."
 
 
 
+# ship "Village" "CS 2 Village"
 ship "CS 2 Village"
 	sprite "ship/Marsian CS Village"
 	attributes
@@ -621,12 +813,12 @@ ship "CS 2 Village"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
+#	engine -15 94
+#	engine 15 94
+	turret -30 -30
+	turret 30 -30
+	turret -30 30
+	turret 30 30
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The CS Village is the second of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer some comfortable living rooms and enough cargo space to store supplies for a few months."
@@ -669,14 +861,14 @@ ship "CS 3 Town"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
+#	engine -30 140
+#	engine 30 140
+	turret 0 -142
+	turret -52 -59
+	turret 52 -59
+	turret -52 59
+	turret 52 59
+	turret 0 142
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The CS Town is the third of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer comfortable living rooms and enough cargo space to store supplies for a few months."
@@ -721,16 +913,17 @@ ship "CS 4 City"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
+#	engine -47.5 188
+#	engine 0 188
+#	engine 47.5 188
+	turret -41 -154
+	turret 41 -154
+	turret -71 -83
+	turret 71 -83
+	turret -71 83
+	turret 71 83
+	turret -41 154
+	turret 41 154
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The CS City is the fourth of the recovered colony ship blueprints. Scientists call them colony ships because their main purpose seems to be to serve as habitat. These ships are slow and have minimal armament. But they offer comfortable living rooms and enough cargo space to store supplies for a few months."
@@ -775,18 +968,19 @@ ship "CS 5 Large City"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
+#	engine -47.5 285
+#	engine 0 285
+#	engine 47.5 285
+	turret 0 -308
+	turret -77 -202
+	turret 77 -202
+	turret -101 -131
+	turret 101 -131
+	turret -101 131
+	turret 101 131
+	turret -77 201
+	turret 77 201
+	turret 0 308
 	fighter 0 0 under
 	fighter 0 0 under
 	fighter 0 0 under
@@ -825,8 +1019,8 @@ ship "CS 6 Metropolis Segment"
 			"hull damage" 19e+5
 			"hit force" 57e+5
 	outfits
-		"Marsian Triple Electron Turret" 2
-		"Marsian Anti-Missile Turret" 10
+		"Marsian Triple Electron Turret" 4
+		"Marsian Anti-Missile Turret" 8
 
 		"Stack Metro Core" 13
 		"LP288a Battery Pack" 13
@@ -837,21 +1031,21 @@ ship "CS 6 Metropolis Segment"
 		Hyperdrive 4
 		Ramscoop
 
-#	engine 53 345
-#	engine 0 345
-#	engine -53 345
-	turret -4 -206 "Marsian Triple Electron Turret"
-	turret 4 -206 "Marsian Triple Electron Turret"
-	turret -56 -192 "Marsian Anti-Missile Turret"
-	turret 56 -192 "Marsian Anti-Missile Turret"
-	turret -47 -71 "Marsian Anti-Missile Turret"
-	turret 47 -71 "Marsian Anti-Missile Turret"
-	turret -47 62 "Marsian Anti-Missile Turret"
-	turret 47 62 "Marsian Anti-Missile Turret"
-	turret -47 196 "Marsian Anti-Missile Turret"
-	turret 47 196 "Marsian Anti-Missile Turret"
-	turret -56 320 "Marsian Anti-Missile Turret"
-	turret 56 320 "Marsian Anti-Missile Turret"
+#	engine -71 431.5
+#	engine 0 443.5
+#	engine 71 431.5
+	turret -148 -273 "Marsian Triple Electron Turret"
+	turret 148 -273 "Marsian Triple Electron Turret"
+	turret -172 -213 "Marsian Anti-Missile Turret"
+	turret 172 -213 "Marsian Anti-Missile Turret"
+	turret -172 -154 "Marsian Anti-Missile Turret"
+	turret 172 -154 "Marsian Anti-Missile Turret"
+	turret -172 154 "Marsian Anti-Missile Turret"
+	turret 172 154 "Marsian Anti-Missile Turret"
+	turret -172 213 "Marsian Anti-Missile Turret"
+	turret 172 213 "Marsian Anti-Missile Turret"
+	turret -148 273 "Marsian Triple Electron Turret"
+	turret 148 273 "Marsian Triple Electron Turret"
 	fighter -28 -177 left
 	fighter 28 -177 right
 	fighter -28 -177 left

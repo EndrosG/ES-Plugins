@@ -29,6 +29,12 @@ outfitter "Marsian Relicts: Tiny Outfits"
 
 
 
+outfitter "Marsian Relicts: Small Outfits"
+	"Mini Core"
+	"D06-GT Shield Generator"
+
+
+
 outfitter "Marsian Relicts: Megaliner Outfits"
 	"Cargo Extension"
 	"Cargo Facility"
@@ -129,54 +135,72 @@ outfitter "Marsian Relicts: Cube Outfits"
 
 
 
-shipyard "Marsian Relicts: Support Ships"
+# generation 1
+shipyard "Marsian Relicts: G1 Interceptors"
+	"MaRe G1 Drone"
+	"MaRe G1 Fighter"
+	"MaRe G1 Light Interceptor"
+	"MaRe G1 Heavy Interceptor"
+
+shipyard "Marsian Relicts: G1 Warships"
+	"MaRe G1 Light Warship"
+	"MaRe G1 Medium Warship"
+	"MaRe G1 Large Warship"
+	"MaRe G1 Heavy Warship"
+
+shipyard "Marsian Relicts: G1 Capital Ships"
+	"MaRe G1 Carrier"
+
+
+
+# generation 1
+shipyard "Marsian Relicts: G1 Support Ships"
 	"SS Fuel Tanker"
 	"SS Maintenance"
 
 
 
-shipyard "Marsian Relicts: Small Transport Ships"
+# generation 2
+shipyard "Marsian Relicts: G2 Small Transport Ships"
 	"TS Cityliner"
 #	"TS Metroliner"
 
-shipyard "Marsian Relicts: Small Freight Ships"
+shipyard "Marsian Relicts: G2 Small Freight Ships"
 	"FS Village"
 	"FS Town"
 #	"FS City"
 
-
-
-shipyard "Marsian Relicts: Cargo Drones"
+shipyard "Marsian Relicts: G2 Cargo Drones"
 	"AHD 20 Miner"
 	"ATV 960 Civil"
 	"ATV 960 Military"
 	"ATV 960 Hyper"
 
-shipyard "Marsian Relicts: Transport Ships"
+shipyard "Marsian Relicts: G2 Transport Ships"
 	"TS Cityliner"
 	"TS Metroliner"
 
-shipyard "Marsian Relicts: Freight Ships"
+shipyard "Marsian Relicts: G2 Freight Ships"
 	"FS Village"
 	"FS Town"
 	"FS City"
 
 
 
-shipyard "Marsian Relicts: Colony Ships (Small)"
+shipyard "Marsian Relicts: G2 Colony Ships (Small)"
 	"CS 1 Hamlet"
 	"CS 2 Village"
 	"CS 3 Town"
 
-shipyard "Marsian Relicts: Colony Ships (Medium)"
+shipyard "Marsian Relicts: G2 Colony Ships (Medium)"
 	"CS 4 City"
 	"CS 5 Large City"
 
-shipyard "Marsian Relicts: Colony Ships (Heavy)"
+shipyard "Marsian Relicts: G2 Colony Ships (Heavy)"
 	"CS 6 Metropolis Segment"
 	"CS 7 Metropolis"
 
-shipyard "Marsian Relicts: Colony Ships (Capital)"
+shipyard "Marsian Relicts: G2 Colony Ships (Capital)"
 	"CS 8 Conurbation"
 	"CS 9 Megalopolis"
 
@@ -233,6 +257,7 @@ shipyard "Marsian Tech: Human Freighters Adv"
 
 
 
+# generation 4
 shipyard "Marsian Relicts: Cubes"
 	"MaCuFi Alpha"
 	"MaCuFi Alpha Scout"

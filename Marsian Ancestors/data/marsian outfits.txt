@@ -146,6 +146,16 @@ outfit "D01-AA Shield Generator"
 	"shield generation" .01
 	description "This baby shield generator is intended to fill vacant tiny outfit spaces."
 
+outfit "D06-GT Shield Generator"
+	category "Systems"
+	cost 6600
+	thumbnail "outfit/tiny shield"
+	"mass" 6
+	"outfit space" -6
+	"shield generation" .07
+	"shield energy" .05
+	description "This baby shield generator is intended to fill vacant tiny outfit spaces."
+
 outfit "D95-EE Shield Generator"
 	category "Systems"
 	cost 440000
@@ -153,7 +163,7 @@ outfit "D95-EE Shield Generator"
 	"mass" 75
 	"outfit space" -75
 	"shield generation" 2.09
-	"shield energy" 0.25
+	"shield energy" 2.0
 	description "This is the smallest of the new shield generators available after Marsian technology became available. Due to their size they are unlikely to fit in normal human ships."
 
 outfit "D96-FF Shield Generator"
@@ -163,7 +173,7 @@ outfit "D96-FF Shield Generator"
 	"mass" 90
 	"outfit space" -90
 	"shield generation" 3.33
-	"shield energy" 0.5
+	"shield energy" 2.9
 	description "This is the second of the new shield generators available after Marsian technology became available. Due to their size they are unlikely to fit in normal human ships."
 
 outfit "D97-GG Shield Generator"
@@ -173,7 +183,7 @@ outfit "D97-GG Shield Generator"
 	"mass" 105
 	"outfit space" -105
 	"shield generation" 5.33
-	"shield energy" 1
+	"shield energy" 4.1
 	description "This is currently the largest of the new shield generators available after Marsian technology became available. Due to their size they are unlikely to fit in normal human ships."
 	description "Chances are high that a successor of this model will become available in the future."
 
@@ -199,6 +209,16 @@ outfit "Tiny Solar Panel"
 	"energy generation" 0.04
 	"heat generation" 0
 	description "The Tiny Solar Panel is what its name suggest: a tiny energy generator. It is intended to fill vacant outfit spaces."
+
+outfit "Mini Core"
+	category "Power"
+	cost 700e+3
+	thumbnail "outfit/stack core"
+	"mass" 28
+	"outfit space" -28
+	"energy generation" 3.4
+	"heat generation" 10.5
+	description "The Mini Core is a very small fission reactor, mostly found on Marsian drones and fighters. It is not as efficient as a small korath generator."
 
 outfit "Stack Mega Core"
 	category "Power"
