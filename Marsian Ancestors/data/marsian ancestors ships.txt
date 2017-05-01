@@ -452,7 +452,96 @@ ship "MaRe G1 Heavy Warship"
 	drone 252 18 over
 	explode "small explosion" 10
 	explode "medium explosion" 20
-	description `The Marsian Relict "G1 Heavy Warship" comes with even much bigger gun ports, capable to carry a 100-ton weapon each, and two 250-ton turret mounts. overall resulting some 1600 tons of internal armament. It also has 4 docking clamps for drones, making it the oldest known carrier craft.`
+	description `The Marsian Relict "G1 Heavy Warship" comes with even much bigger gun ports, capable to carry a 100-ton weapon each, and two 250-ton turret mounts. overall resulting some 1600 tons of internal armament. It also has four docking clamps for drones, making it the oldest known carrier craft.`
+
+
+
+ship "MaRe G1 Carrier"
+	sprite "ship/Marsian G1 Carrier"
+	attributes
+		category "Heavy Warship"
+		cost 51932000
+		shields 59795
+		hull 24500
+		"required crew" 126
+		bunks 236
+		mass 2715
+		drag 43.38
+		"heat dissipation" .73
+		"fuel capacity" 800
+		"cargo space" 180
+		"outfit space" 5400
+		"weapon capacity" 2860
+		"engine capacity" 1510
+		weapon
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
+
+	outfits
+		"Electron Beam" 12
+#		"Electron Turret" 4
+		"Marsian Anti-Missile Turret" 4
+#		"Capital EMP Blaster Turret" 2
+		"Marsian Triple Electron Turret" 6
+
+		"Stack Core" 4
+		"LP144a Battery Pack"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 8
+
+		"X5700 Ion Thruster" 6
+		"X5200 Ion Steering" 7
+		Hyperdrive
+		Ramscoop
+
+#	engine 0 191 0.7
+#	engine -53 205
+#	engine 53 205
+#	engine -126.5 191
+#	engine 126.5 191
+#	engine -200 177
+#	engine 200 177
+
+	gun -18 -219
+	gun 18 -219
+	gun -44 -219
+	gun 44 -219
+	gun -148 -213
+	gun 148 -213
+	gun -182 -205
+	gun 182 -205
+	gun -216 -197
+	gun 216 -197
+	gun -250 -189
+	gun 250 -189
+
+	turret -104 -104 "Marsian Triple Electron Turret"
+	turret 104 -104 "Marsian Triple Electron Turret"
+	turret -146 -86 "Marsian Anti-Missile Turret"
+	turret 146 -86 "Marsian Anti-Missile Turret"
+	turret -77 -45 "Marsian Triple Electron Turret"
+	turret 77 -45 "Marsian Triple Electron Turret"
+	turret -77 9 "Marsian Triple Electron Turret"
+	turret 77 9 "Marsian Triple Electron Turret"
+	turret -77 62 "Marsian Anti-Missile Turret"
+	turret 77 62 "Marsian Anti-Missile Turret"
+
+	drone -282 -126 under
+	drone 282 -126 under
+	drone -282 -36 under
+	drone 282 -36 under
+	drone -282 54 under
+	drone 282 54 under
+
+	fighter -282 -80 over
+	fighter 282 -80 over
+	fighter -282 33 over
+	fighter 282 33 over
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G1 Carrier" comes with as many as twelve gun ports and ten turret mounts. Six main engines and one auxiliary steering unit ensure that this carrier stays maneuverable even under full load, i.e. with four fighters and six drones attached to the outer hull.`
 
 
 
