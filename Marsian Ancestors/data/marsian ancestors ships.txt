@@ -589,7 +589,7 @@ ship "MaRe G1 Carrier"
 
 # this ship belongs to generation 1
 ship "SS Fuel Tanker"
-	sprite "ship/freighter"
+	sprite "ship/Marsian G1 SS Fuel Tanker"
 	attributes
 		category "Light Freighter"
 		cost 3095000
@@ -623,11 +623,11 @@ ship "SS Fuel Tanker"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	explode "small explosion" 10
+#	engine -25 37
+#	engine 25 37
+	turret -22 -26
+	turret 22 -26
+	explode "small explosion" 15
 	explode "medium explosion" 20
 	description "The SS Fuel Tanker is a dedicated support ship roughly at the size of a Hauler III. Its only purpose is to transport fuel and refuel ships on the fly. It does not have excessive bunks, cargo space or armament."
 
@@ -635,7 +635,7 @@ ship "SS Fuel Tanker"
 
 # this ship belongs to generation 1
 ship "SS Maintenance"
-	sprite "ship/freighter"
+	sprite "ship/Marsian G1 SS Maintenance"
 	attributes
 		category "Light Freighter"
 		cost 3449000
@@ -669,12 +669,12 @@ ship "SS Maintenance"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	explode "small explosion" 10
-	explode "medium explosion" 20
+#	engine -25 33
+#	engine 25 33
+	turret -22 -30
+	turret 22 -30
+	explode "small explosion" 15
+	explode "medium explosion" 25
 	description "The SS Maintenance is a dedicated support ship similar to the SS Fuel Tanker but slightly larger. It typically performs maintenance tasks, repairing stranded ships, satellites or damaged stations and can also refuel each of them. Its cargo space holds mainly spare parts."
 	description "	Despite its still large fuel capacity, it also makes a good tiny freighter offering an entry point beneath the FS Village."
 
