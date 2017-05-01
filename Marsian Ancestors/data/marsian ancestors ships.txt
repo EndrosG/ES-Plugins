@@ -15,6 +15,12 @@
 
 
 
+# IMPORTANT NOTE
+# Most ships in this file have engine ports defined, but they are deactivated right now.
+# If you prefer to play with engine sprites, replace "#	engine" by "	engine"
+
+
+
 ship "MaRe G1 Drone"
 	sprite "ship/Marsian G1 Drone"
 	attributes
@@ -30,10 +36,10 @@ ship "MaRe G1 Drone"
 		"weapon capacity" 60
 		"engine capacity" 80
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
 
 	outfits
 		"Electron Beam" 2
@@ -46,12 +52,11 @@ ship "MaRe G1 Drone"
 #		"X3200 Ion Steering"
 		"Greyhound Plasma Steering"
 
-#	engine -29 23
-#	engine 29 23
-	gun -77 -40
-	gun 77 -40
-	explode "small explosion" 10
-	explode "medium explosion" 20
+#	engine -14.6 11.5
+#	engine 14.5 11.5
+	gun -38.5 -20
+	gun 38.5 -20
+	explode "tiny explosion" 10
 	description `The Marsian Relict "G1 Combat Drone" belongs to the oldest ship series you have yet recovered. Capable to carry two large front guns, it is stronger than any human drone.`
 
 
@@ -73,10 +78,10 @@ ship "MaRe G1 Fighter"
 		"weapon capacity" 120
 		"engine capacity" 88
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 30
+			"shield damage" 300
+			"hull damage" 150
+			"hit force" 450
 
 	outfits
 		"Electron Beam" 4
@@ -90,14 +95,14 @@ ship "MaRe G1 Fighter"
 		"X3200 Ion Steering"
 #		"Greyhound Plasma Steering"
 
-#	engine -42 32
-#	engine 42 32
-	gun -77 -38
-	gun 77 -38
-	gun -98 -31
-	gun 98 -31
+#	engine -21 16
+#	engine 21 16
+	gun -38.5 -19
+	gun 38.5 -19
+	gun -49 -15.5
+	gun 49 -15.5
+	explode "tiny explosion" 5
 	explode "small explosion" 10
-	explode "medium explosion" 20
 	description `The Marsian Relict "G1 Fighter" belongs to the oldest ship series you have yet recovered. Capable to carry four large front guns, this fighter easily outperforms the human interceptors and can eventually compete with a Quicksilver.`
 
 
@@ -120,10 +125,10 @@ ship "MaRe G1 Light Interceptor"
 		"weapon capacity" 120
 		"engine capacity" 95
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
 
 	outfits
 		"Electron Beam" 2
@@ -138,14 +143,15 @@ ship "MaRe G1 Light Interceptor"
 #		"Greyhound Plasma Steering"
 		Hyperdrive
 
-#	engine -18 75
-#	engine 18 75
-	gun -77 -83
-	gun 77 -83
-	turret -36 26
-	turret 36 26
+#	engine -9 37.5
+#	engine 9 37.5
+	gun -38.5 -41.5
+	gun 38.5 -41.5
+	turret -18 13
+	turret 18 13
+	explode "tiny explosion" 5
 	explode "small explosion" 10
-	explode "medium explosion" 20
+	explode "medium explosion" 5
 	description `The Marsian Relict "G1 Light Interceptor" belongs to the oldest ship series you have yet recovered. These interceptors are just slightly larger than the drones and fighters. Just enough to accomodate a hyperdrive with some fuel, two turret mounts and a few more bunks for the larger crew. While these ships may reach the fire power of human light or medium warships, they dont reach their hull or shield strength. These are very lightweight ships.`
 
 
@@ -168,10 +174,10 @@ ship "MaRe G1 Heavy Interceptor"
 		"weapon capacity" 180
 		"engine capacity" 95
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 50
+			"shield damage" 500
+			"hull damage" 250
+			"hit force" 750
 
 	outfits
 		"Electron Beam" 4
@@ -188,16 +194,16 @@ ship "MaRe G1 Heavy Interceptor"
 #		"Greyhound Plasma Steering"
 		Hyperdrive
 
-#	engine -18 85
-#	engine 18 85
-	gun -77 -73
-	gun 77 -73
-	gun -98 -95
-	gun 98 -95
-	turret -36 36
-	turret 36 36
-	explode "small explosion" 10
-	explode "medium explosion" 20
+#	engine -9 42.5
+#	engine 9 42.5
+	gun -38.5 -36.5
+	gun 38.5 -36.5
+	gun -49 -47.5
+	gun 49 -47.5
+	turret -18 18
+	turret 18 18
+	explode "small explosion" 15
+	explode "medium explosion" 10
 	description `The Marsian Relict "G1 Heavy Interceptor" belongs to the oldest ship series you have yet recovered. These interceptors are just slightly larger than the drones and fighters. Just enough to accomodate a hyperdrive with some fuel, two turret mounts and a few more bunks for the larger crew. While these ships may reach the fire power of human light or medium warships, they dont reach their hull or shield strength. These are very lightweight ships.`
 
 
@@ -220,10 +226,10 @@ ship "MaRe G1 Light Warship"
 		"weapon capacity" 220
 		"engine capacity" 135
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
 
 	outfits
 		"Electron Beam" 4
@@ -241,13 +247,13 @@ ship "MaRe G1 Light Warship"
 		Hyperdrive
 		Ramscoop
 
-#	engine 0 79
-	gun -77 -82
-	gun 77 -82
-	gun -103.5 -67
-	gun 103.5 -67
-	turret -30 34
-	turret 30 34
+#	engine 0 39.5
+	gun -38.5 -41
+	gun 38.5 -41
+	gun -51.75 -33.5
+	gun 51.75 -33.5
+	turret -15 17
+	turret 15 17
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description `The Marsian Relict "G1 Light Warship" is slightly larger than the heavy interceptor. Larger turret hardpoints, more fuel capacity and a bigger engine on a separate tail, and a bit more cargo space. That's it.`
@@ -273,10 +279,10 @@ ship "MaRe G1 Medium Warship"
 		"weapon capacity" 340
 		"engine capacity" 230
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
 
 	outfits
 		"Electron Beam" 6
@@ -294,20 +300,21 @@ ship "MaRe G1 Medium Warship"
 		Hyperdrive
 		Ramscoop
 
-#	engine -47 93
-#	engine 47 93
-	gun -77 -107
-	gun 77 -107
-	gun -104 -92
-	gun 104 -92
-	gun -130 -78
-	gun 130 -78
-	turret -45 -56
-	turret 45 -56
-	turret -12 59
-	turret 12 59
-	explode "small explosion" 10
-	explode "medium explosion" 20
+#	engine -23.5 46.5
+#	engine 23.5 46.5
+	gun -38.5 -53.5
+	gun 38.5 -53.5
+	gun -52 -46
+	gun 52 -46
+	gun -65 -39
+	gun 65 -39
+	turret -22.5 -28
+	turret 22.5 -28
+	turret -6 29.5
+	turret 6 29.5
+	explode "small explosion" 15
+	explode "medium explosion" 30
+	explode "large explosion" 5
 	description `The Marsian Relict "G1 Medium Warship" still follows a minimalistic concept. Two more front guns and two additional turret mounts increased the mass and thus another engine port was added. This resulted in a larger crew and thus more bunks had to be added, together with some more cargo space again. This ship still has nothing what it doesn't need.`
 	description `While this ship has the same internal armament as a Navy Cruiser, it is still weaker due to the lack of drone bays and the overall smaller and thus weaker hull.`
 
@@ -331,10 +338,10 @@ ship "MaRe G1 Large Warship"
 		"weapon capacity" 680
 		"engine capacity" 470
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 200
+			"shield damage" 2000
+			"hull damage" 1000
+			"hit force" 3000
 
 	outfits
 		"Electron Beam" 8
@@ -355,26 +362,27 @@ ship "MaRe G1 Large Warship"
 		Hyperdrive
 		Ramscoop
 
-#	engine -24 109
-#	engine 24 109
-#	engine -73 118
-#	engine 73 118
-	gun -83 -126
-	gun 83 -126
-	gun -110 -117
-	gun 110 -117
-	gun -136 -109
-	gun 136 -109
-	gun -162 -101
-	gun 162 -101
-	turret -45 -58 "Electron Turret"
-	turret 45 -58 "Electron Turret"
-	turret -45 -10 "Electron Turret"
-	turret 45 -10 "Electron Turret"
-	turret -119 20 "Marsian Anti-Missile Turret"
-	turret 119 20 "Marsian Anti-Missile Turret"
-	explode "small explosion" 10
-	explode "medium explosion" 20
+#	engine -12 54.5
+#	engine 12 54.5
+#	engine -36.5 59
+#	engine 36.5 59
+	gun -41.5 -63
+	gun 41.5 -63
+	gun -55 -58.5
+	gun 55 -58.5
+	gun -68 -54.5
+	gun 68 -54.5
+	gun -81 -50.5
+	gun 81 -50.5
+	turret -22.5 -29 "Electron Turret"
+	turret 22.5 -29 "Electron Turret"
+	turret -22.5 -5 "Electron Turret"
+	turret 22.5 -5 "Electron Turret"
+	turret -59.5 10 "Marsian Anti-Missile Turret"
+	turret 59.5 10 "Marsian Anti-Missile Turret"
+	explode "small explosion" 20
+	explode "medium explosion" 50
+	explode "large explosion" 30
 	description `The Marsian Relict "G1 Large Warship" introduces new, visibly larger gun ports, and a bunch of larger turret mounts, resulting in twice the internal armament of its predecessor. Again, the engine section had to be adapted, and overall this ship seems pretty much like a doubled version of its predecessor.`
 	description `While you can get human ships with stronger shields and hull for the same price, you wont even come close to the firepower of this ship.`
 
@@ -398,10 +406,10 @@ ship "MaRe G1 Heavy Warship"
 		"weapon capacity" 1620
 		"engine capacity" 930
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 450
+			"shield damage" 4500
+			"hull damage" 2250
+			"hit force" 6750
 
 	outfits
 		"Electron Beam" 10
@@ -422,36 +430,38 @@ ship "MaRe G1 Heavy Warship"
 		Hyperdrive
 		Ramscoop
 
-#	engine -53 149
-#	engine 53 149
-#	engine -126 135
-#	engine 126 135
-	gun -18 -163
-	gun 18 -163
-	gun -44 -163
-	gun 44 -163
-	gun -95 -163
-	gun 95 -163
-	gun -134 -155
-	gun 134 -155
-	gun -174 -147
-	gun 174 -147
-	turret -53 -65 "Marsian Triple Electron Turret"
-	turret 53 -65 "Marsian Triple Electron Turret"
-	turret -53 -30 "Marsian Triple Electron Turret"
-	turret 53 -30 "Marsian Triple Electron Turret"
-	turret -53 6 "Marsian Anti-Missile Turret"
-	turret 53 6 "Marsian Anti-Missile Turret"
-	turret -104 -42 "Marsian Triple Electron Turret"
-	turret 104 -42 "Marsian Triple Electron Turret"
+#	engine -26.5 74.5
+#	engine 26.5 74.5
+#	engine -63 67.5
+#	engine 63 67.5
+	gun -9 -81.5
+	gun 9 -81.5
+	gun -22 -81.5
+	gun 22 -81.5
+	gun -47.5 -81.5
+	gun 47.5 -81.5
+	gun -67 -77.5
+	gun 67 -77.5
+	gun -87 -73.5
+	gun 87 -73.5
+	turret -26.5 -32.5 "Marsian Triple Electron Turret"
+	turret 26.5 -32.5 "Marsian Triple Electron Turret"
+	turret -26.5 -15 "Marsian Triple Electron Turret"
+	turret 26.5 -15 "Marsian Triple Electron Turret"
+	turret -26.5 3 "Marsian Anti-Missile Turret"
+	turret 26.5 3 "Marsian Anti-Missile Turret"
+	turret -52 -21 "Marsian Triple Electron Turret"
+	turret 52 -21 "Marsian Triple Electron Turret"
 
 # theoretically, the bays are at -82 and +8, but it looks better with the G1 drone if they are offset by +10 pixels
-	drone -252 -72 over
-	drone 252 -72 over
-	drone -252 18 over
-	drone 252 18 over
-	explode "small explosion" 10
-	explode "medium explosion" 20
+	drone -126 -36 over
+	drone 126 -36 over
+	drone -126 9 over
+	drone 126 9 over
+	explode "small explosion" 15
+	explode "medium explosion" 45
+	explode "large explosion" 60
+	explode "huge explosion" 30
 	description `The Marsian Relict "G1 Heavy Warship" comes with even much bigger gun ports, capable to carry a 100-ton weapon each, and two 250-ton turret mounts. overall resulting some 1600 tons of internal armament. It also has four docking clamps for drones, making it the oldest known carrier craft.`
 
 
@@ -474,10 +484,10 @@ ship "MaRe G1 Carrier"
 		"weapon capacity" 2860
 		"engine capacity" 1510
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 840
+			"shield damage" 8400
+			"hull damage" 4200
+			"hit force" 12600
 
 	outfits
 		"Electron Beam" 12
@@ -496,51 +506,53 @@ ship "MaRe G1 Carrier"
 		Hyperdrive
 		Ramscoop
 
-#	engine 0 191 0.7
-#	engine -53 205
-#	engine 53 205
-#	engine -126.5 191
-#	engine 126.5 191
-#	engine -200 177
-#	engine 200 177
+#	engine 0 95.5 0.7
+#	engine -26.5 102.5
+#	engine 26.5 102.5
+#	engine -63 95.5
+#	engine 63 95.5
+#	engine -100 88.5
+#	engine 100 88.5
 
-	gun -18 -219
-	gun 18 -219
-	gun -44 -219
-	gun 44 -219
-	gun -148 -213
-	gun 148 -213
-	gun -182 -205
-	gun 182 -205
-	gun -216 -197
-	gun 216 -197
-	gun -250 -189
-	gun 250 -189
+	gun -9 -110
+	gun 9 -110
+	gun -22 -110
+	gun 22 -110
+	gun -74 -106.5
+	gun 74 -106.5
+	gun -91 -102.5
+	gun 91 -102.5
+	gun -108 -98.5
+	gun 108 -98.5
+	gun -125 -94.5
+	gun 125 -94.5
 
-	turret -104 -104 "Marsian Triple Electron Turret"
-	turret 104 -104 "Marsian Triple Electron Turret"
-	turret -146 -86 "Marsian Anti-Missile Turret"
-	turret 146 -86 "Marsian Anti-Missile Turret"
-	turret -77 -45 "Marsian Triple Electron Turret"
-	turret 77 -45 "Marsian Triple Electron Turret"
-	turret -77 9 "Marsian Triple Electron Turret"
-	turret 77 9 "Marsian Triple Electron Turret"
-	turret -77 62 "Marsian Anti-Missile Turret"
-	turret 77 62 "Marsian Anti-Missile Turret"
+	turret -52 -52 "Marsian Triple Electron Turret"
+	turret 52 -52 "Marsian Triple Electron Turret"
+	turret -73 -43 "Marsian Anti-Missile Turret"
+	turret 73 -43 "Marsian Anti-Missile Turret"
+	turret -38.5 -22.5 "Marsian Triple Electron Turret"
+	turret 38.5 -22.5 "Marsian Triple Electron Turret"
+	turret -38.5 4.5 "Marsian Triple Electron Turret"
+	turret 38.5 4.5 "Marsian Triple Electron Turret"
+	turret -38.5 31 "Marsian Anti-Missile Turret"
+	turret 38.5 31 "Marsian Anti-Missile Turret"
 
-	drone -282 -126 under
-	drone 282 -126 under
-	drone -282 -36 under
-	drone 282 -36 under
-	drone -282 54 under
-	drone 282 54 under
+	drone -141 -63 under
+	drone 141 -63 under
+	drone -141 -18 under
+	drone 141 -18 under
+	drone -141 27 under
+	drone 141 27 under
 
-	fighter -282 -80 over
-	fighter 282 -80 over
-	fighter -282 33 over
-	fighter 282 33 over
-	explode "small explosion" 10
-	explode "medium explosion" 20
+	fighter -141 -40 over
+	fighter 141 -40 over
+	fighter -141 16.5 over
+	fighter 141 16.5 over
+	explode "small explosion" 15
+	explode "medium explosion" 45
+	explode "large explosion" 60
+	explode "huge explosion" 30
 	description `The Marsian Relict "G1 Carrier" comes with as many as twelve gun ports and ten turret mounts. Six main engines and one auxiliary steering unit ensure that this carrier stays maneuverable even under full load, i.e. with four fighters and six drones attached to the outer hull.`
 
 
