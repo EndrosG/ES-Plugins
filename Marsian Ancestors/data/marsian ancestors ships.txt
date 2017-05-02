@@ -52,7 +52,7 @@ ship "MaRe G1 Drone"
 #		"X3200 Ion Steering"
 		"Greyhound Plasma Steering"
 
-#	engine -14.6 11.5
+#	engine -14.5 11.5
 #	engine 14.5 11.5
 	gun -38.5 -20
 	gun 38.5 -20
@@ -167,7 +167,7 @@ ship "MaRe G1 Heavy Interceptor"
 		bunks 12
 		mass 185
 		drag 3.30
-		"heat dissipation" .78
+		"heat dissipation" .79
 		"fuel capacity" 200
 		"cargo space" 10
 		"outfit space" 365
@@ -219,7 +219,7 @@ ship "MaRe G1 Light Warship"
 		bunks 12
 		mass 220
 		drag 3.80
-		"heat dissipation" .77
+		"heat dissipation" .78
 		"fuel capacity" 300
 		"cargo space" 25
 		"outfit space" 461
@@ -272,7 +272,7 @@ ship "MaRe G1 Medium Warship"
 		bunks 24
 		mass 360
 		drag 6.33
-		"heat dissipation" .76
+		"heat dissipation" .77
 		"fuel capacity" 300
 		"cargo space" 50
 		"outfit space" 731
@@ -331,7 +331,7 @@ ship "MaRe G1 Large Warship"
 		bunks 64
 		mass 690
 		drag 11.86
-		"heat dissipation" .75
+		"heat dissipation" .76
 		"fuel capacity" 500
 		"cargo space" 65
 		"outfit space" 1480
@@ -399,7 +399,7 @@ ship "MaRe G1 Heavy Warship"
 		bunks 136
 		mass 1520
 		drag 25.08
-		"heat dissipation" .74
+		"heat dissipation" .75
 		"fuel capacity" 700
 		"cargo space" 100
 		"outfit space" 3176
@@ -462,7 +462,7 @@ ship "MaRe G1 Heavy Warship"
 	explode "medium explosion" 45
 	explode "large explosion" 60
 	explode "huge explosion" 30
-	description `The Marsian Relict "G1 Heavy Warship" comes with even much bigger gun ports, capable to carry a 100-ton weapon each, and two 250-ton turret mounts. overall resulting some 1600 tons of internal armament. It also has four docking clamps for drones, making it the oldest known carrier craft.`
+	description `The Marsian Relict "G1 Heavy Warship" comes with even much bigger gun ports, capable to carry a 100-ton weapon each, and two 250-ton turret mounts, which adds up to some 1600 tons of internal armament. It also has four docking clamps for drones, making it the oldest known carrier craft.`
 
 
 
@@ -477,7 +477,7 @@ ship "MaRe G1 Carrier"
 		bunks 236
 		mass 2715
 		drag 43.38
-		"heat dissipation" .73
+		"heat dissipation" .74
 		"fuel capacity" 800
 		"cargo space" 180
 		"outfit space" 5400
@@ -499,7 +499,7 @@ ship "MaRe G1 Carrier"
 		"Stack Core" 4
 		"LP144a Battery Pack"
 #		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 8
+		"D94-YV Shield Generator" 16
 
 		"X5700 Ion Thruster" 6
 		"X5200 Ion Steering" 7
@@ -554,6 +554,402 @@ ship "MaRe G1 Carrier"
 	explode "large explosion" 60
 	explode "huge explosion" 30
 	description `The Marsian Relict "G1 Carrier" comes with as many as twelve gun ports and ten turret mounts. Six main engines and one auxiliary steering unit ensure that this carrier stays maneuverable even under full load, i.e. with four fighters and six drones attached to the outer hull.`
+
+
+
+ship "MaRe G2 Drone"
+	sprite "ship/Marsian G2 Drone"
+	attributes
+		category Drone
+		automaton 1
+		cost 1560000
+		shields 2000
+		hull 700
+		mass 100
+		drag 1.80
+		"outfit space" 240
+		"weapon capacity" 120
+		"engine capacity" 80
+		"heat dissipation" .81
+		weapon	
+			"blast radius" 25
+			"shield damage" 250
+			"hull damage" 125
+			"hit force" 375
+
+	outfits
+		"Electron Beam" 4
+
+#		"Mini Core" 2
+		"S3 Thermionic"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+
+		"X3700 Ion Thruster"
+#		"X3200 Ion Steering"
+		"Greyhound Plasma Steering"
+
+#	engine -15 20
+#	engine 15 20
+	gun -23.5 -27
+	gun 23.5 -27
+	gun -34.5 -22
+	gun 34.5 -22
+	explode "tiny explosion" 12
+	description `The Marsian Relict Generation 2 ships feature more weapon hardpoints which makes these ships slower than their predecessors. Obviously, the designers prefered raw fire power over strong hull.`
+	description `The Combat Drone is a very small ship, but capable of carrying four full-size guns (compared to human standards).`
+
+
+
+ship "MaRe G2 Fighter"
+	sprite "ship/Marsian G2 Fighter"
+	attributes
+		category Fighter
+		cost 3124000
+		shields 3670
+		hull 1330
+		"required crew" 7
+		bunks 12
+		mass 180
+		drag 3.17
+		"cargo space" 10
+		"outfit space" 390
+		"weapon capacity" 220
+		"engine capacity" 95
+		"heat dissipation" 0.8
+		weapon
+			"blast radius" 50
+			"shield damage" 500
+			"hull damage" 250
+			"hit force" 750
+
+	outfits
+		"Electron Beam" 4
+		"Heavy Anti-Missile Turret" 2
+
+#		"Mini Core"
+#		"NT-200 Nucleovoltaic"
+		"Fission Reactor"
+		"LP072a Battery Pack"
+		"D14-RN Shield Generator"
+		"D94-YV Shield Generator"
+		"Small Radar Jammer"
+
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+#		"Greyhound Plasma Steering"
+
+#	engine -33 18
+#	engine 33 18
+	gun -33 -22
+	gun 33 -22
+	gun -47 -18
+	gun 47 -18
+	turret -17 0
+	turret 17 0
+	explode "tiny explosion" 10
+	explode "small explosion" 15
+	description `The Marsian Relict Generation 2 ships feature more weapon hardpoints which makes these ships slower than their predecessors. Obviously, the designers prefered raw fire power over strong hull.`
+	description `This Fighter features two turret mounts which allow it to provide anti-missile protection to the fleet.`
+
+
+
+ship "MaRe G2 Interceptor"
+	sprite "ship/Marsian G2 Interceptor"
+	attributes
+		category Interceptor
+		cost 3995000
+		shields 4710
+		hull 1720
+		"required crew" 8
+		bunks 12
+		mass 230
+		drag 4.03
+		"fuel capacity" 200
+		"cargo space" 10
+		"outfit space" 485
+		"weapon capacity" 280
+		"engine capacity" 95
+		"heat dissipation" 0.79
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+
+	outfits
+		"Electron Beam" 6
+		"Heavy Anti-Missile Turret" 2
+
+#		"Mini Core"
+#		"NT-200 Nucleovoltaic"
+#		"Fission Reactor"
+		"Breeder Reactor"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"D94-YV Shield Generator"
+		"Small Radar Jammer"
+
+		"X3700 Ion Thruster"
+#		"X3200 Ion Steering"
+		"Impala Plasma Steering"
+		Hyperdrive
+#		Ramscoop
+
+#	engine -33 19
+#	engine 33 19
+	gun -33 -23
+	gun 33 -23
+	gun -47 -19
+	gun 47 -19
+	gun -59 -15
+	gun 59 -15
+	turret -17 -1
+	turret 17 -1
+	explode "tiny explosion" 10
+	explode "small explosion" 15
+	explode "medium explosion" 5
+	description `The Marsian Relict Generation 2 ships feature more weapon hardpoints which makes these ships slower than their predecessors. Obviously, the designers prefered raw fire power over strong hull.`
+	description `This Interceptor is just slightly larger than the fighter. Just enough to accomodate a hyperdrive with some fuel, and two additional front guns. These are very lightweight ships.`
+
+
+
+ship "MaRe G2 Light Warship"
+	sprite "ship/Marsian G2 Light Warship"
+	attributes
+		category "Light Warship"
+		cost 6584000
+		shields 7730
+		hull 2855
+		"required crew" 15
+		bunks 24
+		mass 375
+		drag 6.52
+		"fuel capacity" 300
+		"cargo space" 50
+		"outfit space" 755
+		"weapon capacity" 440
+		"engine capacity" 150
+		"heat dissipation" 0.78
+		weapon
+			"blast radius" 105
+			"shield damage" 1050
+			"hull damage" 525
+			"hit force" 1575
+
+	outfits
+		"Electron Beam" 8
+		"Heavy Anti-Missile Turret" 4
+
+#		"Mini Core" 3
+#		"Breeder Reactor"
+		"Stack Core"
+		"LP036a Battery Pack"
+#		"D23-QP Shield Generator"
+		"D94-YV Shield Generator" 2
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+#		"Impala Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine 0 49
+#	engine -22 49
+#	engine 22 49
+	gun -35 -44
+	gun 35 -44
+	gun -45 -47
+	gun 45 -47
+	gun -55 -50
+	gun 55 -50
+	gun -65 -53
+	gun 65 -53
+	turret -22 -20.5
+	turret 22 -20.5
+	turret -44 24
+	turret 44 24
+	explode "small explosion" 15
+	explode "medium explosion" 30
+	explode "large explosion" 5
+	description `The Marsian Relict Generation 2 ships feature more weapon hardpoints which makes these ships slower than their predecessors. Obviously, the designers prefered raw fire power over strong hull.`
+	description `The Light Warship can be roughly seen as the equivalent of two fighters. Many things have approximately doubled: armament, shields, hull, crew, bunks. It is thougher than the Gen 1 Medium Warship, but still lightweight.`
+
+
+
+ship "MaRe G2 Medium Warship"
+	sprite "ship/Marsian G2 Medium Warship"
+	attributes
+		category "Medium Warship"
+		cost 13318000
+		shields 15580
+		hull 5700
+		"required crew" 33
+		bunks 64
+		mass 760
+		drag 13.30
+		"fuel capacity" 500
+		"cargo space" 95
+		"outfit space" 1576
+		"weapon capacity" 960
+		"engine capacity" 270
+		"heat dissipation" 0.77
+		weapon
+			"blast radius" 210
+			"shield damage" 2100
+			"hull damage" 1050
+			"hit force" 3150
+
+	outfits
+		"Electron Beam" 12
+		"Electron Turret" 4
+		"Heavy Anti-Missile Turret" 4
+
+		"Stack Core" 2
+#		"Fusion Reactor"
+		"LP072a Battery Pack"
+		"D14-RN Shield Generator"
+		"D94-YV Shield Generator" 6
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster"
+#		"X5200 Ion Steering"
+		"Tyrant Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -23.5 46.5
+#	engine 23.5 46.5
+
+	gun -7.5 -51
+	gun 7.5 -51
+	gun -20.5 -51
+	gun 20.5 -51
+
+	gun -41.5 -35
+	gun 41.5 -35
+	gun -54.5 -31
+	gun 54.5 -31
+	gun -67.5 -26.5
+	gun 67.5 -26.5
+	gun -80.5 -22
+	gun 80.5 -22
+
+	turret -22.5 -18 "Electron Turret"
+	turret 22.5 -18 "Electron Turret"
+	turret -22.5 6 "Electron Turret"
+	turret 22.5 6 "Electron Turret"
+
+	turret -47.5 -18 "Heavy Anti-Missile Turret"
+	turret 47.5 -18 "Heavy Anti-Missile Turret"
+	turret -47.5 19 "Heavy Anti-Missile Turret"
+	turret 47.5 19 "Heavy Anti-Missile Turret"
+
+	explode "small explosion" 15
+	explode "medium explosion" 30
+	explode "large explosion" 45
+	explode "huge explosion" 15
+	description `The Marsian Relict Generation 2 ships feature more weapon hardpoints which makes these ships slower than their predecessors. Obviously, the designers prefered raw fire power over strong hull.`
+	description `The Medium Warship would be considered by most humans to be a fortress. Twelve gun ports and eight turret mounts make this ship a nice weapon platform.`
+
+
+
+ship "MaRe G2 Heavy Warship"
+	sprite "ship/Marsian G2 Heavy Warship"
+	attributes
+		category "Heavy Warship"
+		cost 43400000
+		shields 51435
+		hull 20560
+		"required crew" 95
+		bunks 136
+		mass 2375
+		drag 38.96
+		"fuel capacity" 900
+		"cargo space" 100
+		"outfit space" 5400
+		"weapon capacity" 3650
+		"engine capacity" 750
+		"heat dissipation" 0.75
+		weapon
+			"blast radius" 715
+			"shield damage" 7150
+			"hull damage" 3575
+			"hit force" 10725
+
+	outfits
+		"Electron Beam" 18
+#		"Electron Turret" 4
+		"Marsian Anti-Missile Turret" 6
+		"Marsian Triple Electron Turret" 8
+
+		"Stack Mega Core"
+		"LP144a Battery Pack"
+		"Liquid Helium Cooler"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 20
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster" 2
+		"Orca Plasma Thruster" 1
+#		"X5200 Ion Steering" 1
+		"Tyrant Plasma Steering" 3
+		Hyperdrive
+		Ramscoop
+
+#	engine -27 84
+#	engine 27 84
+#	engine -60 70 0.7
+#	engine 60 70 0.7
+	gun -12 -91
+	gun 12 -91
+
+	gun -47.5 -71.5
+	gun 47.5 -71.5
+	gun -67.5 -67
+	gun 67.5 -67
+	gun -87 -63
+	gun 87 -63
+	gun -107 -59
+	gun 107 -59
+
+	gun -58.5 -59.5
+	gun 58.5 -59.5
+	gun -78 -55.5
+	gun 78 -55.5
+	gun -97.5 -51.5
+	gun 97.5 -51.5
+	gun -117.5 -47
+	gun 117.5 -47
+
+	turret -26.5 -23 "Marsian Anti-Missile Turret"
+	turret 26.5 -23 "Marsian Anti-Missile Turret"
+	turret -26.5 -5 "Marsian Anti-Missile Turret"
+	turret 26.5 -5 "Marsian Anti-Missile Turret"
+	turret -26.5 13 "Marsian Anti-Missile Turret"
+	turret 26.5 13 "Marsian Anti-Missile Turret"
+
+	turret -52 -11 "Marsian Triple Electron Turret"
+	turret 52 -11 "Marsian Triple Electron Turret"
+	turret -71.5 -5.5 "Marsian Triple Electron Turret"
+	turret 71.5 -5.5 "Marsian Triple Electron Turret"
+	turret -91 0 "Marsian Triple Electron Turret"
+	turret 91 0 "Marsian Triple Electron Turret"
+	turret -110.5 5.5 "Marsian Triple Electron Turret"
+	turret 110.5 5.5 "Marsian Triple Electron Turret"
+
+	fighter 0 -25 under
+	drone 0 65 under
+
+	explode "small explosion" 15
+	explode "medium explosion" 60
+	explode "large explosion" 75
+	explode "huge explosion" 60
+	description `The Marsian Relict "G2 Heavy Warship" comes again with much bigger gun ports, capable to carry a 100-ton weapon each, and several 100-ton and 250-ton turret mounts. It also has one docking clamp for a fighter and one for a drone.`
 
 
 

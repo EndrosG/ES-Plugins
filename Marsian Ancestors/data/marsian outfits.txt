@@ -212,7 +212,7 @@ outfit "Tiny Solar Panel"
 
 outfit "Mini Core"
 	category "Power"
-	cost 700e+3
+	cost 650e+3
 	thumbnail "outfit/stack core"
 	"mass" 28
 	"outfit space" -28

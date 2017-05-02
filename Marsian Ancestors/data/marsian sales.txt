@@ -161,6 +161,23 @@ shipyard "Marsian Relicts: G1 Support Ships"
 
 
 # generation 2
+shipyard "Marsian Relicts: G2 Interceptors"
+	"MaRe G2 Drone"
+	"MaRe G2 Fighter"
+	"MaRe G2 Interceptor"
+
+shipyard "Marsian Relicts: G2 Warships"
+	"MaRe G2 Light Warship"
+	"MaRe G2 Medium Warship"
+	"MaRe G2 Heavy Warship"
+
+shipyard "Marsian Relicts: G2 Capital Ships"
+	"MaRe G2 Cruiser"
+	"MaRe G2 Carrier"
+
+
+
+# generation 2
 shipyard "Marsian Relicts: G2 Small Transport Ships"
 	"TS Cityliner"
 #	"TS Metroliner"
