@@ -953,6 +953,241 @@ ship "MaRe G2 Heavy Warship"
 
 
 
+# Mk II, reworked to 32+4 hardpoints because of game internal restrictions
+ship "MaRe G2 Cruiser"
+	sprite "ship/Marsian G2 Cruiser"
+	attributes
+		category "Heavy Warship"
+		cost 63880000
+		shields 74900
+		hull 30440
+		"required crew" 126
+		bunks 236
+		mass 3420
+		drag 55.06
+		"fuel capacity" 900
+		"cargo space" 180
+		"outfit space" 7468
+		"weapon capacity" 5100
+		"engine capacity" 990
+		"heat dissipation" 0.74
+		weapon
+			"blast radius" 1050
+			"shield damage" 10500
+			"hull damage" 5250
+			"hit force" 15750
+
+	outfits
+		"Electron Beam" 24
+		"Marsian Anti-Missile Turret" 4
+		"Marsian Triple Electron Turret" 8
+
+		"Stack Core"
+		"Stack Mega Core"
+		"LP144a Battery Pack"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 40
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster" 2
+		"Orca Plasma Thruster" 2
+#		"X5200 Ion Steering" 2
+		"Tyrant Plasma Steering" 4
+		Hyperdrive
+		Ramscoop
+
+#	engine 0 103.5 0.7
+#	engine -27 112
+#	engine 27 112
+#	engine -63 105
+#	engine 63 105
+	gun -12 -120.5
+	gun 12 -120.5
+	gun -29 -120.5
+	gun 29 -120.5
+
+	gun -77 -97
+	gun 77 -97
+	gun -97 -93
+	gun 97 -93
+	gun -117 -88.5
+	gun 117 -88.5
+	gun -137 -84
+	gun 137 -84
+	gun -156 -80
+	gun 156 -80
+
+	gun -87.5 -85
+	gun 87.5 -85
+	gun -107.5 -81
+	gun 107.5 -81
+	gun -127.5 -77
+	gun 127.5 -77
+	gun -147 -72.5
+	gun 147 -72.5
+	gun -167 -68
+	gun 167 -68
+
+	turret -52 -42 "Marsian Triple Electron Turret"
+	turret 52 -42 "Marsian Triple Electron Turret"
+	turret -78 -36.5 "Marsian Triple Electron Turret"
+	turret 78 -36.5 "Marsian Triple Electron Turret"
+	turret -104 -31 "Marsian Triple Electron Turret"
+	turret 104 -31 "Marsian Triple Electron Turret"
+	turret -130 -25.5 "Marsian Triple Electron Turret"
+	turret 130 -25.5 "Marsian Triple Electron Turret"
+#	turret -156 -20 "Marsian Triple Electron Turret"
+#	turret 156 -20 "Marsian Triple Electron Turret"
+
+	turret -39 -12 "Marsian Anti-Missile Turret"
+	turret 39 -12 "Marsian Anti-Missile Turret"
+#	turret -39 14 "Marsian Anti-Missile Turret"
+#	turret 39 14 "Marsian Anti-Missile Turret"
+	turret -39 41 "Marsian Anti-Missile Turret"
+	turret 39 41 "Marsian Anti-Missile Turret"
+
+	drone -213 -19 over
+	drone 213 -19 over
+	drone -213 37 over
+	drone 213 37 over
+	drone -213 -3 under
+	drone 213 -3 under
+	drone -213 -49 under
+	drone 213 -49 under
+
+	explode "small explosion" 15
+	explode "medium explosion" 60
+	explode "large explosion" 90
+	explode "huge explosion" 75
+
+	description `The Marsian Relict "G2 Cruiser" can carry up to eigth drones and has a maximum of 24 front guns. But not all of the originally planned 16 turret mounts are working. It looks like the ancestors reached some practical limits here.`
+	description `	Compared to the previous ships, the slower acceleration and turning is noticable, making it harder to fully utilize those 24 front guns.`
+	description `	WARNING: The four turret mounts holding the anti-missile systems can't be used for offensive weapon systems.`
+
+
+
+# Mk II, limited to 32 hardpoints because of game internal restrictions
+ship "MaRe G2 Carrier"
+	sprite "ship/Marsian G2 Carrier Mk II"
+	attributes
+		category "Heavy Warship"
+		cost 97220000
+		shields 106965
+		hull 43850
+		"required crew" 243
+		bunks 336
+		mass 4855
+		drag 77.53
+		"fuel capacity" 1000
+		"cargo space" 320
+		"outfit space" 9500
+		"weapon capacity" 6500
+		"engine capacity" 1250
+		"heat dissipation" 0.73
+		weapon
+			"blast radius" 1505
+			"shield damage" 15050
+			"hull damage" 7525
+			"hit force" 22575
+
+	outfits
+		"Electron Beam" 12
+		"Marsian Anti-Missile Turret" 6
+		"Marsian Triple Electron Turret" 14
+
+		"Stack Core"
+		"Stack Mega Core"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator" 60
+
+		"X5700 Ion Thruster" 5
+		"X5200 Ion Steering" 5
+		"Orca Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine 0 160
+#	engine -32 158
+#	engine 32 158
+#	engine -64 155
+#	engine 64 155
+
+	gun -77 -168
+	gun 77 -168
+	gun -97 -164
+	gun 97 -164
+	gun -117 -160
+	gun 117 -160
+	gun -137 -155.5
+	gun 137 -155.5
+	gun -156 -151.25
+	gun 156 -151.25
+	gun -176 -147
+	gun 176 -147
+
+	turret -52 -113 "Marsian Triple Electron Turret"
+	turret 52 -113 "Marsian Triple Electron Turret"
+	turret -78 -108 "Marsian Triple Electron Turret"
+	turret 78 -108 "Marsian Triple Electron Turret"
+	turret -104 -102.5 "Marsian Triple Electron Turret"
+	turret 104 -102.5 "Marsian Triple Electron Turret"
+	turret -130 -97 "Marsian Triple Electron Turret"
+	turret 130 -97 "Marsian Triple Electron Turret"
+	turret -156 -91.5 "Marsian Triple Electron Turret"
+	turret 156 -91.5 "Marsian Triple Electron Turret"
+
+	turret -39 -84 "Marsian Anti-Missile Turret"
+	turret 39 -84 "Marsian Anti-Missile Turret"
+	turret -39 -41 "Marsian Triple Electron Turret"
+	turret 39 -41 "Marsian Triple Electron Turret"
+	turret -39 1 "Marsian Anti-Missile Turret"
+	turret 39 1 "Marsian Anti-Missile Turret"
+	turret -39 44 "Marsian Triple Electron Turret"
+	turret 39 44 "Marsian Triple Electron Turret"
+	turret -39 86 "Marsian Anti-Missile Turret"
+	turret 39 86 "Marsian Anti-Missile Turret"
+
+	drone -136 110 back
+	drone 136 110 back
+	drone -136 110 back
+	drone 136 110 back
+	drone -136 110 back
+	drone 136 110 back
+	drone -136 110 back
+	drone 136 110 back
+	drone -136 110 back
+	drone 136 110 back
+	drone -136 110 back
+	drone 136 110 back
+
+	fighter -136 110 back
+	fighter 136 110 back
+	fighter -136 110 back
+	fighter 136 110 back
+	fighter -136 110 back
+	fighter 136 110 back
+	fighter -136 110 back
+	fighter 136 110 back
+	fighter -136 110 back
+	fighter 136 110 back
+	fighter -136 110 back
+	fighter 136 110 back
+	fighter -136 110 back
+	fighter 136 110 back
+	fighter -136 110 back
+	fighter 136 110 back
+
+	explode "small explosion" 15
+	explode "medium explosion" 90
+	explode "large explosion" 120
+	explode "huge explosion" 135
+
+	description `The Marsian Relict "G2 Carrier" is the first ship with less gun ports than its predecessor after the ancestors reached some practical limits. Instead, they added another set of turret mounts to the main hull, resulting in a total of 20 turret mounts.`
+	description `	The ancestors also must have reached another limit with the external docking points for drones and fighters because this Carrier is the first ship to use internal bays, split amongst two main hangars. These hangars are just large enough to hold 16 fighters and 12 drones but not more.`
+
+
+
 # new classification as of 24.04.17 - defined as generation 2 afterwards
 # Light Freighter
 # SS Fuel Tanker : Support Ship Fuel Tanker
