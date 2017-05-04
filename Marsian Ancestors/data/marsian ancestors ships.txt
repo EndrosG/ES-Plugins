@@ -572,28 +572,31 @@ ship "MaRe G2 Drone"
 	attributes
 		category Drone
 		automaton 1
-		cost 1490000
-		shields 1848
-		hull 748
-		mass 88
-		drag 1.58
+		cost 1390000
+		shields 1722
+		hull 697
+		mass 82
+		drag 1.48
 		"heat dissipation" 0.81
-		"outfit space" 240
-		"weapon capacity" 120
+		"outfit space" 221
+		"weapon capacity" 104
 		"engine capacity" 80
 		weapon
-			"blast radius" 25
-			"shield damage" 250
-			"hull damage" 125
-			"hit force" 375
+			"blast radius" 20
+			"shield damage" 200
+			"hull damage" 100
+			"hit force" 300
 
 	outfits
-		"Electron Beam" 4
+		"Electron Beam" 2
+		"Heavy Laser" 2
 
 #		"Mini Core" 2
 		"S3 Thermionic"
+#		"Supercapacitor"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D06-GT Shield Generator"
+#		"D14-RN Shield Generator"
 
 		"X3700 Ion Thruster"
 #		"X3200 Ion Steering"
@@ -615,23 +618,23 @@ ship "MaRe G2 Fighter"
 	sprite "ship/Marsian G2 Fighter"
 	attributes
 		category Fighter
-		cost 3024000
-		shields 3606
-		hull 1487
+		cost 2854000
+		shields 3386
+		hull 1392
 		"required crew" 7
-		mass 170
-		drag 3.00
+		mass 160
+		drag 2.83
 		"heat dissipation" 0.80
 		bunks 12
 		"cargo space" 10
-		"outfit space" 366
-		"weapon capacity" 200
+		"outfit space" 337
+		"weapon capacity" 176
 		"engine capacity" 95
 		weapon
-			"blast radius" 50
-			"shield damage" 500
-			"hull damage" 250
-			"hit force" 750
+			"blast radius" 45
+			"shield damage" 450
+			"hull damage" 225
+			"hit force" 675
 
 	outfits
 		"Electron Beam" 4
@@ -641,8 +644,8 @@ ship "MaRe G2 Fighter"
 #		"NT-200 Nucleovoltaic"
 		"Fission Reactor"
 		"LP072a Battery Pack"
-#		"D14-RN Shield Generator"
-		"D67-TM Shield Generator"
+		"D23-QP Shield Generator"
+#		"D67-TM Shield Generator"
 		"Small Radar Jammer"
 
 		"X3700 Ion Thruster"
@@ -668,24 +671,24 @@ ship "MaRe G2 Interceptor"
 	sprite "ship/Marsian G2 Interceptor"
 	attributes
 		category Interceptor
-		cost 4440000
-		shields 5243
-		hull 2187
+		cost 4110000
+		shields 4834
+		hull 2015
 		"required crew" 8
-		mass 245
-		drag 4.29
+		mass 226
+		drag 3.96
 		"heat dissipation" 0.79
 		bunks 12
 		"fuel capacity" 200
 		"cargo space" 10
-		"outfit space" 560
-		"weapon capacity" 340
+		"outfit space" 502
+		"weapon capacity" 292
 		"engine capacity" 95
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 65
+			"shield damage" 650
+			"hull damage" 325
+			"hit force" 975
 
 	outfits
 		"Electron Beam" 6
@@ -697,7 +700,7 @@ ship "MaRe G2 Interceptor"
 		"Breeder Reactor"
 		"LP072a Battery Pack"
 		"D41-HY Shield Generator"
-		"D94-YV Shield Generator" 2
+		"D94-YV Shield Generator"
 		"Small Radar Jammer"
 
 		"X3700 Ion Thruster"
@@ -728,24 +731,24 @@ ship "MaRe G2 Light Warship"
 	sprite "ship/Marsian G2 Light Warship"
 	attributes
 		category "Light Warship"
-		cost 6969000
-		shields 8258
-		hull 3464
+		cost 6519000
+		shields 7692
+		hull 3223
 		"required crew" 15
-		mass 384
-		drag 6.70
+		mass 358
+		drag 6.25
 		"heat dissipation" 0.78
 		bunks 24
 		"fuel capacity" 300
 		"cargo space" 50
-		"outfit space" 806
-		"weapon capacity" 480
+		"outfit space" 728
+		"weapon capacity" 416
 		"engine capacity" 150
 		weapon
-			"blast radius" 115
-			"shield damage" 1150
-			"hull damage" 575
-			"hit force" 1725
+			"blast radius" 105
+			"shield damage" 1050
+			"hull damage" 525
+			"hit force" 1575
 
 	outfits
 		"Electron Beam" 8
@@ -755,8 +758,8 @@ ship "MaRe G2 Light Warship"
 #		"Breeder Reactor"
 		"Stack Core"
 		"LP036a Battery Pack"
-#		"D23-QP Shield Generator"
-		"D94-YV Shield Generator" 3
+		"D67-TM Shield Generator"
+		"D94-YV Shield Generator"
 		"Small Radar Jammer"
 		"Marsian Scanner"
 
@@ -793,24 +796,24 @@ ship "MaRe G2 Medium Warship"
 	sprite "ship/Marsian G2 Medium Warship"
 	attributes
 		category "Medium Warship"
-		cost 13475000
-		shields 15935
-		hull 6710
+		cost 12650000
+		shields 14875
+		hull 6263
 		"required crew" 33
-		mass 738
-		drag 12.85
+		mass 689
+		drag 12.00
 		"heat dissipation" 0.77
 		bunks 64
 		"fuel capacity" 500
 		"cargo space" 95
-		"outfit space" 1482
-		"weapon capacity" 880
+		"outfit space" 1337
+		"weapon capacity" 760
 		"engine capacity" 270
 		weapon
-			"blast radius" 225
-			"shield damage" 2250
-			"hull damage" 1125
-			"hit force" 3375
+			"blast radius" 210
+			"shield damage" 2100
+			"hull damage" 1050
+			"hit force" 3150
 
 	outfits
 		"Electron Beam" 12
@@ -820,8 +823,8 @@ ship "MaRe G2 Medium Warship"
 		"Stack Core" 2
 #		"Fusion Reactor"
 		"LP036a Battery Pack"
-		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 4
+		"D23-QP Shield Generator"
+		"D94-YV Shield Generator" 2
 		"Large Radar Jammer"
 		"Marsian Scanner"
 
@@ -871,38 +874,38 @@ ship "MaRe G2 Heavy Warship"
 	sprite "ship/Marsian G2 Heavy Warship"
 	attributes
 		category "Heavy Warship"
-		cost 34123500
-		shields 40157
-		hull 18045
+		cost 31512500
+		shields 36923
+		hull 16586
 		"required crew" 95
-		mass 1769
-		drag 28.83
+		mass 1627
+		drag 26.53
 		"heat dissipation" 0.75
 		bunks 136
 		"fuel capacity" 900
 		"cargo space" 100
-		"outfit space" 3592
-		"weapon capacity" 2140
+		"outfit space" 3186
+		"weapon capacity" 1804
 		"engine capacity" 750
 		weapon
-			"blast radius" 580
-			"shield damage" 5800
-			"hull damage" 2900
-			"hit force" 8700
+			"blast radius" 535
+			"shield damage" 5350
+			"hull damage" 2675
+			"hit force" 8025
 
 	outfits
 		"Electron Beam" 18
-		"Electron Turret" 2
+		"Electron Turret" 4
 		"Heavy Anti-Missile Turret" 4
 		"Marsian Anti-Missile Turret" 2
-		"Marsian Triple Electron Turret" 6
+		"Marsian Triple Electron Turret" 4
 
 		"Stack Core" 5
 #		"Stack Mega Core"
 		"LP036a Battery Pack"
 		"Liquid Helium Cooler"
-#		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 6
+		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 2
 		"Large Radar Jammer"
 		"Marsian Scanner"
 
@@ -949,8 +952,8 @@ ship "MaRe G2 Heavy Warship"
 	turret 52 -11 "Marsian Triple Electron Turret"
 	turret -71.5 -5.5 "Marsian Triple Electron Turret"
 	turret 71.5 -5.5 "Marsian Triple Electron Turret"
-	turret -91 0 "Marsian Triple Electron Turret"
-	turret 91 0 "Marsian Triple Electron Turret"
+	turret -91 0 "Electron Turret"
+	turret 91 0 "Electron Turret"
 	turret -110.5 5.5 "Electron Turret"
 	turret 110.5 5.5 "Electron Turret"
 
@@ -970,35 +973,36 @@ ship "MaRe G2 Cruiser"
 	sprite "ship/Marsian G2 Cruiser"
 	attributes
 		category "Heavy Warship"
-		cost 47496500
-		shields 54624
-		hull 24987
+		cost 44255500
+		shields 50606
+		hull 23156
 		"required crew" 126
-		mass 2371
-		drag 37.85
+		mass 2196
+		drag 35.04
 		"heat dissipation" 0.74
 		bunks 236
 		"fuel capacity" 900
 		"cargo space" 180
-		"outfit space" 4376
-		"weapon capacity" 2520
+		"outfit space" 3884
+		"weapon capacity" 2112
 		"engine capacity" 990
 		weapon
-			"blast radius" 600
-			"shield damage" 6000
-			"hull damage" 3000
-			"hit force" 9000
+			"blast radius" 735
+			"shield damage" 7350
+			"hull damage" 3675
+			"hit force" 11025
 
 	outfits
 		"Electron Beam" 24
+		"Electron Turret" 2
 		"Marsian Anti-Missile Turret" 4
-		"Marsian Triple Electron Turret" 8
+		"Marsian Triple Electron Turret" 6
 
 #		"Stack Core"
 		"Stack Mega Core"
 		"LP072a Battery Pack"
-#		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 8
+		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 3
 		"Large Radar Jammer"
 		"Marsian Scanner"
 
@@ -1047,8 +1051,8 @@ ship "MaRe G2 Cruiser"
 	turret 78 -36.5 "Marsian Triple Electron Turret"
 	turret -104 -31 "Marsian Triple Electron Turret"
 	turret 104 -31 "Marsian Triple Electron Turret"
-	turret -130 -25.5 "Marsian Triple Electron Turret"
-	turret 130 -25.5 "Marsian Triple Electron Turret"
+	turret -130 -25.5 "Electron Turret"
+	turret 130 -25.5 "Electron Turret"
 #	turret -156 -20 "Marsian Triple Electron Turret"
 #	turret 156 -20 "Marsian Triple Electron Turret"
 
@@ -1084,35 +1088,36 @@ ship "MaRe G2 Carrier"
 	sprite "ship/Marsian G2 Carrier Mk II"
 	attributes
 		category "Heavy Warship"
-		cost 73330000
-		shields 78042
-		hull 35930
+		cost 69947000
+		shields 73884
+		hull 34034
 		"required crew" 240
-		mass 3369
-		drag 53.35
+		mass 3188
+		drag 50.45
 		"heat dissipation" 0.73
 		bunks 336
 		"fuel capacity" 1000
 		"cargo space" 320
-		"outfit space" 4872
-		"weapon capacity" 2640
+		"outfit space" 4361
+		"weapon capacity" 2216
 		"engine capacity" 1250
 		weapon
-			"blast radius" 750
-			"shield damage" 7500
-			"hull damage" 3750
-			"hit force" 11250
+			"blast radius" 1075
+			"shield damage" 10750
+			"hull damage" 5375
+			"hit force" 16125
 
 	outfits
 		"Electron Beam" 12
-		"Electron Turret" 6
+		"Electron Turret" 8
 		"Marsian Anti-Missile Turret" 6
-		"Marsian Triple Electron Turret" 8
+		"Marsian Triple Electron Turret" 6
 
 #		"Stack Core"
 		"Stack Mega Core"
 		"LP072a Battery Pack"
-		"D94-YV Shield Generator" 9
+#		"D41-HY Shield Generator"
+		"D94-YV Shield Generator" 4
 		"Large Radar Jammer"
 		"Marsian Scanner"
 
@@ -1145,8 +1150,8 @@ ship "MaRe G2 Carrier"
 	turret 52 -113 "Marsian Triple Electron Turret"
 	turret -78 -108 "Marsian Triple Electron Turret"
 	turret 78 -108 "Marsian Triple Electron Turret"
-	turret -104 -102.5 "Electron Turret"
-	turret 104 -102.5 "Electron Turret"
+	turret -104 -102.5 "Marsian Triple Electron Turret"
+	turret 104 -102.5 "Marsian Triple Electron Turret"
 	turret -130 -97 "Electron Turret"
 	turret 130 -97 "Electron Turret"
 	turret -156 -91.5 "Electron Turret"
@@ -1154,12 +1159,12 @@ ship "MaRe G2 Carrier"
 
 	turret -39 -84 "Marsian Anti-Missile Turret"
 	turret 39 -84 "Marsian Anti-Missile Turret"
-	turret -39 -41 "Marsian Triple Electron Turret"
-	turret 39 -41 "Marsian Triple Electron Turret"
+	turret -39 -41 "Electron Turret"
+	turret 39 -41 "Electron Turret"
 	turret -39 1 "Marsian Anti-Missile Turret"
 	turret 39 1 "Marsian Anti-Missile Turret"
-	turret -39 44 "Marsian Triple Electron Turret"
-	turret 39 44 "Marsian Triple Electron Turret"
+	turret -39 44 "Electron Turret"
+	turret 39 44 "Electron Turret"
 	turret -39 86 "Marsian Anti-Missile Turret"
 	turret 39 86 "Marsian Anti-Missile Turret"
 
