@@ -259,6 +259,30 @@ outfit "Large Pulse Laser"
 		"heat damage" 8
 	description "The Pulse Laser is a alternative development branche of the Beam Laser technology. It has a similar energy efficiency but fires pulses which mainly target enemy shields and do only small damage to the hull."
 
+outfit "Large EMP Blaster"
+	category "Guns"
+	cost 349000
+	thumbnail "outfit/mod blaster"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"gun ports" -1
+	weapon
+		sprite "projectile/mod blaster"
+		sound "laser"
+		"hit effect" "blaster impact"
+		"inaccuracy" .60
+		"velocity" 500
+		"lifetime" 8
+		"reload" 10
+		"firing energy" 17
+		"firing heat" 32
+		"shield damage" 25
+		"hull damage" 0.5
+		"heat damage" 12.5
+		"ion damage" 0.025
+	description "The EMP Blaster fires electro magnetic pulses which cut down enemy shields but do only minimal damage to the hull."
+
 outfit "Capital Pulse Laser"
 	category "Guns"
 	cost 1050000
@@ -404,6 +428,32 @@ outfit "Large Pulse Laser Turret"
 		"hull damage" 8
 		"heat damage" 16
 	description "This large turret carries two Large Pulse Lasers side by side. Often found on heavy warships and capital ships of the cube series."
+
+outfit "Large EMP Blaster Turret"
+	category "Turrets"
+	cost 877000
+	thumbnail "outfit/pulse turret"
+	"mass" 160
+	"outfit space" -160
+	"weapon capacity" -160
+	"energy capacity" 400
+	"turret mounts" -1
+	"required crew" 4
+	weapon
+		sprite "projectile/mod blaster"
+		sound "laser"
+		"hit effect" "blaster impact"
+		"inaccuracy" .62
+		"velocity" 500
+		"lifetime" 8
+		"reload" 10
+		"firing energy" 17
+		"firing heat" 32
+		"shield damage" 25
+		"hull damage" 1
+		"heat damage" 25
+		"ion damage" 0.05
+	description "This large turret carries two Large EMP Blasters side by side. Often found on heavy warships and capital ships of the cube series."
 
 outfit "Capital Pulse Laser Turret"
 	category "Turrets"

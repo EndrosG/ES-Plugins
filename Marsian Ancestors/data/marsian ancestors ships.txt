@@ -26,27 +26,30 @@ ship "MaRe G1 Drone"
 	attributes
 		category Drone
 		automaton 1
-		cost 1010000
-		shields 1300
-		hull 455
-		mass 65
-		drag 1.17
-		"heat dissipation" .81
-		"outfit space" 168
-		"weapon capacity" 60
+		cost 810000
+		shields 980
+		hull 343
+		mass 49
+		drag 0.93
+		"outfit space" 144
+		"weapon capacity" 40
 		"engine capacity" 80
+		"heat dissipation" 0.81
 		weapon
-			"blast radius" 16
-			"shield damage" 160
-			"hull damage" 80
-			"hit force" 240
+			"blast radius" 10
+			"shield damage" 100
+			"hull damage" 50
+			"hit force" 150
 
 	outfits
-		"Electron Beam" 2
+#		"Electron Beam" 2
+		"Heavy Laser" 2
 
 		"Mini Core"
-		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+#		"LP036a Battery Pack"
+		"Supercapacitor"
+		"D06-GT Shield Generator"
+#		"D14-RN Shield Generator"
 
 		"X3700 Ion Thruster"
 #		"X3200 Ion Steering"
@@ -65,31 +68,36 @@ ship "MaRe G1 Fighter"
 	sprite "ship/Marsian G1 Fighter"
 	attributes
 		category Fighter
-		cost 1857500
-		shields 2315
-		hull 820
+		cost 1475000
+		shields 1711
+		hull 609
 		"required crew" 4
+		mass 85
+		drag 1.59
 		bunks 6
-		mass 115
-		drag 2.06
-		"heat dissipation" .8
+		"fuel capacity" 0
 		"cargo space" 5
-		"outfit space" 255
-		"weapon capacity" 120
+		"outfit space" 207
+		"weapon capacity" 80
 		"engine capacity" 88
+		"heat dissipation" 0.8
 		weapon
-			"blast radius" 30
-			"shield damage" 300
-			"hull damage" 150
-			"hit force" 450
+			"blast radius" 20
+			"shield damage" 200
+			"hull damage" 100
+			"hit force" 300
 
 	outfits
-		"Electron Beam" 4
+#		"Electron Beam" 4
+		"Heavy Laser" 4
 
 #		"Mini Core" 2
-		"NT-200 Nucleovoltaic"
-		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"S3 Thermionic"
+#		"NT-200 Nucleovoltaic"
+#		"LP036a Battery Pack"
+		"Supercapacitor"
+		"D06-GT Shield Generator"
+#		"D14-RN Shield Generator"
 
 		"X3700 Ion Thruster"
 		"X3200 Ion Steering"
@@ -111,24 +119,24 @@ ship "MaRe G1 Light Interceptor"
 	sprite "ship/Marsian G1 Light Interceptor"
 	attributes
 		category Interceptor
-		cost 2625000
-		shields 3030
-		hull 1080
+		cost 2530000
+		shields 2822
+		hull 1008
 		"required crew" 6
+		mass 140
+		drag 2.62
 		bunks 12
-		mass 150
-		drag 2.67
-		"heat dissipation" .79
 		"fuel capacity" 200
 		"cargo space" 10
-		"outfit space" 293
+		"outfit space" 294
 		"weapon capacity" 120
 		"engine capacity" 95
+		"heat dissipation" 0.79
 		weapon
-			"blast radius" 40
-			"shield damage" 400
-			"hull damage" 200
-			"hit force" 600
+			"blast radius" 35
+			"shield damage" 350
+			"hull damage" 175
+			"hit force" 525
 
 	outfits
 		"Electron Beam" 2
@@ -160,24 +168,24 @@ ship "MaRe G1 Heavy Interceptor"
 	sprite "ship/Marsian G1 Heavy Interceptor"
 	attributes
 		category Interceptor
-		cost 3175000
-		shields 3730
-		hull 1325
+		cost 2890000
+		shields 3222
+		hull 1148
 		"required crew" 7
+		mass 160
+		drag 3.00
 		bunks 12
-		mass 185
-		drag 3.30
-		"heat dissipation" .79
 		"fuel capacity" 200
 		"cargo space" 10
-		"outfit space" 365
-		"weapon capacity" 180
+		"outfit space" 342
+		"weapon capacity" 160
 		"engine capacity" 95
+		"heat dissipation" 0.79
 		weapon
-			"blast radius" 50
-			"shield damage" 500
-			"hull damage" 250
-			"hit force" 750
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
 
 	outfits
 		"Electron Beam" 4
@@ -185,9 +193,9 @@ ship "MaRe G1 Heavy Interceptor"
 
 #		"Mini Core" 3
 		"Fission Reactor"
-		"LP036a Battery Pack"
-#		"D23-QP Shield Generator" 2
-		"D67-TM Shield Generator"
+#		"LP036a Battery Pack"
+		"Supercapacitor"
+		"D41-HY Shield Generator"
 
 		"X3700 Ion Thruster"
 		"X3200 Ion Steering"
@@ -212,40 +220,41 @@ ship "MaRe G1 Light Warship"
 	sprite "ship/Marsian G1 Light Warship"
 	attributes
 		category "Light Warship"
-		cost 3847500
-		shields 4560
-		hull 1700
+		cost 3467500
+		shields 3990
+		hull 1481
 		"required crew" 9
+		mass 193
+		drag 3.54
+		"heat dissipation" 0.78
 		bunks 12
-		mass 220
-		drag 3.80
-		"heat dissipation" .78
 		"fuel capacity" 300
 		"cargo space" 25
-		"outfit space" 461
-		"weapon capacity" 220
+		"outfit space" 414
+		"weapon capacity" 180
 		"engine capacity" 135
 		weapon
-			"blast radius" 60
-			"shield damage" 600
-			"hull damage" 300
-			"hit force" 900
+			"blast radius" 50
+			"shield damage" 500
+			"hull damage" 250
+			"hit force" 750
 
 	outfits
 		"Electron Beam" 4
 		"Heavy Anti-Missile Turret" 2
 
 #		"Mini Core" 3
-		"Breeder Reactor"
+		"Fission Reactor"
+#		"Breeder Reactor"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
-		"D94-YV Shield Generator"
+		"D67-TM Shield Generator"
+#		"D94-YV Shield Generator"
 
 		"X4700 Ion Thruster"
 #		"X4200 Ion Steering"
 		"Impala Plasma Steering"
 		Hyperdrive
-		Ramscoop
+#		Ramscoop
 
 #	engine 0 39.5
 	gun -38.5 -41
@@ -265,24 +274,24 @@ ship "MaRe G1 Medium Warship"
 	sprite "ship/Marsian G1 Medium Warship"
 	attributes
 		category "Medium Warship"
-		cost 6224000
-		shields 7350
-		hull 2670
+		cost 5473000
+		shields 6261
+		hull 2257
 		"required crew" 15
+		mass 308
+		drag 5.75
+		"heat dissipation" 0.77
 		bunks 24
-		mass 360
-		drag 6.33
-		"heat dissipation" .77
 		"fuel capacity" 300
 		"cargo space" 50
-		"outfit space" 731
-		"weapon capacity" 340
+		"outfit space" 636
+		"weapon capacity" 260
 		"engine capacity" 230
 		weapon
-			"blast radius" 100
-			"shield damage" 1000
-			"hull damage" 500
-			"hit force" 1500
+			"blast radius" 85
+			"shield damage" 850
+			"hull damage" 425
+			"hit force" 1275
 
 	outfits
 		"Electron Beam" 6
@@ -290,15 +299,16 @@ ship "MaRe G1 Medium Warship"
 		"Heavy Anti-Missile Turret" 4
 
 		"Fusion Reactor"
-		"LP072a Battery Pack"
+		"Supercapacitor"
+#		"LP072a Battery Pack"
 #		"D41-HY Shield Generator"
-		"D94-YV Shield Generator" 2
+		"D94-YV Shield Generator"
 
 		"X5700 Ion Thruster"
 #		"X5200 Ion Steering"
 		"Orca Plasma Steering"
 		Hyperdrive
-		Ramscoop
+#		Ramscoop
 
 #	engine -23.5 46.5
 #	engine 23.5 46.5
@@ -324,37 +334,38 @@ ship "MaRe G1 Large Warship"
 	sprite "ship/Marsian G1 Large Warship"
 	attributes
 		category "Medium Warship"
-		cost 12147000
-		shields 14360
-		hull 5390
+		cost 10487000
+		shields 12159
+		hull 4606
 		"required crew" 32
+		mass 581
+		drag 10.50
+		"heat dissipation" 0.76
 		bunks 64
-		mass 690
-		drag 11.86
-		"heat dissipation" .76
 		"fuel capacity" 500
 		"cargo space" 65
-		"outfit space" 1480
-		"weapon capacity" 680
+		"outfit space" 1167
+		"weapon capacity" 420
 		"engine capacity" 470
 		weapon
-			"blast radius" 200
-			"shield damage" 2000
-			"hull damage" 1000
-			"hit force" 3000
+			"blast radius" 165
+			"shield damage" 1650
+			"hull damage" 825
+			"hit force" 2475
 
 	outfits
 		"Electron Beam" 8
-		"Electron Turret" 4
-		"Marsian Anti-Missile Turret" 2
+#		"Electron Turret" 4
+		"Heavy Laser Turret" 4
+		"Heavy Anti-Missile Turret" 2
 
-#		"Mini Core" 3
+#		"Mini Core"
 #		"Fission Reactor"
-		"Stack Core" 2
-		"LP036a Battery Pack"
-		"D41-HY Shield Generator"
+		"Stack Core"
+		"LP144a Battery Pack"
 #		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 3
+		"D94-YV Shield Generator" 2
+		"Small Radar Jammer"
 
 		"X5700 Ion Thruster" 2
 		"X5200 Ion Steering"
@@ -374,12 +385,12 @@ ship "MaRe G1 Large Warship"
 	gun 68 -54.5
 	gun -81 -50.5
 	gun 81 -50.5
-	turret -22.5 -29 "Electron Turret"
-	turret 22.5 -29 "Electron Turret"
-	turret -22.5 -5 "Electron Turret"
-	turret 22.5 -5 "Electron Turret"
-	turret -59.5 10 "Marsian Anti-Missile Turret"
-	turret 59.5 10 "Marsian Anti-Missile Turret"
+	turret -22.5 -29 "Heavy Laser Turret"
+	turret 22.5 -29 "Heavy Laser Turret"
+	turret -22.5 -5 "Heavy Laser Turret"
+	turret 22.5 -5 "Heavy Laser Turret"
+	turret -59.5 10 "Heavy Anti-Missile Turret"
+	turret 59.5 10 "Heavy Anti-Missile Turret"
 	explode "small explosion" 20
 	explode "medium explosion" 50
 	explode "large explosion" 30
@@ -392,36 +403,35 @@ ship "MaRe G1 Heavy Warship"
 	sprite "ship/Marsian G1 Heavy Warship"
 	attributes
 		category "Heavy Warship"
-		cost 28092000
-		shields 32680
-		hull 12920
+		cost 20820000
+		shields 23298
+		hull 9232
 		"required crew" 70
+		mass 1082
+		drag 18.90
+		"heat dissipation" 0.75
 		bunks 136
-		mass 1520
-		drag 25.08
-		"heat dissipation" .75
 		"fuel capacity" 700
 		"cargo space" 100
-		"outfit space" 3176
-		"weapon capacity" 1620
+		"outfit space" 1963
+		"weapon capacity" 610
 		"engine capacity" 930
 		weapon
-			"blast radius" 450
-			"shield damage" 4500
-			"hull damage" 2250
-			"hit force" 6750
+			"blast radius" 300
+			"shield damage" 3000
+			"hull damage" 1500
+			"hit force" 4500
 
 	outfits
 		"Electron Beam" 10
-#		"Electron Turret" 4
-		"Marsian Anti-Missile Turret" 2
-#		"Capital EMP Blaster Turret" 2
-		"Marsian Triple Electron Turret" 6
+		"Electron Turret" 6
+		"Heavy Anti-Missile Turret" 2
 
-		"Stack Core" 3
-		"LP144a Battery Pack"
+		"Stack Core" 2
+		"LP072a Battery Pack"
 #		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 8
+		"D94-YV Shield Generator" 2
+		"Small Radar Jammer"
 
 		"X5700 Ion Thruster" 2
 		"Orca Plasma Thruster" 2
@@ -444,14 +454,14 @@ ship "MaRe G1 Heavy Warship"
 	gun 67 -77.5
 	gun -87 -73.5
 	gun 87 -73.5
-	turret -26.5 -32.5 "Marsian Triple Electron Turret"
-	turret 26.5 -32.5 "Marsian Triple Electron Turret"
-	turret -26.5 -15 "Marsian Triple Electron Turret"
-	turret 26.5 -15 "Marsian Triple Electron Turret"
-	turret -26.5 3 "Marsian Anti-Missile Turret"
-	turret 26.5 3 "Marsian Anti-Missile Turret"
-	turret -52 -21 "Marsian Triple Electron Turret"
-	turret 52 -21 "Marsian Triple Electron Turret"
+	turret -52 -21 "Electron Turret"
+	turret 52 -21 "Electron Turret"
+	turret -26.5 -32.5 "Electron Turret"
+	turret 26.5 -32.5 "Electron Turret"
+	turret -26.5 -15 "Electron Turret"
+	turret 26.5 -15 "Electron Turret"
+	turret -26.5 3 "Heavy Anti-Missile Turret"
+	turret 26.5 3 "Heavy Anti-Missile Turret"
 
 # theoretically, the bays are at -82 and +8, but it looks better with the G1 drone if they are offset by +10 pixels
 	drone -126 -36 over
@@ -470,36 +480,36 @@ ship "MaRe G1 Carrier"
 	sprite "ship/Marsian G1 Carrier"
 	attributes
 		category "Heavy Warship"
-		cost 51932000
-		shields 59795
-		hull 24500
-		"required crew" 126
+		cost 36895000
+		shields 40168
+		hull 16547
+		"required crew" 125
+		mass 1817
+		drag 30.70
+		"heat dissipation" 0.74
 		bunks 236
-		mass 2715
-		drag 43.38
-		"heat dissipation" .74
 		"fuel capacity" 800
 		"cargo space" 180
-		"outfit space" 5400
-		"weapon capacity" 2860
+		"outfit space" 2951
+		"weapon capacity" 820
 		"engine capacity" 1510
 		weapon
-			"blast radius" 840
-			"shield damage" 8400
-			"hull damage" 4200
-			"hit force" 12600
+			"blast radius" 500
+			"shield damage" 5000
+			"hull damage" 2500
+			"hit force" 7500
 
 	outfits
 		"Electron Beam" 12
 #		"Electron Turret" 4
 		"Marsian Anti-Missile Turret" 4
-#		"Capital EMP Blaster Turret" 2
-		"Marsian Triple Electron Turret" 6
+		"Electron Turret" 6
 
-		"Stack Core" 4
-		"LP144a Battery Pack"
-#		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 16
+		"Stack Core" 3
+		"LP036a Battery Pack"
+		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 2
+		"Small Radar Jammer"
 
 		"X5700 Ion Thruster" 6
 		"X5200 Ion Steering" 7
@@ -527,14 +537,14 @@ ship "MaRe G1 Carrier"
 	gun -125 -94.5
 	gun 125 -94.5
 
-	turret -52 -52 "Marsian Triple Electron Turret"
-	turret 52 -52 "Marsian Triple Electron Turret"
+	turret -52 -52 "Electron Turret"
+	turret 52 -52 "Electron Turret"
 	turret -73 -43 "Marsian Anti-Missile Turret"
 	turret 73 -43 "Marsian Anti-Missile Turret"
-	turret -38.5 -22.5 "Marsian Triple Electron Turret"
-	turret 38.5 -22.5 "Marsian Triple Electron Turret"
-	turret -38.5 4.5 "Marsian Triple Electron Turret"
-	turret 38.5 4.5 "Marsian Triple Electron Turret"
+	turret -38.5 -22.5 "Electron Turret"
+	turret 38.5 -22.5 "Electron Turret"
+	turret -38.5 4.5 "Electron Turret"
+	turret 38.5 4.5 "Electron Turret"
 	turret -38.5 31 "Marsian Anti-Missile Turret"
 	turret 38.5 31 "Marsian Anti-Missile Turret"
 
@@ -562,16 +572,16 @@ ship "MaRe G2 Drone"
 	attributes
 		category Drone
 		automaton 1
-		cost 1560000
-		shields 2000
-		hull 700
-		mass 100
-		drag 1.80
+		cost 1490000
+		shields 1848
+		hull 748
+		mass 88
+		drag 1.58
+		"heat dissipation" 0.81
 		"outfit space" 240
 		"weapon capacity" 120
 		"engine capacity" 80
-		"heat dissipation" .81
-		weapon	
+		weapon
 			"blast radius" 25
 			"shield damage" 250
 			"hull damage" 125
@@ -605,18 +615,18 @@ ship "MaRe G2 Fighter"
 	sprite "ship/Marsian G2 Fighter"
 	attributes
 		category Fighter
-		cost 3124000
-		shields 3670
-		hull 1330
+		cost 3024000
+		shields 3606
+		hull 1487
 		"required crew" 7
+		mass 170
+		drag 3.00
+		"heat dissipation" 0.80
 		bunks 12
-		mass 180
-		drag 3.17
 		"cargo space" 10
-		"outfit space" 390
-		"weapon capacity" 220
+		"outfit space" 366
+		"weapon capacity" 200
 		"engine capacity" 95
-		"heat dissipation" 0.8
 		weapon
 			"blast radius" 50
 			"shield damage" 500
@@ -631,8 +641,8 @@ ship "MaRe G2 Fighter"
 #		"NT-200 Nucleovoltaic"
 		"Fission Reactor"
 		"LP072a Battery Pack"
-		"D14-RN Shield Generator"
-		"D94-YV Shield Generator"
+#		"D14-RN Shield Generator"
+		"D67-TM Shield Generator"
 		"Small Radar Jammer"
 
 		"X3700 Ion Thruster"
@@ -658,24 +668,24 @@ ship "MaRe G2 Interceptor"
 	sprite "ship/Marsian G2 Interceptor"
 	attributes
 		category Interceptor
-		cost 3995000
-		shields 4710
-		hull 1720
+		cost 4440000
+		shields 5243
+		hull 2187
 		"required crew" 8
+		mass 245
+		drag 4.29
+		"heat dissipation" 0.79
 		bunks 12
-		mass 230
-		drag 4.03
 		"fuel capacity" 200
 		"cargo space" 10
-		"outfit space" 485
-		"weapon capacity" 280
+		"outfit space" 560
+		"weapon capacity" 340
 		"engine capacity" 95
-		"heat dissipation" 0.79
 		weapon
-			"blast radius" 60
-			"shield damage" 600
-			"hull damage" 300
-			"hit force" 900
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
 
 	outfits
 		"Electron Beam" 6
@@ -686,15 +696,15 @@ ship "MaRe G2 Interceptor"
 #		"Fission Reactor"
 		"Breeder Reactor"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
-		"D94-YV Shield Generator"
+		"D41-HY Shield Generator"
+		"D94-YV Shield Generator" 2
 		"Small Radar Jammer"
 
 		"X3700 Ion Thruster"
 #		"X3200 Ion Steering"
 		"Impala Plasma Steering"
 		Hyperdrive
-#		Ramscoop
+		Ramscoop
 
 #	engine -33 19
 #	engine 33 19
@@ -718,24 +728,24 @@ ship "MaRe G2 Light Warship"
 	sprite "ship/Marsian G2 Light Warship"
 	attributes
 		category "Light Warship"
-		cost 6584000
-		shields 7730
-		hull 2855
+		cost 6969000
+		shields 8258
+		hull 3464
 		"required crew" 15
+		mass 384
+		drag 6.70
+		"heat dissipation" 0.78
 		bunks 24
-		mass 375
-		drag 6.52
 		"fuel capacity" 300
 		"cargo space" 50
-		"outfit space" 755
-		"weapon capacity" 440
+		"outfit space" 806
+		"weapon capacity" 480
 		"engine capacity" 150
-		"heat dissipation" 0.78
 		weapon
-			"blast radius" 105
-			"shield damage" 1050
-			"hull damage" 525
-			"hit force" 1575
+			"blast radius" 115
+			"shield damage" 1150
+			"hull damage" 575
+			"hit force" 1725
 
 	outfits
 		"Electron Beam" 8
@@ -746,8 +756,8 @@ ship "MaRe G2 Light Warship"
 		"Stack Core"
 		"LP036a Battery Pack"
 #		"D23-QP Shield Generator"
-		"D94-YV Shield Generator" 2
-		"Large Radar Jammer"
+		"D94-YV Shield Generator" 3
+		"Small Radar Jammer"
 		"Marsian Scanner"
 
 		"X4700 Ion Thruster"
@@ -783,24 +793,24 @@ ship "MaRe G2 Medium Warship"
 	sprite "ship/Marsian G2 Medium Warship"
 	attributes
 		category "Medium Warship"
-		cost 13318000
-		shields 15580
-		hull 5700
+		cost 13475000
+		shields 15935
+		hull 6710
 		"required crew" 33
+		mass 738
+		drag 12.85
+		"heat dissipation" 0.77
 		bunks 64
-		mass 760
-		drag 13.30
 		"fuel capacity" 500
 		"cargo space" 95
-		"outfit space" 1576
-		"weapon capacity" 960
+		"outfit space" 1482
+		"weapon capacity" 880
 		"engine capacity" 270
-		"heat dissipation" 0.77
 		weapon
-			"blast radius" 210
-			"shield damage" 2100
-			"hull damage" 1050
-			"hit force" 3150
+			"blast radius" 225
+			"shield damage" 2250
+			"hull damage" 1125
+			"hit force" 3375
 
 	outfits
 		"Electron Beam" 12
@@ -809,9 +819,9 @@ ship "MaRe G2 Medium Warship"
 
 		"Stack Core" 2
 #		"Fusion Reactor"
-		"LP072a Battery Pack"
-		"D14-RN Shield Generator"
-		"D94-YV Shield Generator" 6
+		"LP036a Battery Pack"
+		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 4
 		"Large Radar Jammer"
 		"Marsian Scanner"
 
@@ -861,36 +871,38 @@ ship "MaRe G2 Heavy Warship"
 	sprite "ship/Marsian G2 Heavy Warship"
 	attributes
 		category "Heavy Warship"
-		cost 43400000
-		shields 51435
-		hull 20560
+		cost 34123500
+		shields 40157
+		hull 18045
 		"required crew" 95
+		mass 1769
+		drag 28.83
+		"heat dissipation" 0.75
 		bunks 136
-		mass 2375
-		drag 38.96
 		"fuel capacity" 900
 		"cargo space" 100
-		"outfit space" 5400
-		"weapon capacity" 3650
+		"outfit space" 3592
+		"weapon capacity" 2140
 		"engine capacity" 750
-		"heat dissipation" 0.75
 		weapon
-			"blast radius" 715
-			"shield damage" 7150
-			"hull damage" 3575
-			"hit force" 10725
+			"blast radius" 580
+			"shield damage" 5800
+			"hull damage" 2900
+			"hit force" 8700
 
 	outfits
 		"Electron Beam" 18
-#		"Electron Turret" 4
-		"Marsian Anti-Missile Turret" 6
-		"Marsian Triple Electron Turret" 8
+		"Electron Turret" 2
+		"Heavy Anti-Missile Turret" 4
+		"Marsian Anti-Missile Turret" 2
+		"Marsian Triple Electron Turret" 6
 
-		"Stack Mega Core"
-		"LP144a Battery Pack"
+		"Stack Core" 5
+#		"Stack Mega Core"
+		"LP036a Battery Pack"
 		"Liquid Helium Cooler"
 #		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 20
+		"D94-YV Shield Generator" 6
 		"Large Radar Jammer"
 		"Marsian Scanner"
 
@@ -928,10 +940,10 @@ ship "MaRe G2 Heavy Warship"
 
 	turret -26.5 -23 "Marsian Anti-Missile Turret"
 	turret 26.5 -23 "Marsian Anti-Missile Turret"
-	turret -26.5 -5 "Marsian Anti-Missile Turret"
-	turret 26.5 -5 "Marsian Anti-Missile Turret"
-	turret -26.5 13 "Marsian Anti-Missile Turret"
-	turret 26.5 13 "Marsian Anti-Missile Turret"
+	turret -26.5 -5 "Heavy Anti-Missile Turret"
+	turret 26.5 -5 "Heavy Anti-Missile Turret"
+	turret -26.5 13 "Heavy Anti-Missile Turret"
+	turret 26.5 13 "Heavy Anti-Missile Turret"
 
 	turret -52 -11 "Marsian Triple Electron Turret"
 	turret 52 -11 "Marsian Triple Electron Turret"
@@ -939,8 +951,8 @@ ship "MaRe G2 Heavy Warship"
 	turret 71.5 -5.5 "Marsian Triple Electron Turret"
 	turret -91 0 "Marsian Triple Electron Turret"
 	turret 91 0 "Marsian Triple Electron Turret"
-	turret -110.5 5.5 "Marsian Triple Electron Turret"
-	turret 110.5 5.5 "Marsian Triple Electron Turret"
+	turret -110.5 5.5 "Electron Turret"
+	turret 110.5 5.5 "Electron Turret"
 
 	fighter 0 -25 under
 	drone 0 65 under
@@ -958,35 +970,35 @@ ship "MaRe G2 Cruiser"
 	sprite "ship/Marsian G2 Cruiser"
 	attributes
 		category "Heavy Warship"
-		cost 63880000
-		shields 74900
-		hull 30440
+		cost 47496500
+		shields 54624
+		hull 24987
 		"required crew" 126
+		mass 2371
+		drag 37.85
+		"heat dissipation" 0.74
 		bunks 236
-		mass 3420
-		drag 55.06
 		"fuel capacity" 900
 		"cargo space" 180
-		"outfit space" 7468
-		"weapon capacity" 5100
+		"outfit space" 4376
+		"weapon capacity" 2520
 		"engine capacity" 990
-		"heat dissipation" 0.74
 		weapon
-			"blast radius" 1050
-			"shield damage" 10500
-			"hull damage" 5250
-			"hit force" 15750
+			"blast radius" 600
+			"shield damage" 6000
+			"hull damage" 3000
+			"hit force" 9000
 
 	outfits
 		"Electron Beam" 24
 		"Marsian Anti-Missile Turret" 4
 		"Marsian Triple Electron Turret" 8
 
-		"Stack Core"
+#		"Stack Core"
 		"Stack Mega Core"
-		"LP144a Battery Pack"
+		"LP072a Battery Pack"
 #		"D67-TM Shield Generator"
-		"D94-YV Shield Generator" 40
+		"D94-YV Shield Generator" 8
 		"Large Radar Jammer"
 		"Marsian Scanner"
 
@@ -1072,34 +1084,37 @@ ship "MaRe G2 Carrier"
 	sprite "ship/Marsian G2 Carrier Mk II"
 	attributes
 		category "Heavy Warship"
-		cost 97220000
-		shields 106965
-		hull 43850
-		"required crew" 243
+		cost 73330000
+		shields 78042
+		hull 35930
+		"required crew" 240
+		mass 3369
+		drag 53.35
+		"heat dissipation" 0.73
 		bunks 336
-		mass 4855
-		drag 77.53
 		"fuel capacity" 1000
 		"cargo space" 320
-		"outfit space" 9500
-		"weapon capacity" 6500
+		"outfit space" 4872
+		"weapon capacity" 2640
 		"engine capacity" 1250
-		"heat dissipation" 0.73
 		weapon
-			"blast radius" 1505
-			"shield damage" 15050
-			"hull damage" 7525
-			"hit force" 22575
+			"blast radius" 750
+			"shield damage" 7500
+			"hull damage" 3750
+			"hit force" 11250
 
 	outfits
 		"Electron Beam" 12
+		"Electron Turret" 6
 		"Marsian Anti-Missile Turret" 6
-		"Marsian Triple Electron Turret" 14
+		"Marsian Triple Electron Turret" 8
 
-		"Stack Core"
+#		"Stack Core"
 		"Stack Mega Core"
-		"LP144a Battery Pack"
-		"D94-YV Shield Generator" 60
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator" 9
+		"Large Radar Jammer"
+		"Marsian Scanner"
 
 		"X5700 Ion Thruster" 5
 		"X5200 Ion Steering" 5
@@ -1130,12 +1145,12 @@ ship "MaRe G2 Carrier"
 	turret 52 -113 "Marsian Triple Electron Turret"
 	turret -78 -108 "Marsian Triple Electron Turret"
 	turret 78 -108 "Marsian Triple Electron Turret"
-	turret -104 -102.5 "Marsian Triple Electron Turret"
-	turret 104 -102.5 "Marsian Triple Electron Turret"
-	turret -130 -97 "Marsian Triple Electron Turret"
-	turret 130 -97 "Marsian Triple Electron Turret"
-	turret -156 -91.5 "Marsian Triple Electron Turret"
-	turret 156 -91.5 "Marsian Triple Electron Turret"
+	turret -104 -102.5 "Electron Turret"
+	turret 104 -102.5 "Electron Turret"
+	turret -130 -97 "Electron Turret"
+	turret 130 -97 "Electron Turret"
+	turret -156 -91.5 "Electron Turret"
+	turret 156 -91.5 "Electron Turret"
 
 	turret -39 -84 "Marsian Anti-Missile Turret"
 	turret 39 -84 "Marsian Anti-Missile Turret"
@@ -1223,24 +1238,24 @@ ship "SS Fuel Tanker"
 	sprite "ship/Marsian G1 SS Fuel Tanker"
 	attributes
 		category "Light Freighter"
-		cost 3095000
-		shields 5107
-		hull 1783
+		cost 2924000
+		shields 4558
+		hull 1366
 		"required crew" 4
+		mass 359
+		drag 8.18
+		"heat dissipation" 0.75
 		bunks 10
-		mass 387
-		drag 8.97
-		"heat dissipation" .75
 		"fuel capacity" 6300
 		"cargo space" 20
 		"outfit space" 371
 		"weapon capacity" 60
 		"engine capacity" 210
 		weapon
-			"blast radius" 70
-			"shield damage" 700
-			"hull damage" 350
-			"hit force" 1050
+			"blast radius" 55
+			"shield damage" 550
+			"hull damage" 275
+			"hit force" 825
 
 	outfits
 		"Heavy Anti-Missile Turret" 2
@@ -1269,24 +1284,24 @@ ship "SS Maintenance"
 	sprite "ship/Marsian G1 SS Maintenance"
 	attributes
 		category "Light Freighter"
-		cost 3449000
-		shields 5447
-		hull 2343
+		cost 3280000
+		shields 4946
+		hull 1704
 		"required crew" 6
+		mass 403
+		drag 8.50
+		"heat dissipation" 0.75
 		bunks 10
-		mass 427
-		drag 8.77
-		"heat dissipation" .75
 		"fuel capacity" 1300
 		"cargo space" 500
 		"outfit space" 371
 		"weapon capacity" 60
 		"engine capacity" 210
 		weapon
-			"blast radius" 78
-			"shield damage" 780
-			"hull damage" 390
-			"hit force" 1170
+			"blast radius" 65
+			"shield damage" 650
+			"hull damage" 325
+			"hit force" 975
 
 	outfits
 		"Heavy Anti-Missile Turret" 2
@@ -1316,11 +1331,11 @@ ship "AHD 20 Miner"
 	attributes
 		category Drone
 		cost 165000
-		shields 216
-		hull 64
+		shields 208
+		hull 56
 		automaton 1
 		mass 16
-		drag 0.4
+		drag 0.384
 		"heat dissipation" 1
 		"cargo space" 20
 		"outfit space" 24
@@ -1331,6 +1346,7 @@ ship "AHD 20 Miner"
 			"shield damage" 30
 			"hull damage" 15
 			"hit force" 45
+
 	outfits
 		"Tiny Mining Laser" 2
 
@@ -1354,21 +1370,22 @@ ship "ATV 960 Civil"
 	sprite "ship/atv_960_civil"
 	attributes
 		category Drone
-		cost 5620000
-		shields 7640
-		hull 3090
 		automaton 1
-		mass 350
-		drag 5.66
-		"heat dissipation" .82
+		cost 5910000
+		shields 8174
+		hull 3699
+		mass 358
+		drag 5.79
+		"heat dissipation" 0.82
 		"cargo space" 960
 		"outfit space" 96
 		"engine capacity" 80
 		weapon
-			"blast radius" 12
-			"shield damage" 120
-			"hull damage" 60
-			"hit force" 180
+			"blast radius" 20
+			"shield damage" 200
+			"hull damage" 100
+			"hit force" 300
+
 	outfits
 		"nGVF-BB Fuel Cell"
 		"Supercapacitor"
@@ -1386,22 +1403,23 @@ ship "ATV 960 Military"
 	sprite "ship/atv_960_military"
 	attributes
 		category Drone
-		cost 7089000
-		shields 9450
-		hull 3795
 		automaton 1
-		mass 435
-		drag 7.08
-		"heat dissipation" .8
+		cost 7176000
+		shields 9748
+		hull 4398
+		mass 428
+		drag 6.94
+		"heat dissipation" 0.80
 		"cargo space" 960
-		"outfit space" 288
-		"weapon capacity" 60
+		"outfit space" 240
+		"weapon capacity" 20
 		"engine capacity" 180
 		weapon
-			"blast radius" 16
-			"shield damage" 160
-			"hull damage" 80
-			"hit force" 240
+			"blast radius" 25
+			"shield damage" 250
+			"hull damage" 125
+			"hit force" 375
+
 	outfits
 		"Tiny Pulse Laser Turret" 2
 		
@@ -1426,23 +1444,24 @@ ship "ATV 960 Hyper"
 	sprite "ship/atv_960_military"
 	attributes
 		category "Light Freighter"
-		cost 7410000
-		shields 9790
-		hull 3940
 		automaton 1
-		mass 450
-		drag 7.31
-		"heat dissipation" .8
+		cost 7760000
+		shields 10405
+		hull 4693
+		mass 457
+		drag 7.42
+		"heat dissipation" 0.80
 		"fuel capacity" 300
 		"cargo space" 960
 		"outfit space" 311
 		"weapon capacity" 60
 		"engine capacity" 180
 		weapon
-			"blast radius" 16
-			"shield damage" 160
-			"hull damage" 80
-			"hit force" 240
+			"blast radius" 30
+			"shield damage" 300
+			"hull damage" 150
+			"hit force" 450
+
 	outfits
 		"Tiny Pulse Laser Turret" 2
 		
@@ -1469,24 +1488,24 @@ ship "FS Village"
 	sprite "ship/freighter"
 	attributes
 		category "Light Freighter"
-		cost 6511000
-		shields 10989
-		hull 4651
+		cost 6484000
+		shields 11185
+		hull 3935
 		"required crew" 8
+		mass 840
+		drag 17.02
+		"heat dissipation" 0.71
 		bunks 10
-		mass 859
-		drag 17.83
-		"heat dissipation" .7
 		"fuel capacity" 300
 		"cargo space" 1700
-		"outfit space" 371
-		"weapon capacity" 60
+		"outfit space" 396
+		"weapon capacity" 80
 		"engine capacity" 210
 		weapon
-			"blast radius" 156
-			"shield damage" 1560
-			"hull damage" 780
-			"hit force" 2340
+			"blast radius" 150
+			"shield damage" 1500
+			"hull damage" 750
+			"hit force" 2250
 
 	outfits
 		"Heavy Anti-Missile Turret" 2
@@ -1514,24 +1533,24 @@ ship "FS Town"
 	sprite "ship/freighter"
 	attributes
 		category "Light Freighter"
-		cost 37235000
-		shields 53248
-		hull 28998
+		cost 36223000
+		shields 52797
+		hull 22084
 		"required crew" 43
+		mass 4160
+		drag 73.91
+		"heat dissipation" 0.70
 		bunks 50
-		mass 4370
-		drag 74.77
-		"heat dissipation" .7
 		"fuel capacity" 500
 		"cargo space" 8435
-		"outfit space" 1183
-		"weapon capacity" 120
+		"outfit space" 1208
+		"weapon capacity" 140
 		"engine capacity" 810
 		weapon
-			"blast radius" 800
-			"shield damage" 8000
-			"hull damage" 4000
-			"hit force" 12000
+			"blast radius" 745
+			"shield damage" 7450
+			"hull damage" 3725
+			"hit force" 11175
 
 	outfits
 		"Heavy Anti-Missile Turret" 4
@@ -1563,24 +1582,24 @@ ship "FS City"
 	sprite "ship/freighter"
 	attributes
 		category "Light Freighter"
-		cost 216419000
-		shields 295918
-		hull 170950
+		cost 209631000
+		shields 292418
+		hull 127810
 		"required crew" 219
+		mass 23346
+		drag 399.25
+		"heat dissipation" 0.69
 		bunks 225
-		mass 24606
-		drag 397.57
-		"heat dissipation" .69
 		"fuel capacity" 1700
 		"cargo space" 48060
 		"outfit space" 5088
 		"weapon capacity" 420
 		"engine capacity" 3690
 		weapon
-			"blast radius" 4600
-			"shield damage" 46000
-			"hull damage" 23000
-			"hit force" 69000
+			"blast radius" 4200
+			"shield damage" 42000
+			"hull damage" 21000
+			"hit force" 63000
 
 	outfits
 		"Marsian Anti-Missile Turret" 7
@@ -1620,24 +1639,24 @@ ship "TS Cityliner"
 	sprite "ship/freighter"
 	attributes
 		category "Transport"
-		cost 29431000
-		shields 36083
-		hull 16983
+		cost 28963000
+		shields 35896
+		hull 13586
 		"required crew" 59
+		mass 2749
+		drag 52.87
+		"heat dissipation" 0.70
 		bunks 1010
-		mass 2875
-		drag 55.50
-		"heat dissipation" .7
 		"fuel capacity" 600
 		"cargo space" 220
-		"outfit space" 1491
-		"weapon capacity" 120
+		"outfit space" 1516
+		"weapon capacity" 140
 		"engine capacity" 750
 		weapon
-			"blast radius" 530
-			"shield damage" 5300
-			"hull damage" 2650
-			"hit force" 7950
+			"blast radius" 490
+			"shield damage" 4900
+			"hull damage" 2450
+			"hit force" 7350
 
 	outfits
 		"Heavy Anti-Missile Turret" 4
@@ -1668,24 +1687,24 @@ ship "TS Metroliner"
 	sprite "ship/freighter"
 	attributes
 		category "Transport"
-		cost 451274000
-		shields 537160
-		hull 264105
+		cost 442528000
+		shields 530852
+		hull 207400
 		"required crew" 880
+		mass 41014
+		drag 769.95
+		"heat dissipation" 0.68
 		bunks 16025
-		mass 43175
-		drag 805.16
-		"heat dissipation" .68
 		"fuel capacity" 3900
 		"cargo space" 3220
 		"outfit space" 18200
 		"weapon capacity" 360
 		"engine capacity" 9410
 		weapon
-			"blast radius" 8000
-			"shield damage" 80000
-			"hull damage" 40000
-			"hit force" 120000
+			"blast radius" 7380
+			"shield damage" 73800
+			"hull damage" 36900
+			"hit force" 110700
 
 	outfits
 		"Marsian Anti-Missile Turret" 6
@@ -1719,24 +1738,24 @@ ship "CS 1 Hamlet"
 	sprite "ship/Marsian CS Hamlet"
 	attributes
 		category "Transport"
-		cost 2609000
-		shields 1854
-		hull 3938
+		cost 2608000
+		shields 1848
+		hull 3920
 		"required crew" 11
+		mass 518
+		drag 13.62
+		"heat dissipation" 0.75
 		bunks 155
-		mass 521
-		drag 13.72
-		"heat dissipation" .75
 		"fuel capacity" 700
 		"cargo space" 305
 		"outfit space" 265
 		"weapon capacity" 60
 		"engine capacity" 50
 		weapon
-			"blast radius" 58
-			"shield damage" 580
-			"hull damage" 290
-			"hit force" 870
+			"blast radius" 55
+			"shield damage" 550
+			"hull damage" 275
+			"hit force" 825
 
 	outfits
 		"Heavy Anti-Missile Turret" 2
@@ -1766,24 +1785,24 @@ ship "CS 2 Village"
 	sprite "ship/Marsian CS Village"
 	attributes
 		category "Transport"
-		cost 14043000
-		shields 10424
-		hull 20788
+		cost 13850000
+		shields 10035
+		hull 20043
 		"required crew" 52
+		mass 2502
+		drag 62.47
+		"heat dissipation" 0.70
 		bunks 795
-		mass 2591
-		drag 64.60
-		"heat dissipation" .7
 		"fuel capacity" 800
 		"cargo space" 1965
 		"outfit space" 797
 		"weapon capacity" 120
 		"engine capacity" 250
 		weapon
-			"blast radius" 312
-			"shield damage" 3120
-			"hull damage" 1560
-			"hit force" 4680
+			"blast radius" 300
+			"shield damage" 3000
+			"hull damage" 1500
+			"hit force" 4500
 
 	outfits
 		"Heavy Anti-Missile Turret" 4
@@ -1814,24 +1833,24 @@ ship "CS 3 Town"
 	sprite "ship/Marsian CS Town"
 	attributes
 		category "Transport"
-		cost 85858000
-		shields 64460
-		hull 118700
+		cost 84911000
+		shields 62601
+		hull 115237
 		"required crew" 262
+		mass 13159
+		drag 299.08
+		"heat dissipation" 0.69
 		bunks 4060
-		mass 13560
-		drag 308.34
-		"heat dissipation" .7
 		"fuel capacity" 1000
 		"cargo space" 11060
 		"outfit space" 3048
 		"weapon capacity" 360
 		"engine capacity" 1250
 		weapon
-			"blast radius" 1800
-			"shield damage" 18000
-			"hull damage" 9000
-			"hit force" 27000
+			"blast radius" 1185
+			"shield damage" 11850
+			"hull damage" 5925
+			"hit force" 17775
 
 	outfits
 		"Marsian Anti-Missile Turret" 6
@@ -1865,24 +1884,24 @@ ship "CS 4 City"
 	sprite "ship/Marsian CS City"
 	attributes
 		category "Transport"
-		cost 498155000
-		shields 386580
-		hull 678980
+		cost 490803000
+		shields 373521
+		hull 656633
 		"required crew" 1339
+		mass 70778
+		drag 1498.22
+		"heat dissipation" 0.68
 		bunks 20390
-		mass 73100
-		drag 1544.96
-		"heat dissipation" .68
 		"fuel capacity" 1500
 		"cargo space" 64140
 		"outfit space" 11288
 		"weapon capacity" 480
 		"engine capacity" 6450
 		weapon
-			"blast radius" 10600
-			"shield damage" 106000
-			"hull damage" 53000
-			"hit force" 159000
+			"blast radius" 5150
+			"shield damage" 51500
+			"hull damage" 25750
+			"hit force" 77250
 
 	outfits
 		"Marsian Anti-Missile Turret" 8
@@ -1919,24 +1938,24 @@ ship "CS 5 Large City"
 	sprite "ship/Marsian CS Large City"
 	attributes
 		category "Transport"
-		cost 3056094000
-		shields 2367500
-		hull 3922220
+		cost 3071585000
+		shields 2390744
+		hull 3960040
 		"required crew" 6742
+		mass 392324
+		drag 7343.76
+		"heat dissipation" 0.67
 		bunks 102045
-		mass 388680
-		drag 7278.66
-		"heat dissipation" .67
 		"fuel capacity" 2400
 		"cargo space" 341940
 		"outfit space" 44352
 		"weapon capacity" 600
 		"engine capacity" 31300
 		weapon
-			"blast radius" 62000
-			"shield damage" 620000
-			"hull damage" 310000
-			"hit force" 930000
+			"blast radius" 25400
+			"shield damage" 254000
+			"hull damage" 127000
+			"hit force" 381000
 
 	outfits
 		"Marsian Anti-Missile Turret" 10
@@ -1984,24 +2003,25 @@ ship "CS 6 Metropolis Segment"
 	sprite "ship/Marsian CS Metropolis Segment vB"
 	attributes
 		category "Transport"
-		cost 19195487000
-		shields 14918710
-		hull 23350090
+		cost 20131455000
+		shields 16278581
+		hull 25450917
 		"required crew" 33951
+		mass 2293084
+		drag 36726.60
+		"heat dissipation" 0.66
 		bunks 506465
-		mass 2107845
-		drag 33879.14
-		"heat dissipation" .66
 		"fuel capacity" 4200
 		"cargo space" 1843080
 		"outfit space" 193980
 		"weapon capacity" 1200
 		"engine capacity" 151400
 		weapon
-			"blast radius" 38e+4
-			"shield damage" 38e+5
-			"hull damage" 19e+5
-			"hit force" 57e+5
+			"blast radius" 139095
+			"shield damage" 1390950
+			"hull damage" 695475
+			"hit force" 2086425
+
 	outfits
 		"Marsian Triple Electron Turret" 4
 		"Marsian Anti-Missile Turret" 8
@@ -2054,24 +2074,25 @@ ship "CS 7 Metropolis"
 	sprite "ship/Marsian CS Metropolis Segment vA"
 	attributes
 		category "Transport"
-		cost 119624922000
-		shields 93644780
-		hull 145950220
-		"required crew" 205674
+		cost 125714302000
+		shields 102490064
+		hull 159602992
+		"required crew" 205670
+		mass 14278232
+		drag 225612.59
+		"heat dissipation" 0.65
 		bunks 3000080
-		mass 13076360
-		drag 207190.98
-		"heat dissipation" .65
 		"fuel capacity" 14000
 		"cargo space" 11992080
-		"outfit space" 1175560
-		"weapon capacity" 4800
+		"outfit space" 1174360
+		"weapon capacity" 3800
 		"engine capacity" 921800
 		weapon
-			"blast radius" 240e+4
-			"shield damage" 240e+5
-			"hull damage" 120e+5
-			"hit force" 360e+5
+			"blast radius" 748835
+			"shield damage" 7488350
+			"hull damage" 3744175
+			"hit force" 11232525
+
 	outfits
 		"Marsian Triple Electron Turret" 6
 		"Marsian Anti-Missile Turret" 30
@@ -2148,24 +2169,25 @@ ship "CS 8 Conurbation"
 	sprite "ship/Marsian CS Metropolis Segment vA"
 	attributes
 		category "Transport"
-		cost 415446164000
-		shields 329114900
-		hull 511183020
-		"required crew" 702214
+		cost 438193856000
+		shields 362188122
+		hull 562035370
+		"required crew" 702206
+		mass 49961812
+		drag 783569.58
+		"heat dissipation" 0.64
 		bunks 10060135
-		mass 45517030
-		drag 716135.41
-		"heat dissipation" .64
 		"fuel capacity" 42400
 		"cargo space" 43715120
-		"outfit space" 3659180
-		"weapon capacity" 12000
+		"outfit space" 3656780
+		"weapon capacity" 10000
 		"engine capacity" 2880300
 		weapon
-			"blast radius" 840e+4
-			"shield damage" 840e+5
-			"hull damage" 420e+5
-			"hit force" 1260e+5
+			"blast radius" 2310555
+			"shield damage" 23105550
+			"hull damage" 11552775
+			"hit force" 34658325
+
 	outfits
 		"Marsian Triple Electron Turret" 10
 		"Marsian Anti-Missile Turret" 50
@@ -2268,24 +2290,25 @@ ship "CS 9 Megalopolis"
 	sprite "ship/Marsian CS Metropolis Segment vB"
 	attributes
 		category "Transport"
-		cost 1280356826000
-		shields 1014639480
-		hull 1569703800
-		"required crew" 2113406
+		cost 1354019622000
+		shields 1121533116
+		hull 1734051020
+		"required crew" 2113390
+		mass 153129476
+		drag 2368226.06
+		"heat dissipation" 0.63
 		bunks 30020190
-		mass 138766080
-		drag 2150626.52
-		"heat dissipation" .63
 		"fuel capacity" 117600
 		"cargo space" 135595160
-		"outfit space" 10404440
-		"weapon capacity" 19800
+		"outfit space" 10399640
+		"weapon capacity" 15800
 		"engine capacity" 8208400
 		weapon
-			"blast radius" 240e+4
-			"shield damage" 240e+5
-			"hull damage" 120e+5
-			"hit force" 360e+5
+			"blast radius" 5711165
+			"shield damage" 57111650
+			"hull damage" 28555825
+			"hit force" 85667475
+
 	outfits
 		"Marsian Triple Electron Turret" 16
 		"Marsian Anti-Missile Turret" 80
@@ -2419,32 +2442,91 @@ ship "CS 9 Megalopolis"
 
 
 
-ship "MaCuFi Alpha"
-	sprite "ship/cube_fighter_19x29"
+ship "MaCuD Alpha"
+	sprite "ship/cube_drone_19x19"
 	attributes
-		category Fighter
-		cost 31513500
-		shields 37970
-		hull 13953
-		"required crew" 59
+		category Drone
+		cost 28336000
+		shields 36530
+		hull 19073
+		"required crew" 49
 		bunks 100
-		mass 1848
-		drag 32.24
-		"heat dissipation" .82
-		"fuel capacity" 0
+		mass 1587
+		drag 25.36
+		"heat dissipation" .83
 		"cargo space" 20
-		"outfit space" 4875
-		"weapon capacity" 1610
+		"outfit space" 3960
+		"weapon capacity" 840
 		"engine capacity" 2400
 		weapon
 			"blast radius" 240
 			"shield damage" 2400
 			"hull damage" 1200
 			"hit force" 3600
+
 	outfits
 		"Small Pulse Laser Turret" 4
+		"Electron Turret" 2
+		"Marsian Triple Electron Turret" 3
+		"Marsian Anti-Missile Turret" 2
+
+		"Triple Plasma Core"
+		"Spheric Shield Generator"
+		"Spheric Heatpump"
+
+		"X8700 Ion Thruster"
+		"X8200 Ion Steering"
+
+		"Marsian Scanner"
+
+	turret -6 -6 "Marsian Triple Electron Turret"
+	turret 6 -6 "Marsian Triple Electron Turret"
+
+	turret 0 -8 "Small Pulse Laser Turret"
+	turret 0 -4 "Small Pulse Laser Turret"
+	turret -2 0 "Small Pulse Laser Turret"
+	turret 2 0 "Small Pulse Laser Turret"
+
+	turret -7 1 "Electron Turret"
+	turret 7 1 "Electron Turret"
+	turret -7 7 "Marsian Anti-Missile Turret"
+	turret 7 7 "Marsian Anti-Missile Turret"
+
+	turret 0 6 "Marsian Triple Electron Turret"
+
+	explode "tiny explosion" 10
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	description "This is the third generation of drones based purely on Marsian. It is much stronger than the regular Marsian drones."
+	description "Please use it only on large Marsian cubes and not on regular human carrier ships or Marsian ships which are much smaller by design."
+
+ship "MaCuFi Alpha"
+	sprite "ship/cube_fighter_19x29"
+	attributes
+		category Fighter
+		cost 32445000
+		shields 41359
+		hull 21724
+		"required crew" 59
+		bunks 100
+		mass 1785
+		drag 28.26
+		"heat dissipation" .82
+		"cargo space" 20
+		"outfit space" 4440
+		"weapon capacity" 1240
+		"engine capacity" 2400
+		weapon
+			"blast radius" 240
+			"shield damage" 2400
+			"hull damage" 1200
+			"hit force" 3600
+
+	outfits
+#		"Small Pulse Laser Turret" 4
+		"Electron Turret" 4
 		"Marsian Triple Electron Turret" 2
-		"Capital EMP Blaster Turret" 2
+		"Large EMP Blaster Turret" 2
 		"Marsian Anti-Missile Turret" 4
 		"Defense Beam Turret LR1200"
 
@@ -2460,10 +2542,10 @@ ship "MaCuFi Alpha"
 	turret -6 -11 "Marsian Triple Electron Turret"
 	turret 6 -11 "Marsian Triple Electron Turret"
 
-	turret 0 -13 "Small Pulse Laser Turret"
-	turret 0 -9 "Small Pulse Laser Turret"
-	turret -2 -5 "Small Pulse Laser Turret"
-	turret 2 -5 "Small Pulse Laser Turret"
+	turret 0 -13 "Electron Turret"
+	turret 0 -9 "Electron Turret"
+	turret -2 -5 "Electron Turret"
+	turret 2 -5 "Electron Turret"
 
 	turret -7 -4 "Marsian Anti-Missile Turret"
 	turret 7 -4 "Marsian Anti-Missile Turret"
@@ -2472,8 +2554,8 @@ ship "MaCuFi Alpha"
 
 	turret 0 1 "Defense Beam Turret LR1200"
 
-	turret -5 10 "Capital EMP Blaster Turret"
-	turret 5 10 "Capital EMP Blaster Turret"
+	turret -5 10 "Large EMP Blaster Turret"
+	turret 5 10 "Large EMP Blaster Turret"
 
 	explode "tiny explosion" 10
 	explode "small explosion" 30
@@ -2485,28 +2567,30 @@ ship "MaCuFi Alpha Scout"
 	sprite "ship/cube_fighter_19x29"
 	attributes
 		category "Light Warship"
-		cost 41573500
-		shields 50695
-		hull 20243
-		"required crew" 94
+		cost 45569500
+		shields 57366
+		hull 31527
+		"required crew" 91
 		bunks 200
-		mass 2343
-		drag 38.32
+		mass 2349
+		drag 34.25
 		"heat dissipation" .81
 		"fuel capacity" 1400
 		"cargo space" 640
-		"outfit space" 4915
-		"weapon capacity" 1610
+		"outfit space" 4480
+		"weapon capacity" 1240
 		"engine capacity" 2400
 		weapon
 			"blast radius" 240
 			"shield damage" 2400
 			"hull damage" 1200
 			"hit force" 3600
+
 	outfits
-		"Small Pulse Laser Turret" 4
+#		"Small Pulse Laser Turret" 4
+		"Electron Turret" 4
 		"Marsian Triple Electron Turret" 2
-		"Capital EMP Blaster Turret" 2
+		"Large EMP Blaster Turret" 2
 		"Marsian Anti-Missile Turret" 4
 		"Defense Beam Turret LR1200"
 
@@ -2524,10 +2608,10 @@ ship "MaCuFi Alpha Scout"
 	turret -6 -11 "Marsian Triple Electron Turret"
 	turret 6 -11 "Marsian Triple Electron Turret"
 
-	turret 0 -13 "Small Pulse Laser Turret"
-	turret 0 -9 "Small Pulse Laser Turret"
-	turret -2 -5 "Small Pulse Laser Turret"
-	turret 2 -5 "Small Pulse Laser Turret"
+	turret 0 -13 "Electron Turret"
+	turret 0 -9 "Electron Turret"
+	turret -2 -5 "Electron Turret"
+	turret 2 -5 "Electron Turret"
 
 	turret -7 -4 "Marsian Anti-Missile Turret"
 	turret 7 -4 "Marsian Anti-Missile Turret"
@@ -2536,8 +2620,8 @@ ship "MaCuFi Alpha Scout"
 
 	turret 0 1 "Defense Beam Turret LR1200"
 
-	turret -5 10 "Capital EMP Blaster Turret"
-	turret 5 10 "Capital EMP Blaster Turret"
+	turret -5 10 "Large EMP Blaster Turret"
+	turret 5 10 "Large EMP Blaster Turret"
 
 	explode "tiny explosion" 10
 	explode "small explosion" 30
@@ -2553,24 +2637,25 @@ ship "Freight Cube 37"
 	sprite "ship/cube_37_civil"
 	attributes
 		category "Light Freighter"
-		cost 9730200
-		shields 126185
-		hull 53970
-		"required crew" 183
-		bunks 424
-		mass 5555
-		drag 84.91
-		"heat dissipation" .69
+		cost 119213500
+		shields 150305
+		hull 85999
+		"required crew" 179
+		mass 5846
+		drag 77.69
+		"heat dissipation" 0.69
+		bunks 348
 		"fuel capacity" 900
 		"cargo space" 10000
-		"outfit space" 3436
-		"weapon capacity" 240
-		"engine capacity" 2370
+		"outfit space" 3432
+		"weapon capacity" 320
+		"engine capacity" 2400
 		weapon
-			"blast radius" 220
-			"shield damage" 2200
-			"hull damage" 1100
-			"hit force" 3300
+			"blast radius" 1180
+			"shield damage" 11800
+			"hull damage" 5900
+			"hit force" 17700
+
 	outfits
 		"Electron Turret" 2
 		"Marsian Anti-Missile Turret" 2
@@ -2583,7 +2668,7 @@ ship "Freight Cube 37"
 		"Hyperdrive"
 		"Ramscoop"
 
-		"Marsian Scanner"
+#		"Marsian Scanner"
 
 	turret -16 -16 "Electron Turret"
 	turret 16 -16 "Electron Turret"
@@ -2598,30 +2683,31 @@ ship "Freight Cube 39"
 	sprite "ship/cube_39_medium"
 	attributes
 		category "Light Freighter"
-		cost 109406000
-		shields 137390
-		hull 58350
+		cost 136018000
+		shields 167057
+		hull 95260
 		"required crew" 234
+		mass 6527
+		drag 87.50
+		"heat dissipation" 0.69
 		bunks 424
-		mass 6080
-		drag 93.65
-		"heat dissipation" .69
 		"fuel capacity" 1000
 		"cargo space" 10000
-		"outfit space" 4324
-		"weapon capacity" 820
+		"outfit space" 4204
+		"weapon capacity" 720
 		"engine capacity" 2630
 		weapon
-			"blast radius" 240
-			"shield damage" 2400
-			"hull damage" 1200
-			"hit force" 3600
+			"blast radius" 1310
+			"shield damage" 13100
+			"hull damage" 6550
+			"hit force" 19650
+
 	outfits
 		"Marsian Triple Electron Turret" 2
 		"Marsian Anti-Missile Turret" 4
 
 		"Stack Mega Core"
-		"D94-YV Shield Generator" 5
+		"D95-EE Shield Generator" 3
 
 		"X8700 Ion Thruster"
 		"X8200 Ion Steering"
@@ -2630,7 +2716,7 @@ ship "Freight Cube 39"
 		"Hyperdrive"
 		"Ramscoop"
 
-		"Marsian Scanner"
+#		"Marsian Scanner"
 
 	turret -16 -16 "Marsian Anti-Missile Turret"
 	turret 16 -16 "Marsian Anti-Missile Turret"
@@ -2659,28 +2745,29 @@ ship "Freight Cube 83"
 	sprite "ship/cube_83_medium"
 	attributes
 		category "Light Freighter"
-		cost 1058100000
-		shields 1345465
-		hull 579440
-		"required crew" 2083
+		cost 1303850000
+		shields 1609038
+		hull 922990
+		"required crew" 2067
+		mass 62368
+		drag 823.31
+		"heat dissipation" 0.68
 		bunks 4400
-		mass 58925
-		drag 893.69
-		"heat dissipation" .68
-		"fuel capacity" 2400
+		"fuel capacity" 9400
 		"cargo space" 100000
-		"outfit space" 38752
-		"weapon capacity" 7120
+		"outfit space" 35402
+		"weapon capacity" 4320
 		"engine capacity" 23660
 		weapon
-			"blast radius" 440
-			"shield damage" 4400
-			"hull damage" 2200
-			"hit force" 6600
+			"blast radius" 6330
+			"shield damage" 63300
+			"hull damage" 31650
+			"hit force" 94950
+
 	outfits
 		"Marsian Triple Electron Turret" 4
-		"Large Pulse Laser Turret" 2
-		"Capital Pulse Laser Turret" 14
+		"Large Pulse Laser Turret" 14
+		"Capital Pulse Laser Turret" 2
 		"Marsian Anti-Missile Turret" 8
 
 		"Stack Metro Core" 2
@@ -2708,24 +2795,24 @@ ship "Freight Cube 83"
 	turret 32 23 "Marsian Anti-Missile Turret"
 	turret 23 32 "Marsian Anti-Missile Turret"
 
-	turret -15 -30 "Capital Pulse Laser Turret"
+	turret -15 -30 "Large Pulse Laser Turret"
 	turret -5 -30 "Capital Pulse Laser Turret"
 	turret 5 -30 "Capital Pulse Laser Turret"
-	turret 15 -30 "Capital Pulse Laser Turret"
+	turret 15 -30 "Large Pulse Laser Turret"
 
-	turret -30 -15 "Capital Pulse Laser Turret"
-	turret -30 -5 "Capital Pulse Laser Turret"
-	turret -30 5 "Capital Pulse Laser Turret"
-	turret -30 15 "Capital Pulse Laser Turret"
+	turret -30 -15 "Large Pulse Laser Turret"
+	turret -30 -5 "Large Pulse Laser Turret"
+	turret -30 5 "Large Pulse Laser Turret"
+	turret -30 15 "Large Pulse Laser Turret"
 
-	turret 30 -15 "Capital Pulse Laser Turret"
-	turret 30 -5 "Capital Pulse Laser Turret"
-	turret 30 5 "Capital Pulse Laser Turret"
-	turret 30 15 "Capital Pulse Laser Turret"
+	turret 30 -15 "Large Pulse Laser Turret"
+	turret 30 -5 "Large Pulse Laser Turret"
+	turret 30 5 "Large Pulse Laser Turret"
+	turret 30 15 "Large Pulse Laser Turret"
 
 	turret -15 30 "Large Pulse Laser Turret"
-	turret -5 30 "Capital Pulse Laser Turret"
-	turret 5 30 "Capital Pulse Laser Turret"
+	turret -5 30 "Large Pulse Laser Turret"
+	turret 5 30 "Large Pulse Laser Turret"
 	turret 15 30 "Large Pulse Laser Turret"
 
 	fighter -27 -39
@@ -2801,30 +2888,33 @@ ship "Freight Cube 127"
 	sprite "ship/cube_127_medium"
 	attributes
 		category "Heavy Freighter"
-		cost 3739794000
-		shields 4883235
-		hull 2109295
-		"required crew" 7123
+		cost 4676552500
+		shields 5871639
+		hull 3376564
+		"required crew" 7074
+		mass 226825
+		drag 2974.54
+		"heat dissipation" 0.67
 		bunks 11000
-		mass 213380
-		drag 3225.21
-		"heat dissipation" .67
-		"fuel capacity" 3600
+		"fuel capacity" 36800
 		"cargo space" 400000
-		"outfit space" 134300
-		"weapon capacity" 14080
+		"outfit space" 125394
+		"weapon capacity" 6640
 		"engine capacity" 94120
 		weapon
-			"blast radius" 660
-			"shield damage" 8800
-			"hull damage" 4400
-			"hit force" 13200
+			"blast radius" 18495
+			"shield damage" 184950
+			"hull damage" 92475
+			"hit force" 277425
+
 	outfits
 		"Marsian Triple Electron Turret" 4
 		"Capital EMP Blaster Turret" 4
-		"Capital Pulse Laser Turret" 24
+#		"Capital Pulse Laser Turret" 24
+		"Capital Pulse Laser Turret" 4
+		"Large Pulse Laser Turret" 12
 		"Marsian Anti-Missile Turret" 8
-		"Defense Beam Turret LR2400" 8
+#		"Defense Beam Turret LR2400" 8
 
 		"Stack Metro Core" 9
 		"D96-FF Shield Generator" 50
@@ -2850,14 +2940,14 @@ ship "Freight Cube 127"
 	turret 44 54 "Marsian Anti-Missile Turret"
 	turret 54 44 "Marsian Anti-Missile Turret"
 
-	turret -14 -53 "Defense Beam Turret LR2400"
-	turret 14 -53 "Defense Beam Turret LR2400"
-	turret -53 -14 "Defense Beam Turret LR2400"
-	turret -53 14 "Defense Beam Turret LR2400"
-	turret 53 -14 "Defense Beam Turret LR2400"
-	turret 53 14 "Defense Beam Turret LR2400"
-	turret -14 53 "Defense Beam Turret LR2400"
-	turret 14 53 "Defense Beam Turret LR2400"
+#	turret -14 -53 "Defense Beam Turret LR2400"
+#	turret 14 -53 "Defense Beam Turret LR2400"
+#	turret -53 -14 "Defense Beam Turret LR2400"
+#	turret -53 14 "Defense Beam Turret LR2400"
+#	turret 53 -14 "Defense Beam Turret LR2400"
+#	turret 53 14 "Defense Beam Turret LR2400"
+#	turret -14 53 "Defense Beam Turret LR2400"
+#	turret 14 53 "Defense Beam Turret LR2400"
 
 
 	turret -46 -46 "Capital EMP Blaster Turret"
@@ -2867,31 +2957,31 @@ ship "Freight Cube 127"
 
 	turret -36 -52 "Capital Pulse Laser Turret"
 	turret -26 -52 "Capital Pulse Laser Turret"
-	turret -5 -52 "Capital Pulse Laser Turret"
-	turret 5 -52 "Capital Pulse Laser Turret"
+#	turret -5 -52 "Capital Pulse Laser Turret"
+#	turret 5 -52 "Capital Pulse Laser Turret"
 	turret 26 -52 "Capital Pulse Laser Turret"
 	turret 36 -52 "Capital Pulse Laser Turret"
 
-	turret -52 -36 "Capital Pulse Laser Turret"
-	turret -52 -26 "Capital Pulse Laser Turret"
-	turret -52 -5 "Capital Pulse Laser Turret"
-	turret -52 5 "Capital Pulse Laser Turret"
-	turret -52 26 "Capital Pulse Laser Turret"
-	turret -52 36 "Capital Pulse Laser Turret"
+	turret -52 -36 "Large Pulse Laser Turret"
+	turret -52 -26 "Large Pulse Laser Turret"
+#	turret -52 -5 "Capital Pulse Laser Turret"
+#	turret -52 5 "Capital Pulse Laser Turret"
+	turret -52 26 "Large Pulse Laser Turret"
+	turret -52 36 "Large Pulse Laser Turret"
 
-	turret 52 -36 "Capital Pulse Laser Turret"
-	turret 52 -26 "Capital Pulse Laser Turret"
-	turret 52 -5 "Capital Pulse Laser Turret"
-	turret 52 5 "Capital Pulse Laser Turret"
-	turret 52 26 "Capital Pulse Laser Turret"
-	turret 52 36 "Capital Pulse Laser Turret"
+	turret 52 -36 "Large Pulse Laser Turret"
+	turret 52 -26 "Large Pulse Laser Turret"
+#	turret 52 -5 "Capital Pulse Laser Turret"
+#	turret 52 5 "Capital Pulse Laser Turret"
+	turret 52 26 "Large Pulse Laser Turret"
+	turret 52 36 "Large Pulse Laser Turret"
 
-	turret -36 52 "Capital Pulse Laser Turret"
-	turret -26 52 "Capital Pulse Laser Turret"
-	turret -5 52 "Capital Pulse Laser Turret"
-	turret 5 52 "Capital Pulse Laser Turret"
-	turret 26 52 "Capital Pulse Laser Turret"
-	turret 36 52 "Capital Pulse Laser Turret"
+	turret -36 52 "Large Pulse Laser Turret"
+	turret -26 52 "Large Pulse Laser Turret"
+#	turret -5 52 "Capital Pulse Laser Turret"
+#	turret 5 52 "Capital Pulse Laser Turret"
+	turret 26 52 "Large Pulse Laser Turret"
+	turret 36 52 "Large Pulse Laser Turret"
 
 	fighter -49 -61
 	fighter -39 -61
@@ -2995,29 +3085,31 @@ ship "Freight Cube 255"
 	sprite "ship/cube_255_medium"
 	attributes
 		category "Heavy Freighter"
-		cost 30999404000
-		shields 38862105
-		hull 16630740
-		"required crew" 62461
-		bunks 240000
-		mass 1710105
-		drag 26121.89
-		"heat dissipation" .66
-		"fuel capacity" 4500
-		"cargo space" 2.1e+6
-		"outfit space" 1493556
-		"weapon capacity" 19280
+		cost 36718407000
+		shields 45472069
+		hull 25852843
+		"required crew" 60291
+		mass 1783566
+		drag 24087.01
+		"heat dissipation" 0.66
+		bunks 225000
+		"fuel capacity" 441100
+		"cargo space" 2100000
+		"outfit space" 1485850
+		"weapon capacity" 17840
 		"engine capacity" 1145300
 		weapon
-			"blast radius" 1300
-			"shield damage" 40000
-			"hull damage" 20000
-			"hit force" 60000
+			"blast radius" 71320
+			"shield damage" 713200
+			"hull damage" 356600
+			"hit force" 1069800
+
 	outfits
 		"Small Pulse Laser Turret" 120
 		"Marsian Triple Electron Turret" 4
 		# "Capital Pulse Laser Turret" 32
-		"Capital EMP Blaster Turret" 32
+		"Capital EMP Blaster Turret" 24
+		"Large EMP Blaster Turret" 8
 		"Marsian Anti-Missile Turret" 28
 		"Defense Beam Turret LR1200" 8
 
@@ -3111,14 +3203,14 @@ ship "Freight Cube 255"
 	turret 115 85 "Capital EMP Blaster Turret"
 	turret 115 95 "Capital EMP Blaster Turret"
 
-	turret -95 115 "Capital EMP Blaster Turret"
-	turret -85 115 "Capital EMP Blaster Turret"
-	turret -75 115 "Capital EMP Blaster Turret"
-	turret -65 115 "Capital EMP Blaster Turret"
-	turret 65 115 "Capital EMP Blaster Turret"
-	turret 75 115 "Capital EMP Blaster Turret"
-	turret 85 115 "Capital EMP Blaster Turret"
-	turret 95 115 "Capital EMP Blaster Turret"
+	turret -95 115 "Large EMP Blaster Turret"
+	turret -85 115 "Large EMP Blaster Turret"
+	turret -75 115 "Large EMP Blaster Turret"
+	turret -65 115 "Large EMP Blaster Turret"
+	turret 65 115 "Large EMP Blaster Turret"
+	turret 75 115 "Large EMP Blaster Turret"
+	turret 85 115 "Large EMP Blaster Turret"
+	turret 95 115 "Large EMP Blaster Turret"
 
 
 	turret -118 -122 "Small Pulse Laser Turret"
@@ -3378,24 +3470,25 @@ ship "Freight Cube 255 Ultra"
 	sprite "ship/cube_255_light"
 	attributes
 		category "Heavy Freighter"
-		cost 29905522000
-		shields 39029150
-		hull 16834770
-		"required crew" 57402
-		bunks 120000
-		mass 1707260
-		drag 25846.73
-		"heat dissipation" .66
-		"fuel capacity" 4200
-		"cargo space" 3e+6
-		"outfit space" 1162860
-		"weapon capacity" 11200
+		cost 37180550500
+		shields 46821165
+		hull 26913486
+		"required crew" 56232
+		mass 1809789
+		drag 23760.61
+		"heat dissipation" 0.66
+		bunks 105000
+		"fuel capacity" 353600
+		"cargo space" 3000000
+		"outfit space" 1156786
+		"weapon capacity" 11120
 		"engine capacity" 917800
 		weapon
-			"blast radius" 1300
-			"shield damage" 40000
-			"hull damage" 20000
-			"hit force" 60000
+			"blast radius" 73730
+			"shield damage" 737300
+			"hull damage" 368650
+			"hit force" 1105950
+
 	outfits
 		"Small Pulse Laser Turret" 64
 		"Marsian Triple Electron Turret" 4
@@ -3631,32 +3724,34 @@ ship "Freight Cube 255 Ultra"
 #	description "This cube is strong enough to protect valuable cargo against most attacks."
 
 ship "Civil Freight Cube 255 Ultimate"
-	sprite "ship/cube_255_civil"
+	sprite "ship/cube_255_civil_32hp"
 	attributes
 		category "Heavy Freighter"
-		cost 17622200000
-		shields 24151370
-		hull 14025908
-		"required crew" 17212
+		cost 17341379000
+		shields 29311569
+		hull 12363688
+		"required crew" 19198
+		mass 1984536
+		drag 31911.23
+		"heat dissipation" 0.66
 		bunks 19000
-		mass 2010595
-		drag 32314.90
-		"heat dissipation" .66
-		"fuel capacity" 4100
-		"cargo space" 3.8e+6
-		"outfit space" 560823
-		"weapon capacity" 2880
+		"fuel capacity" 176400
+		"cargo space" 3800000
+		"outfit space" 559843
+		"weapon capacity" 2060
 		"engine capacity" 458120
 		weapon
-			"blast radius" 1300
-			"shield damage" 40000
-			"hull damage" 20000
-			"hit force" 60000
+			"blast radius" 34725
+			"shield damage" 347250
+			"hull damage" 173625
+			"hit force" 520875
+
 	outfits
 		"Tiny Pulse Laser Turret" 16
 		"Marsian Triple Electron Turret" 4
-		"Medium Pulse Laser Turret" 2
-		"Marsian Anti-Missile Turret" 16
+#		"Medium Pulse Laser Turret" 2
+#		"Marsian Anti-Missile Turret" 16
+		"Marsian Anti-Missile Turret" 4
 		"Defense Beam Turret LR1200" 8
 
 		"Tactical Cube Core" 2
@@ -3684,27 +3779,27 @@ ship "Civil Freight Cube 255 Ultimate"
 	turret 124 112 "Defense Beam Turret LR1200"
 
 	turret -117 -117 "Marsian Anti-Missile Turret"
-	turret -111 -117 "Marsian Anti-Missile Turret"
-	turret -117 -111 "Marsian Anti-Missile Turret"
-	turret -111 -111 "Marsian Anti-Missile Turret"
+#	turret -111 -117 "Marsian Anti-Missile Turret"
+#	turret -117 -111 "Marsian Anti-Missile Turret"
+#	turret -111 -111 "Marsian Anti-Missile Turret"
 
 	turret 117 -117 "Marsian Anti-Missile Turret"
-	turret 111 -117 "Marsian Anti-Missile Turret"
-	turret 117 -111 "Marsian Anti-Missile Turret"
-	turret 111 -111 "Marsian Anti-Missile Turret"
+#	turret 111 -117 "Marsian Anti-Missile Turret"
+#	turret 117 -111 "Marsian Anti-Missile Turret"
+#	turret 111 -111 "Marsian Anti-Missile Turret"
 
 	turret -117 117 "Marsian Anti-Missile Turret"
-	turret -111 117 "Marsian Anti-Missile Turret"
-	turret -117 111 "Marsian Anti-Missile Turret"
-	turret -111 111 "Marsian Anti-Missile Turret"
+#	turret -111 117 "Marsian Anti-Missile Turret"
+#	turret -117 111 "Marsian Anti-Missile Turret"
+#	turret -111 111 "Marsian Anti-Missile Turret"
 
 	turret 117 117 "Marsian Anti-Missile Turret"
-	turret 111 117 "Marsian Anti-Missile Turret"
-	turret 117 111 "Marsian Anti-Missile Turret"
-	turret 111 111 "Marsian Anti-Missile Turret"
+#	turret 111 117 "Marsian Anti-Missile Turret"
+#	turret 117 111 "Marsian Anti-Missile Turret"
+#	turret 111 111 "Marsian Anti-Missile Turret"
 
-	turret -4 -117 "Medium Pulse Laser Turret"
-	turret 4 -117 "Medium Pulse Laser Turret"
+#	turret -4 -117 "Medium Pulse Laser Turret"
+#	turret 4 -117 "Medium Pulse Laser Turret"
 
 	turret -118 -126 "Tiny Pulse Laser Turret"
 	turret -118 -122 "Tiny Pulse Laser Turret"
@@ -3748,32 +3843,34 @@ ship "Civil Freight Cube 255 Ultimate"
 #	description "With only few bunks left empty, this cube is clearly no transport ship. Contrary, it currently offers the best cargo space per bunk available, making it an excellent freighter."
 
 ship "Civil Freight Cube 511 Ultimate"
-	sprite "ship/cube_255_civil"
+	sprite "ship/cube_255_civil_32hp"
 	attributes
 		category "Heavy Freighter"
-		cost 140590489000
-		shields 192456830
-		hull 111685310
-		"required crew" 141124
-		bunks 190000
-		mass 16019310
-		drag 257659.62
-		"heat dissipation" .66
-		"fuel capacity" 9000
-		"cargo space" 29e+6
-		"outfit space" 5540016
-		"weapon capacity" 3300
+		cost 152105561000
+		shields 239793698
+		hull 107185228
+		"required crew" 139290
+		mass 16522806
+		drag 248694.13
+		"heat dissipation" 0.65
+		bunks 170000
+		"fuel capacity" 1750300
+		"cargo space" 28750000
+		"outfit space" 5530892
+		"weapon capacity" 2360
 		"engine capacity" 4550000
 		weapon
-			"blast radius" 3200
-			"shield damage" 640000
-			"hull damage" 320000
-			"hit force" 960000
+			"blast radius" 173485
+			"shield damage" 1734850
+			"hull damage" 867425
+			"hit force" 2602275
+
 	outfits
 		"Small Pulse Laser Turret" 16
 		"Marsian Triple Electron Turret" 4
-		"Large Pulse Laser Turret" 2
-		"Marsian Anti-Missile Turret" 16
+#		"Large Pulse Laser Turret" 2
+#		"Marsian Anti-Missile Turret" 16
+		"Marsian Anti-Missile Turret" 4
 		"Defense Beam Turret LR1200" 8
 
 		"Tactical Cube Core" 27
@@ -3800,27 +3897,27 @@ ship "Civil Freight Cube 511 Ultimate"
 	turret 124 112 "Defense Beam Turret LR1200"
 
 	turret -117 -117 "Marsian Anti-Missile Turret"
-	turret -111 -117 "Marsian Anti-Missile Turret"
-	turret -117 -111 "Marsian Anti-Missile Turret"
-	turret -111 -111 "Marsian Anti-Missile Turret"
+#	turret -111 -117 "Marsian Anti-Missile Turret"
+#	turret -117 -111 "Marsian Anti-Missile Turret"
+#	turret -111 -111 "Marsian Anti-Missile Turret"
 
 	turret 117 -117 "Marsian Anti-Missile Turret"
-	turret 111 -117 "Marsian Anti-Missile Turret"
-	turret 117 -111 "Marsian Anti-Missile Turret"
-	turret 111 -111 "Marsian Anti-Missile Turret"
+#	turret 111 -117 "Marsian Anti-Missile Turret"
+#	turret 117 -111 "Marsian Anti-Missile Turret"
+#	turret 111 -111 "Marsian Anti-Missile Turret"
 
 	turret -117 117 "Marsian Anti-Missile Turret"
-	turret -111 117 "Marsian Anti-Missile Turret"
-	turret -117 111 "Marsian Anti-Missile Turret"
-	turret -111 111 "Marsian Anti-Missile Turret"
+#	turret -111 117 "Marsian Anti-Missile Turret"
+#	turret -117 111 "Marsian Anti-Missile Turret"
+#	turret -111 111 "Marsian Anti-Missile Turret"
 
 	turret 117 117 "Marsian Anti-Missile Turret"
-	turret 111 117 "Marsian Anti-Missile Turret"
-	turret 117 111 "Marsian Anti-Missile Turret"
-	turret 111 111 "Marsian Anti-Missile Turret"
+#	turret 111 117 "Marsian Anti-Missile Turret"
+#	turret 117 111 "Marsian Anti-Missile Turret"
+#	turret 111 111 "Marsian Anti-Missile Turret"
 
-	turret -4 -117 "Large Pulse Laser Turret"
-	turret 4 -117 "Large Pulse Laser Turret"
+#	turret -4 -117 "Large Pulse Laser Turret"
+#	turret 4 -117 "Large Pulse Laser Turret"
 
 	turret -118 -126 "Small Pulse Laser Turret"
 	turret -118 -122 "Small Pulse Laser Turret"
@@ -3866,29 +3963,31 @@ ship "Tactical Cube  75"
 	sprite "ship/cube_75_tactical"
 	attributes
 		category "Heavy Warship"
-		cost 798685000
-		shields 1005700
-		hull 429020
+		cost 965837000
+		shields 1191284
+		hull 679113
 		"required crew" 1990
+		mass 46561
+		drag 624.60
+		"heat dissipation" 0.67
 		bunks 3000
-		mass 44360
-		drag 679.98
-		"heat dissipation" .67
-		"fuel capacity" 3600
+		"fuel capacity" 27400
 		"cargo space" 3000
-		"outfit space" 98436
-		"weapon capacity" 11300
+		"outfit space" 96898
+		"weapon capacity" 10000
 		"engine capacity" 69680
 		weapon
-			"blast radius" 550
-			"shield damage" 5500
-			"hull damage" 2750
-			"hit force" 9900
+			"blast radius" 4675
+			"shield damage" 46750
+			"hull damage" 23375
+			"hit force" 70125
+
 	outfits
 		"Small Pulse Laser Turret" 60
 		"Marsian Triple Electron Turret" 4
 		# "Capital Pulse Laser Turret" 8
-		"Capital EMP Blaster Turret" 16
+		"Capital EMP Blaster Turret" 10
+		"Large EMP Blaster Turret" 6
 		"Marsian Anti-Missile Turret" 28
 		"Defense Beam Turret LR1200" 8
 
@@ -3967,14 +4066,14 @@ ship "Tactical Cube  75"
 	turret -5 -15 "Capital EMP Blaster Turret"
 	turret 5 -15 "Capital EMP Blaster Turret"
 
-	turret -15 -5 "Capital EMP Blaster Turret"
-	turret -15 5 "Capital EMP Blaster Turret"
+	turret -15 -5 "Large EMP Blaster Turret"
+	turret -15 5 "Large EMP Blaster Turret"
 
-	turret 15 -5 "Capital EMP Blaster Turret"
-	turret 15 5 "Capital EMP Blaster Turret"
+	turret 15 -5 "Large EMP Blaster Turret"
+	turret 15 5 "Large EMP Blaster Turret"
 
-	turret -5 15 "Capital EMP Blaster Turret"
-	turret 5 15 "Capital EMP Blaster Turret"
+	turret -5 15 "Large EMP Blaster Turret"
+	turret 5 15 "Large EMP Blaster Turret"
 
 
 	turret -28 -32 "Small Pulse Laser Turret"
@@ -4116,24 +4215,25 @@ ship "Tactical Cube 255"
 	sprite "ship/cube_255_tactical"
 	attributes
 		category "Heavy Warship"
-		cost 31157356000
-		shields 38774110
-		hull 16566210
-		"required crew" 70906
-		bunks 260000
-		mass 1708300
-		drag 26141.29
-		"heat dissipation" .66
-		"fuel capacity" 6300
-		"cargo space" 0.52e+6
-		"outfit space" 2921948
-		"weapon capacity" 73240
+		cost 37831778500
+		shields 46233265
+		hull 26440646
+		"required crew" 70003
+		mass 1799329
+		drag 23940.57
+		"heat dissipation" 0.66
+		bunks 250000
+		"fuel capacity" 875600
+		"cargo space" 500000
+		"outfit space" 2918018
+		"weapon capacity" 73280
 		"engine capacity" 2275000
 		weapon
-			"blast radius" 1400
-			"shield damage" 44000
-			"hull damage" 22000
-			"hit force" 66000
+			"blast radius" 726735
+			"shield damage" 7267350
+			"hull damage" 3633675
+			"hit force" 10901025
+
 	outfits
 		"Small Pulse Laser Turret" 240
 		"Marsian Triple Electron Turret" 4

@@ -19,24 +19,24 @@ ship "MaFr Courier"
 	sprite "ship/MaFr_courier"
 	attributes
 		category Transport
-		cost 7124000
-		shields 10898
-		hull 4263
+		cost 7005000
+		shields 10951
+		hull 3647
 		"required crew" 18
+		mass 811
+		drag 17.04
 		bunks 110
-		mass 840
-		drag 18.35
-		"heat dissipation" .79
 		"fuel capacity" 800
 		"cargo space" 160
-		"outfit space" 1227
+		"outfit space" 1228
 		"weapon capacity" 200
 		"engine capacity" 750
+		"heat dissipation" 0.79
 		weapon
-			"blast radius" 60
-			"shield damage" 600
-			"hull damage" 300
-			"hit force" 900
+			"blast radius" 70
+			"shield damage" 700
+			"hull damage" 350
+			"hit force" 1050
 	outfits
 		"Tiny Pulse Laser Turret" 2
 		"Electron Turret"
@@ -71,24 +71,24 @@ ship "MaFr Cargo Courier"
 	sprite "ship/MaFr_courier_cargo"
 	attributes
 		category "Light Freighter"
-		cost 9956000
-		shields 15548
-		hull 6366
+		cost 9774000
+		shields 15530
+		hull 5332
 		"required crew" 22
+		mass 1159
+		drag 23.87
 		bunks 110
-		mass 1208
-		drag 25.67
-		"heat dissipation" .76
 		"fuel capacity" 800
 		"cargo space" 1000
-		"outfit space" 1263
+		"outfit space" 1264
 		"weapon capacity" 230
 		"engine capacity" 750
+		"heat dissipation" 0.76
 		weapon
-			"blast radius" 80
-			"shield damage" 800
-			"hull damage" 400
-			"hit force" 1200
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
 	outfits
 		"Tiny Pulse Laser Turret" 2
 		"Electron Turret"
@@ -123,24 +123,24 @@ ship "MaFr Cargo Freighter"
 	sprite "ship/MaFr_courier_freighter"
 	attributes
 		category "Light Freighter"
-		cost 10833000
-		shields 16639
-		hull 7140
+		cost 10663500
+		shields 16700
+		hull 5899
 		"required crew" 21
+		mass 1256
+		drag 25.37
 		bunks 110
-		mass 1303
-		drag 26.89
-		"heat dissipation" .71
 		"fuel capacity" 400
 		"cargo space" 1840
-		"outfit space" 663
-		"weapon capacity" 210
+		"outfit space" 676
+		"weapon capacity" 220
 		"engine capacity" 270
+		"heat dissipation" 0.71
 		weapon
-			"blast radius" 90
-			"shield damage" 900
-			"hull damage" 450
-			"hit force" 1350
+			"blast radius" 110
+			"shield damage" 1100
+			"hull damage" 550
+			"hit force" 1650
 	outfits
 		"Tiny Pulse Laser Turret" 2
 		"Electron Turret"
@@ -175,24 +175,24 @@ ship "MaFr Catamaran"
 	sprite "ship/MaFr_courier_catamaran"
 	attributes
 		category "Heavy Freighter"
-		cost 14850000
-		shields 21833
-		hull 8248
+		cost 14661000
+		shields 22136
+		hull 7726
 		"required crew" 32
+		mass 1659
+		drag 33.80
 		bunks 220
-		mass 1705
-		drag 35.52
-		"heat dissipation" .66
 		"fuel capacity" 600
 		"cargo space" 1880
-		"outfit space" 966
-		"weapon capacity" 360
+		"outfit space" 992
+		"weapon capacity" 380
 		"engine capacity" 300
+		"heat dissipation" 0.66
 		weapon
-			"blast radius" 120
-			"shield damage" 1200
-			"hull damage" 600
-			"hit force" 1800
+			"blast radius" 145
+			"shield damage" 1450
+			"hull damage" 725
+			"hit force" 2175
 	outfits
 		"Tiny Pulse Laser Turret" 4
 		"Electron Turret" 2
@@ -232,24 +232,24 @@ ship "MaFr Racer"
 	sprite "ship/MaFr_courier_racer"
 	attributes
 		category Transport
-		cost 4247250
-		shields 6218
-		hull 2703
+		cost 4237750
+		shields 6399
+		hull 2259
 		"required crew" 10
+		mass 481
+		drag 9.72
 		bunks 35
-		mass 487
-		drag 10.02
-		"heat dissipation" .82
 		"fuel capacity" 400
 		"cargo space" 85
-		"outfit space" 801
-		"weapon capacity" 150
+		"outfit space" 826
+		"weapon capacity" 170
 		"engine capacity" 470
+		"heat dissipation" 0.82
 		weapon
-			"blast radius" 60
-			"shield damage" 600
-			"hull damage" 300
-			"hit force" 900
+			"blast radius" 55
+			"shield damage" 550
+			"hull damage" 275
+			"hit force" 825
 	outfits
 		"Tiny Pulse Laser Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -257,8 +257,8 @@ ship "MaFr Racer"
 
 		"Plasma Core" 2
 		"LP036a Battery Pack"
-		"D67-TM Shield Generator"
-#		"D94-YV Shield Generator"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator"
 
 		"X5700 Ion Thruster" 2
 		"X5200 Ion Steering" 2
@@ -286,24 +286,24 @@ ship "MaFr Cruiseliner"
 	sprite "ship/MaFr_courier_cruiseliner"
 	attributes
 		category Transport
-		cost 16094000
-		shields 23040
-		hull 9153
+		cost 15936000
+		shields 23605
+		hull 7895
 		"required crew" 40
+		mass 1750
+		drag 36.67
 		bunks 330
-		mass 1780
-		drag 38.56
-		"heat dissipation" .7
 		"fuel capacity" 1200
 		"cargo space" 480
-		"outfit space" 1953
-		"weapon capacity" 500
+		"outfit space" 1980
+		"weapon capacity" 520
 		"engine capacity" 810
+		"heat dissipation" 0.7
 		weapon
-			"blast radius" 150
-			"shield damage" 1500
-			"hull damage" 750
-			"hit force" 2250
+			"blast radius" 155
+			"shield damage" 1550
+			"hull damage" 775
+			"hit force" 2325
 	outfits
 		"Tiny Pulse Laser Turret" 6
 		"Electron Turret" 3
@@ -352,24 +352,24 @@ ship "MaFr Bulk Freighter"
 	sprite "ship/MaFr_courier_bulk"
 	attributes
 		category "Heavy Freighter"
-		cost 20012000
-		shields 32423
-		hull 13803
+		cost 19641000
+		shields 32237
+		hull 11377
 		"required crew" 34
+		mass 2423
+		drag 48.99
 		bunks 110
-		mass 2535
-		drag 52.58
-		"heat dissipation" .7
 		"fuel capacity" 800
 		"cargo space" 4000
-		"outfit space" 1491
+		"outfit space" 1492
 		"weapon capacity" 320
 		"engine capacity" 750
+		"heat dissipation" 0.7
 		weapon
-			"blast radius" 180
-			"shield damage" 1800
-			"hull damage" 900
-			"hit force" 2700
+			"blast radius" 215
+			"shield damage" 2150
+			"hull damage" 1075
+			"hit force" 3225
 	outfits
 		"Tiny Pulse Laser Turret" 2
 		"Electron Turret"
