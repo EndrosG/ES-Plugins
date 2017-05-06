@@ -1208,6 +1208,628 @@ ship "MaRe G2 Carrier"
 
 
 
+ship "MaRe G3 Gon"
+	sprite "ship/Marsian G3 Drone Gon"
+	attributes
+		category Drone
+		automaton 1
+		cost 2230000
+		shields 2939
+		hull 1295
+		mass 137
+		drag 2.40
+		"heat dissipation" 0.80
+		"outfit space" 372
+		"weapon capacity" 150
+		"engine capacity" 160
+		weapon
+			"blast radius" 20
+			"shield damage" 200
+			"hull damage" 100
+			"hit force" 300
+
+	outfits
+		"Electron Beam" 4
+		"Heavy Laser" 2
+
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+#		"Supercapacitor"
+#		"D06-GT Shield Generator"
+		"D14-RN Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"X2200 Ion Steering"
+
+#	engine -12 29
+#	engine 12 29
+	gun -12 -41
+	gun 12 -41
+	gun -20.5 -32
+	gun 20.5 -32
+	gun -29 -23
+	gun 29 -23
+	explode "tiny explosion" 10
+	description `The Marsian Relict "G3 Combat Drone" comes with up to 6 front guns, combining great fire power with high speed.`
+
+
+
+ship "MaRe G3 Ganon Mk I"
+	sprite "ship/Marsian G3 Fighter Ganon Mk I"
+	attributes
+		category Fighter
+		cost 3559000
+		shields 4510
+		hull 1984
+		"required crew" 9
+		mass 211
+		drag 3.70
+		"heat dissipation" 0.79
+		bunks 12
+		"cargo space" 10
+		"outfit space" 474
+		"weapon capacity" 210
+		"engine capacity" 175
+		weapon
+			"blast radius" 30
+			"shield damage" 300
+			"hull damage" 150
+			"hit force" 450
+
+	outfits
+		"Electron Beam" 6
+		"Heavy Anti-Missile Turret" 2
+
+		"Breeder Reactor"
+		"LP036a Battery Pack"
+#		"Supercapacitor"
+		"D23-QP Shield Generator"
+
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"X3200 Ion Steering"
+
+#	engine -18 40
+#	engine 18 40
+	gun -12 -60
+	gun 12 -60
+	gun -20.5 -49
+	gun 20.5 49
+	gun -29 -38
+	gun 29 -38
+	turret -28 10
+	turret 28 10
+	explode "tiny explosion" 5
+	explode "small explosion" 10
+	description `The Marsian Relict "G3 Ganon Mk I" Fighter provides, as the G2 Fighter, a combination of offensive gun ports and two defensive turret mounts. It suits well as gunboat or missile boat.`
+
+
+
+ship "MaRe G3 Ganon Mk II"
+	sprite "ship/Marsian G3 Fighter Ganon Mk II"
+	attributes
+		category Fighter
+		cost 4806500
+		shields 6102
+		hull 2703
+		"required crew" 12
+		mass 283
+		drag 4.95
+		"heat dissipation" 0.78
+		bunks 18
+		"cargo space" 15
+		"outfit space" 645
+		"weapon capacity" 260
+		"engine capacity" 263
+		weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
+
+	outfits
+		"Electron Beam" 8
+		"Heavy Anti-Missile Turret" 2
+
+		"Fusion Reactor"
+		"LP072a Battery Pack"
+#		"Supercapacitor"
+#		"D06-GT Shield Generator"
+		"D41-HY Shield Generator"
+		"Small Radar Jammer"
+
+		"X5700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Greyhound Plasma Steering"
+
+#	engine -18 44
+#	engine 18 44
+	gun -12 -65.5
+	gun 12 -65.5
+	gun -20.5 -56
+	gun 20.5 56
+	gun -29 -46
+	gun 29 -46
+	gun -37.5 -36
+	gun 37.5 -36
+	turret -30 12
+	turret 30 12
+	explode "tiny explosion" 5
+	explode "small explosion" 10
+	description `The Marsian Relict "G3 Ganon Mk II" Fighter offers two more gun ports and comes at a greater speed as the Mk I version. That makes it an even better gunboat, but it needs a larger crew though.`
+
+
+
+ship "MaRe G3 Carof"
+	sprite "ship/Marsian G3 Fighter Carof"
+	attributes
+		category Fighter
+		cost 8498000
+		shields 10785
+		hull 4797
+		"required crew" 20
+		mass 499
+		drag 8.68
+		"heat dissipation" 0.77
+		bunks 24
+		"cargo space" 20
+		"outfit space" 1188
+		"weapon capacity" 460
+		"engine capacity" 510
+		weapon
+			"blast radius" 75
+			"shield damage" 750
+			"hull damage" 375
+			"hit force" 1125
+
+	outfits
+		"Electron Beam" 12
+		"Electron Turret" 2
+		"Heavy Anti-Missile Turret" 2
+
+		"Stack Core"
+		"LP144a Battery Pack"
+		"LP072a Battery Pack"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator"
+		"Small Radar Jammer"
+
+		"X5700 Ion Thruster" 2
+		"X5200 Ion Steering" 2
+		"X3200 Ion Steering"
+
+#	engine -10 -51
+#	engine 10 -51
+#	engine -28 -44
+#	engine 28 -44
+	gun -6 -72
+	gun 6 -72
+	gun -13 -59
+	gun 13 -59
+	gun -21 -46
+	gun 21 -46
+	gun -29 -33
+	gun 29 -33
+	gun -37 -20.5
+	gun 37 -20.5
+	gun -45 -8
+	gun 45 -8
+	turret -24 -24
+	turret 24 -24
+	turret -34 13
+	turret 34 13
+	explode "tiny explosion" 5
+	explode "small explosion" 10
+	explode "medium explosion" 5
+	description `The Marsian Relict "G3 Carof" Heavy Fighter has twice the armament of a Ganon Mk I and almost triple engine power, by which it surely qualifies as interceptor of that time. But it also exists in a fighter version and still fits on the carriers of that era.`
+
+
+
+ship "MaRe G3 Caroi"
+	sprite "ship/Marsian G3 Fighter Carof"
+	attributes
+		category Interceptor
+		cost 9029000
+		shields 11434
+		hull 5098
+		"required crew" 20
+		mass 528
+		drag 9.16
+		"heat dissipation" 0.77
+		bunks 24
+		"fuel capacity" 200
+		"cargo space" 20
+		"outfit space" 1261
+		"weapon capacity" 500
+		"engine capacity" 510
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+
+	outfits
+		"Electron Beam" 12
+		"Electron Turret" 2
+		"Heavy Anti-Missile Turret" 2
+
+		"Stack Core"
+		"LP288a Battery Pack"
+		"D14-RN Shield Generator"
+		"D94-YV Shield Generator"
+		"Small Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster" 2
+		"X5200 Ion Steering" 2
+		"X3200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -10 -51
+#	engine 10 -51
+#	engine -28 -44
+#	engine 28 -44
+	gun -6 -72
+	gun 6 -72
+	gun -13 -59
+	gun 13 -59
+	gun -21 -46
+	gun 21 -46
+	gun -29 -33
+	gun 29 -33
+	gun -37 -20.5
+	gun 37 -20.5
+	gun -45 -8
+	gun 45 -8
+	turret -24 -24
+	turret 24 -24
+	turret -34 13
+	turret 34 13
+	explode "tiny explosion" 5
+	explode "small explosion" 10
+	explode "medium explosion" 5
+	description `The Marsian Relict "G3 Caroi" Interceptor has twice the armament of a Ganon Mk I and almost triple engine power, by which it surely qualifies as heavy interceptor of that time. It is almost identical with the fighter version and has only a short interstellar range.`
+
+
+
+ship "MaRe G3 Liwor"
+	sprite "ship/Marsian G3 Light Warship Liwor"
+	attributes
+		category "Light Warship"
+		cost 14194000
+		shields 17462
+		hull 7904
+		"required crew" 27
+		mass 797
+		drag 13.60
+		"heat dissipation" 0.76
+		bunks 44
+		"fuel capacity" 200
+		"cargo space" 88
+		"outfit space" 1801
+		"weapon capacity" 860
+		"engine capacity" 590
+		weapon
+			"blast radius" 125
+			"shield damage" 1250
+			"hull damage" 625
+			"hit force" 1875
+
+	outfits
+		"Electron Beam" 12
+		"Electron Turret" 4
+		"Marsian Anti-Missile Turret" 4
+
+		"Stack Core" 2
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"D94-YV Shield Generator" 2
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster" 2
+		"X5200 Ion Steering" 3
+		Hyperdrive
+		Ramscoop
+
+#	engine -36 43
+#	engine 36 43
+#	engine -59 46
+#	engine 59 46
+
+	gun -9 -51
+	gun 9 -51
+	gun -23 -49
+	gun 23 -49
+	gun -37 -47
+	gun 37 -47
+	gun -51.5 -44.5
+	gun 51.5 -44.5
+	gun -65.5 -42.5
+	gun 65.5 -42.5
+	gun -79 -40
+	gun 79 -40
+
+	turret -27 0
+	turret 27 0
+	turret -46 -2
+	turret 46 -2
+	turret -65 -6
+	turret 65 -6
+	turret -83 -12
+	turret 83 -12
+
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G3 Liwor" Light Warship is a bit larger than the heavy interceptor Caroi. Aside from the totally different optics, most notably the individual hardpoint capacities were increased, and four more turret mounts allow this ship to serve as guarding ship and as bomber. It has still only a short interstellar range.`
+	description `This ship should be strong enough to withstand a Navy Cruiser with 4 drones or a single Navy Carrier.`
+
+
+
+ship "MaRe G3 Defom"
+	sprite "ship/Marsian G3 Medium Warship Defom"
+	attributes
+		category "Medium Warship"
+		cost 26730000
+		shields 32407
+		hull 15427
+		"required crew" 68
+		mass 1415
+		drag 22.78
+		"heat dissipation" 0.75
+		bunks 124
+		"fuel capacity" 1100
+		"cargo space" 100
+		"outfit space" 2931
+		"weapon capacity" 1350
+		"engine capacity" 990
+		weapon
+			"blast radius" 235
+			"shield damage" 2350
+			"hull damage" 1175
+			"hit force" 3525
+
+	outfits
+		"Electron Beam" 10
+		"Electron Turret" 4
+		"Marsian Triple Electron Turret" 2
+		"Marsian Anti-Missile Turret" 6
+
+		"Stack Core" 3
+		"LP288a Battery Pack"
+		"Liquid Helium Cooler"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 4
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster" 4
+		"X5200 Ion Steering" 4
+		"Impala Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -59 77
+#	engine 59 77
+#	engine -83 84
+#	engine 83 84
+
+	gun -9 -92
+	gun 9 -92
+	gun -23 -90
+	gun 23 -90
+	gun -37 -88
+	gun 37 -88
+	gun -51.5 -86
+	gun 51.5 -86
+	gun -65.5 -84
+	gun 65.5 -84
+
+	turret -27 -42
+	turret 27 -42
+	turret -46 -40
+	turret 46 -40
+	turret -65 -36
+	turret 65 -36
+
+	turret -80 -6
+	turret 80 -6
+	turret -77.5 12.5
+	turret 77.5 12.5
+	turret -74 32
+	turret 74 32
+
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G3 Defom" Medium Warship shares the same basic design as the Liwor, but comes at a larger size. It has less gun ports but more turret mounts and can still serve equally well as guarding ship and as bomber. Its long interstellar range also makes it a good patrol ship.`
+	description `This ship should be strong enough to withstand a Navy Carrier with full complement.`
+
+
+
+ship "MaRe G3 Creso"
+	sprite "ship/Marsian G3 Light Cruiser Creso Mk IV"
+	attributes
+		category "Medium Warship"
+		cost 36160000
+		shields 41374
+		hull 19750
+		"required crew" 112
+		mass 1802
+		drag 28.90
+		"heat dissipation" 0.75
+		bunks 164
+		"fuel capacity" 1300
+		"cargo space" 115
+		"outfit space" 3287
+		"weapon capacity" 1390
+		"engine capacity" 1230
+		weapon
+			"blast radius" 305
+			"shield damage" 3050
+			"hull damage" 1525
+			"hit force" 4575
+
+	outfits
+		"Electron Beam" 6
+		"Electron Turret" 6
+		"Marsian Triple Electron Turret" 2
+		"Marsian Anti-Missile Turret" 6
+
+		"Stack Core" 3
+		"LP288a Battery Pack"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 6
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster" 5
+		"X5200 Ion Steering" 5
+		"X4200 Ion Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine -15 195
+#	engine 15 195
+#	engine -45 195
+#	engine 45 195
+
+	gun -9.5 -205
+	gun 9.5 -205
+	gun -23 -204
+	gun 23 -204
+	gun -37 -203
+	gun 37 -203
+
+	turret -41 -113
+	turret 41 -113
+	turret -18.5 -85.5
+	turret 18.5 -85.5
+	turret 0 -55
+	turret -15 -23
+	turret 15 -23
+	turret -25 11
+	turret 25 11
+	turret -30 47
+	turret 30 47
+	turret -30 82
+	turret 30 82
+	turret 0 112
+
+	drone -65.5 -183.5
+	drone 65.5 -183.5
+	drone -65.5 171
+	drone 65.5 171
+
+	fighter -106.5 -72
+	fighter 106.5 -72
+	fighter -106.5 58.5
+	fighter 106.5 58.5
+
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G3 Creso" Light Cruiser features four external docking clamps for drones and four for fighters. Fully stocked, it should easily withstand two Navy Cruisers with full complement.`
+
+
+
+ship "MaRe G3 Caril"
+	sprite "ship/Marsian G3 Light Carrier Caril Mk VI"
+	attributes
+		category "Heavy Warship"
+		cost 67927000
+		shields 73091
+		hull 36887
+		"required crew" 229
+		mass 3017
+		drag 44.57
+		"heat dissipation" 0.74
+		bunks 336
+		"fuel capacity" 1300
+		"cargo space" 140
+		"outfit space" 4075
+		"weapon capacity" 1380
+		"engine capacity" 1850
+		weapon
+			"blast radius" 545
+			"shield damage" 5450
+			"hull damage" 2725
+			"hit force" 8175
+
+	outfits
+		"Electron Beam" 4
+		"Electron Turret" 4
+		"Marsian Triple Electron Turret" 4
+		"Marsian Anti-Missile Turret" 4
+
+		"Stack Core" 4
+		"LP288a Battery Pack"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 8
+		"Large Radar Jammer"
+		"Marsian Scanner"
+
+		"X5700 Ion Thruster" 7
+		"X5200 Ion Steering" 7
+		"Orca Plasma Steering"
+		Hyperdrive
+		Ramscoop
+
+#	engine 0 243
+
+	gun -74.5 -258.5
+	gun 74.5 -258.5
+	gun -89 -253
+	gun 89 -253
+
+	turret -48 -204
+	turret 48 -204
+	turret -81 -138
+	turret 81 -138
+	turret -100 -66
+	turret 100 -66
+	turret -104 8.5
+	turret 104 8.5
+	turret -91 82
+	turret 91 82
+	turret -64 151.5
+	turret 64 151.5
+
+	drone 0 -248
+	drone 0 -248
+	drone 0 -248
+	drone 0 -248
+	drone 0 -248
+	drone 0 -248
+
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+	fighter 0 -248
+
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G3 Caril" Light Carrier is everything but not light according to human standards. But compared to the other dedicated carriers of that era, this is really a light ship. While its internal armament is just slightly weaker than that of the Creso Light Cruiser, it has a hangar large enough to hold 20 fighters and 6 drones.`
+	description `With full complement, one of these ships probably can solely drive an assault against an entire taskforce of the Republic Navy. Even without complement it should have good chances against a Kor Mereti Model 512.`
+
+
+
 # new classification as of 24.04.17 - defined as generation 2 afterwards
 # Light Freighter
 # SS Fuel Tanker : Support Ship Fuel Tanker

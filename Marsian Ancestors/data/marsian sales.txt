@@ -225,6 +225,27 @@ shipyard "Marsian Relicts: G2 Colony Ships (Capital)"
 
 
 
+# generation 3
+shipyard "Marsian Relicts: G3 Interceptors"
+	"MaRe G3 Gon"
+	"MaRe G3 Ganon Mk I"
+	"MaRe G3 Ganon Mk II"
+	"MaRe G3 Carof"
+	"MaRe G3 Caroi"
+
+shipyard "Marsian Relicts: G3 Warships"
+	"MaRe G3 Liwor"
+	"MaRe G3 Defom"
+	"MaRe G3 Creso"
+
+shipyard "Marsian Relicts: G3 Capital Ships"
+	"MaRe G3 Caril"
+	"MaRe G3 Loril"
+	"MaRe G3 Carrier Mk IV"
+	"MaRe G3 Carrier Mk V"
+
+
+
 shipyard "Marsian Relicts: Megaliner"
 	"Military Freighter"
 	"Hauler III-10"
