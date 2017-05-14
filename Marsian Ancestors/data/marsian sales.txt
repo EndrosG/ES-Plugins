@@ -15,23 +15,24 @@
 
 
 
-outfitter "Marsian Relicts: Tiny Outfits"
+outfitter "Marsian Relicts: Tiny Outfits"	# [G2] AHD 20 Miner, ATV 960 series
 	"Tiny Solar Panel"
 	"D01-AA Shield Generator"
 	"X0700 Ion Thruster"
 	"X0200 Ion Steering"
 
 	"Tiny Anti-Missile Turret"
-	"Small Anti-Missile Turret"
 	"Tiny Mining Laser"
 	"Tiny Pulse Laser"
 	"Tiny Pulse Laser Turret"
 
 
 
-outfitter "Marsian Relicts: Small Outfits"
+outfitter "Marsian Relicts: Small Outfits"	# G1 Drone
 	"Mini Core"
 	"D06-GT Shield Generator"
+
+	"Small Anti-Missile Turret"
 
 
 

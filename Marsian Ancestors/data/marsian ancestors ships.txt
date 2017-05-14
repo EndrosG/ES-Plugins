@@ -2031,15 +2031,15 @@ ship "ATV 960 Military"
 	attributes
 		category Drone
 		automaton 1
-		cost 7176000
-		shields 9748
-		hull 4398
-		mass 428
-		drag 6.94
+		cost 7264000
+		shields 9881
+		hull 4444
+		mass 435
+		drag 7.08
 		"heat dissipation" 0.80
 		"cargo space" 960
-		"outfit space" 240
-		"weapon capacity" 20
+		"outfit space" 264
+		"weapon capacity" 40
 		"engine capacity" 180
 		weapon
 			"blast radius" 25
@@ -2052,8 +2052,8 @@ ship "ATV 960 Military"
 		
 		"NT-200 Nucleovoltaic"
 		"Supercapacitor"
-		"D23-QP Shield Generator"
-#		"D67-TM Shield Generator"
+		"D14-RN Shield Generator"
+#		"D23-QP Shield Generator"
 
 		"X4700 Ion Thruster"
 		"X5200 Ion Steering"
@@ -2072,16 +2072,16 @@ ship "ATV 960 Hyper"
 	attributes
 		category "Light Freighter"
 		automaton 1
-		cost 7760000
-		shields 10405
-		hull 4693
-		mass 457
-		drag 7.42
+		cost 7699000
+		shields 10412
+		hull 4662
+		mass 460
+		drag 7.53
 		"heat dissipation" 0.80
 		"fuel capacity" 300
 		"cargo space" 960
-		"outfit space" 311
-		"weapon capacity" 60
+		"outfit space" 326
+		"weapon capacity" 72
 		"engine capacity" 180
 		weapon
 			"blast radius" 30
@@ -2112,7 +2112,7 @@ ship "ATV 960 Hyper"
 
 
 ship "FS Village"
-	sprite "ship/freighter"
+	sprite "ship/Marsian G2 FS Village"
 	attributes
 		category "Light Freighter"
 		cost 6484000
@@ -2146,10 +2146,10 @@ ship "FS Village"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
+#	engine -56 72
+#	engine 56 72
+	turret -25 3
+	turret 25 3
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The FS Village is the smallest member of the dedicated freight ship class. Together with the FS Town and the FS City, this ship class probably built the backbone of the supply network. Similar to the support ship class, the freight ship class has almost no free passenger bunks and only minimal armament."
@@ -2157,7 +2157,7 @@ ship "FS Village"
 
 
 ship "FS Town"
-	sprite "ship/freighter"
+	sprite "ship/Marsian G2 FS Town"
 	attributes
 		category "Light Freighter"
 		cost 36223000
@@ -2193,12 +2193,14 @@ ship "FS Town"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
+#	engine -74 96
+#	engine 74 96
+#	engine -163 96
+#	engine 163 96
+	turret -27 3
+	turret 27 3
+	turret -123 3
+	turret 123 3
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The FS Town is member of the dedicated freight ship class. Together with the FS Village and the FS City, this ship class probably built the backbone of the supply network. Similar to the support ship class, the freight ship class has almost no free passenger bunks and only minimal armament."
@@ -2263,7 +2265,7 @@ ship "FS City"
 
 
 ship "TS Cityliner"
-	sprite "ship/freighter"
+	sprite "ship/Marsian G2 TS Cityliner"
 	attributes
 		category "Transport"
 		cost 28963000
@@ -2298,12 +2300,12 @@ ship "TS Cityliner"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
+#	engine -89 92
+#	engine 89 92
+	turret -39 8
+	turret 39 8
+	turret -136 8
+	turret 136 8
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The TS Cityliner is one of two dedicated transport ships which could be recovered. Together with the TS Metroliner, both seem to have served as commuters between smaller and larger cities or colonies. Similar to the support ship class, these transport ships have only minimal cargo space and armament."
