@@ -2208,7 +2208,7 @@ ship "FS Town"
 
 
 ship "FS City"
-	sprite "ship/freighter"
+	sprite "ship/Marsian G2 FS City"
 	attributes
 		category "Light Freighter"
 		cost 209631000
@@ -2244,15 +2244,19 @@ ship "FS City"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret 0 0
+#	engine -74 153
+#	engine 74 153
+#	engine -119 153
+#	engine 119 153
+#	engine -163 153
+#	engine 163 153
+	turret 0 -134
+	turret -24 -119
+	turret 24 -119
+	turret -213.5 -30
+	turret 213.5 -30
+	turret -213.5 119
+	turret 213.5 119
 	drone 0 0 under
 	drone 0 0 under
 	drone 0 0 under
@@ -2313,7 +2317,7 @@ ship "TS Cityliner"
 
 
 ship "TS Metroliner"
-	sprite "ship/freighter"
+	sprite "ship/Marsian G2 TS Metroliner"
 	attributes
 		category "Transport"
 		cost 442528000
@@ -2347,14 +2351,18 @@ ship "TS Metroliner"
 		Hyperdrive
 		Ramscoop
 
-#	engine -22 198
-#	engine 22 198
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
-	turret -5 0
-	turret 5 0
+#	engine -88 178
+#	engine 88 178
+#	engine -207 178
+#	engine 207 178
+#	engine -296 178
+#	engine 296 178
+	turret -39 -146
+	turret 39 -146
+	turret -251 -57
+	turret 251 -57
+	turret -341 121
+	turret 341 121
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description "The TS Metroliner is one of two dedicated transport ships which could be recovered. Together with the TS Cityliner, both seem to have served as commuters between smaller and larger cities or colonies. Similar to the support ship class, these transport ships have only minimal cargo space and armament."
