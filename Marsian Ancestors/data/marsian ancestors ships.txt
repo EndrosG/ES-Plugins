@@ -1564,7 +1564,7 @@ ship "MaRe G3 Liwor"
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description `The Marsian Relict "G3 Liwor" Light Warship is a bit larger than the heavy interceptor Caroi. Aside from the totally different optics, most notably the individual hardpoint capacities were increased, and four more turret mounts allow this ship to serve as guarding ship and as bomber. It has still only a short interstellar range.`
-	description `This ship should be strong enough to withstand a Navy Cruiser with 4 drones or a single Navy Carrier.`
+	description `	This ship should be strong enough to withstand a Navy Cruiser with 4 drones or a single Navy Carrier.`
 
 
 
@@ -1644,7 +1644,7 @@ ship "MaRe G3 Defom"
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description `The Marsian Relict "G3 Defom" Medium Warship shares the same basic design as the Liwor, but comes at a larger size. It has less gun ports but more turret mounts and can still serve equally well as guarding ship and as bomber. Its long interstellar range also makes it a good patrol ship.`
-	description `This ship should be strong enough to withstand a Navy Carrier with full complement.`
+	description `	This ship should be strong enough to withstand a Navy Carrier with full complement.`
 
 
 
@@ -1826,7 +1826,7 @@ ship "MaRe G3 Caril"
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description `The Marsian Relict "G3 Caril" Light Carrier is everything but not light according to human standards. But compared to the other dedicated carriers of that era, this is really a light ship. While its internal armament is just slightly weaker than that of the Creso Light Cruiser, it has a hangar large enough to hold 20 fighters and 6 drones.`
-	description `With full complement, one of these ships probably can solely drive an assault against an entire taskforce of the Republic Navy. Even without complement it should have good chances against a Kor Mereti Model 512.`
+	description `	With full complement, one of these ships probably can solely drive an assault against an entire taskforce of the Republic Navy. Even without complement it should have good chances against a Kor Mereti Model 512.`
 
 
 
@@ -2058,12 +2058,291 @@ ship "MaRe G3 Loril"
 	fighter -210 181 left
 	fighter 210 181 right
 
-
-
 	explode "small explosion" 10
 	explode "medium explosion" 20
 	description `The Marsian Relict "G3 Loril" Large Carrier is the largest G3 ship. It features six large bays with a total capacity of 100 fighters and 16 drones. To protect this valuable complement, it comes with 4 front guns and 28 turret mounts.`
-	description `With full complement, one of these ships probably can solely drive an assault against an entire fleet of Korath automata ships.`
+	description `	With full complement, one of these ships probably can solely drive an assault against an entire fleet of Korath automata ships.`
+
+
+
+ship "MaRe G3 Faril"
+	sprite "ship/Marsian G3 Carrier Faril Mk IV"
+	attributes
+		category "Heavy Warship"
+		cost 219145500
+		shields 255807
+		hull 132123
+		"required crew" 473
+		mass 10307
+		drag 146.17
+		"heat dissipation" 0.72
+		bunks 872
+		"fuel capacity" 3300
+		"cargo space" 800
+		"outfit space" 18785
+		"weapon capacity" 4080
+		"engine capacity" 7120
+		weapon
+			"blast radius" 1550
+			"shield damage" 15500
+			"hull damage" 7750
+			"hit force" 23250
+
+	outfits
+#		"Electron Beam" 4
+		"Capital EMP Blaster" 2
+		"Large EMP Blaster" 2
+#		"Electron Turret" 4
+		"Marsian Triple Electron Turret" 20
+		"Marsian Anti-Missile Turret" 6
+
+		"Stack Mega Core" 2
+		"LP288a Battery Pack" 2
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 98	# 51
+		"Large Radar Jammer" 2
+		"Marsian Scanner" 2
+
+		"X8700 Ion Thruster" 3
+		"X8200 Ion Steering" 3
+		Hyperdrive 2
+		Ramscoop
+
+#	engine -74 156
+#	engine 74 156
+#	engine -118.5 156
+#	engine 118.5 156
+#	engine -163 156
+#	engine 163 156
+
+	gun -88 -157
+	gun 88 -157
+	gun -106 -157
+	gun 106 -157
+
+	turret -74 -89 "Marsian Triple Electron Turret"
+	turret 74 -89 "Marsian Triple Electron Turret"
+	turret -118.5 -89 "Marsian Triple Electron Turret"
+	turret 118.5 -89 "Marsian Triple Electron Turret"
+	turret -163 -89 "Marsian Triple Electron Turret"
+	turret 163 -89 "Marsian Triple Electron Turret"
+
+	turret -37 -95 "Marsian Anti-Missile Turret"
+	turret 37 -95 "Marsian Anti-Missile Turret"
+	turret -35 -57 "Marsian Triple Electron Turret"
+	turret 35 -57 "Marsian Triple Electron Turret"
+	turret -33.5 -21 "Marsian Triple Electron Turret"
+	turret 33.5 -21 "Marsian Triple Electron Turret"
+	turret -32 17 "Marsian Triple Electron Turret"
+	turret 32 17 "Marsian Triple Electron Turret"
+	turret -31.5 54 "Marsian Triple Electron Turret"
+	turret 31.5 54 "Marsian Triple Electron Turret"
+	turret -31 91 "Marsian Triple Electron Turret"
+	turret 31 91 "Marsian Triple Electron Turret"
+	turret -30.5 127 "Marsian Anti-Missile Turret"
+	turret 30.5 127 "Marsian Anti-Missile Turret"
+
+	turret -196 14 "Marsian Triple Electron Turret"
+	turret 196 14 "Marsian Triple Electron Turret"
+	turret -196 48 "Marsian Anti-Missile Turret"
+	turret 196 48 "Marsian Anti-Missile Turret"
+	turret -196 82 "Marsian Triple Electron Turret"
+	turret 196 82 "Marsian Triple Electron Turret"
+
+	drone -240 48 left
+	drone 240 48 right
+	drone -240 48 left
+	drone 240 48 right
+	drone -240 48 left
+	drone 240 48 right
+	drone -240 48 left
+	drone 240 48 right
+
+	drone -240 48 left
+	drone 240 48 right
+	drone -240 48 left
+	drone 240 48 right
+	drone -240 48 left
+	drone 240 48 right
+	drone -240 48 left
+	drone 240 48 right
+
+	fighter -240 48 left
+	fighter 240 48 right
+	fighter -240 48 left
+	fighter 240 48 right
+	fighter -240 48 left
+	fighter 240 48 right
+	fighter -240 48 left
+	fighter 240 48 right
+
+	fighter -240 48 left
+	fighter 240 48 right
+	fighter -240 48 left
+	fighter 240 48 right
+	fighter -240 48 left
+	fighter 240 48 right
+	fighter -240 48 left
+	fighter 240 48 right
+
+	fighter -240 48 left
+	fighter 240 48 right
+	fighter -240 48 left
+	fighter 240 48 right
+
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G3 Faril" Mk IV Carrier is one of the two flagship versions of the G3 carrier. It features two large bays with a total capacity of 20 fighters and 16 drones. To protect this valuable complement, it comes with 4 front guns and 26 turret mounts. It is much faster than the G3 Large Carrier, has a longer range, more cargo space and a lower crew requirement.`
+	description `	With full complement, one of these ships eventually can solely drive an assault against an entire fleet of Korath automata ships.`
+
+
+
+ship "MaRe G3 Feril"
+	sprite "ship/Marsian G3 Carrier Feril Mk V"
+	attributes
+		category "Heavy Warship"
+		cost 291935000
+		shields 342484
+		hull 176620
+		"required crew" 668
+		mass 13822
+		drag 196.57
+		"heat dissipation" 0.72
+		bunks 1108
+		"fuel capacity" 5100
+		"cargo space" 1700
+		"outfit space" 25017
+		"weapon capacity" 4560
+		"engine capacity" 11850
+		weapon
+			"blast radius" 2075
+			"shield damage" 20750
+			"hull damage" 10375
+			"hit force" 31125
+
+	outfits
+#		"Electron Beam" 4
+		"Large EMP Blaster" 4
+#		"Electron Turret" 4
+		"Marsian Triple Electron Turret" 24
+		"Marsian Anti-Missile Turret" 6
+
+#		"Stack Mega Core" 3
+		"Stack Metro Core"
+		"LP288a Battery Pack" 3
+		"D14-RN Shield Generator"
+		"D94-YV Shield Generator" 108
+		"Large Radar Jammer" 2
+		"Marsian Scanner"
+
+		"X8700 Ion Thruster" 5
+		"X8200 Ion Steering" 5
+		Hyperdrive 2
+		Ramscoop
+
+#	engine -74 181
+#	engine 74 181
+#	engine -118.5 181
+#	engine 118.5 181
+#	engine -163 181
+#	engine 163 181
+
+	gun -25 -183
+	gun 25 -183
+	gun -43 -183
+	gun 43 -183
+
+	turret -74 -121 "Marsian Triple Electron Turret"
+	turret 74 -121 "Marsian Triple Electron Turret"
+	turret -118.5 -121 "Marsian Triple Electron Turret"
+	turret 118.5 -121 "Marsian Triple Electron Turret"
+	turret -163 -121 "Marsian Triple Electron Turret"
+	turret 163 -121 "Marsian Triple Electron Turret"
+
+	turret -194 -18 "Marsian Triple Electron Turret"
+	turret 194 -18 "Marsian Triple Electron Turret"
+	turret -195 15 "Marsian Triple Electron Turret"
+	turret 195 15 "Marsian Triple Electron Turret"
+	turret -196 46.5 "Marsian Anti-Missile Turret"
+	turret 196 46.5 "Marsian Anti-Missile Turret"
+	turret -196 78 "Marsian Triple Electron Turret"
+	turret 196 78 "Marsian Triple Electron Turret"
+	turret -195 111 "Marsian Triple Electron Turret"
+	turret 195 111 "Marsian Triple Electron Turret"
+
+	turret -37 -86 "Marsian Anti-Missile Turret"
+	turret 37 -86 "Marsian Anti-Missile Turret"
+	turret -35 -49 "Marsian Triple Electron Turret"
+	turret 35 -49 "Marsian Triple Electron Turret"
+	turret -33.5 -12 "Marsian Triple Electron Turret"
+	turret 33.5 -12 "Marsian Triple Electron Turret"
+	turret -32 26 "Marsian Triple Electron Turret"
+	turret 32 26 "Marsian Triple Electron Turret"
+	turret -31.5 63 "Marsian Triple Electron Turret"
+	turret 31.5 63 "Marsian Triple Electron Turret"
+	turret -31 100 "Marsian Triple Electron Turret"
+	turret 31 100 "Marsian Triple Electron Turret"
+	turret -30.5 137 "Marsian Anti-Missile Turret"
+	turret 30.5 137 "Marsian Anti-Missile Turret"
+
+	drone -260 45 left
+	drone 260 45 right
+	drone -260 45 left
+	drone 260 45 right
+	drone -260 45 left
+	drone 260 45 right
+	drone -260 45 left
+	drone 260 45 right
+
+	drone -260 45 left
+	drone 260 45 right
+	drone -260 45 left
+	drone 260 45 right
+	drone -260 45 left
+	drone 260 45 right
+	drone -260 45 left
+	drone 260 45 right
+
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+	fighter -260 45 left
+	fighter 260 45 right
+
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G3 Feril" Mk V Carrier is one of the two flagship versions of the G3 carrier. It features two large bays with a total capacity of 30 fighters and 16 drones. To protect this valuable complement, it comes with 4 front guns and 30 turret mounts. This ship is build for speed, plundering capacity and hyperspace range.`
+	description `	Whenever it fails to perform a mission profile solo, just surround it with a proper stack of G3 Creso ships or other carriers.`
+#	description `	With full complement, one of these ships eventually can solely drive an assault against an entire fleet of Korath automata ships.`
+	description `	WARNING: The last two turret mounts can be only used for anti-missile systems, so better don't touch them.`
 
 
 
@@ -2580,7 +2859,8 @@ ship "TS Metroliner"
 	outfits
 		"Marsian Anti-Missile Turret" 6
 
-		"Stack Mega Core" 3
+#		"Stack Mega Core" 3
+		"Stack Metro Core"
 		"LP288a Battery Pack"
 		"D94-YV Shield Generator" 51
 

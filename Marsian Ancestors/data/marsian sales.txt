@@ -240,10 +240,10 @@ shipyard "Marsian Relicts: G3 Warships"
 	"MaRe G3 Creso"
 
 shipyard "Marsian Relicts: G3 Capital Ships"
-	"MaRe G3 Caril"
-	"MaRe G3 Loril"
-	"MaRe G3 Carrier Mk IV"
-	"MaRe G3 Carrier Mk V"
+	"MaRe G3 Caril"		# "MaRe G3 Light Carrier Mk VI"
+	"MaRe G3 Loril"		# "MaRe G3 Large Carrier Mk IV"
+	"MaRe G3 Faril"		# "MaRe G3 Carrier Mk IV"
+	"MaRe G3 Feril"		# "MaRe G3 Carrier Mk V"
 
 
 
