@@ -1830,6 +1830,243 @@ ship "MaRe G3 Caril"
 
 
 
+ship "MaRe G3 Loril"
+	sprite "ship/Marsian G3 Large Carrier Loril Mk IV"
+	attributes
+		category "Heavy Warship"
+		cost 250306000
+		shields 254624
+		hull 131120
+		"required crew" 830
+		mass 10292
+		drag 146.76
+		"heat dissipation" 0.72
+		bunks 1272
+		"fuel capacity" 2100
+		"cargo space" 400
+		"outfit space" 10641
+		"weapon capacity" 4380
+		"engine capacity" 4000
+		weapon
+			"blast radius" 1540
+			"shield damage" 15400
+			"hull damage" 7700
+			"hit force" 23100
+
+	outfits
+#		"Electron Beam" 4
+		"Large EMP Blaster" 4
+#		"Electron Turret" 4
+		"Marsian Triple Electron Turret" 20
+		"Marsian Anti-Missile Turret" 8
+
+		"Stack Mega Core" 2
+		"LP288a Battery Pack"
+#		"D67-TM Shield Generator"
+		"D94-YV Shield Generator" 16
+		"Large Radar Jammer" 2
+		"Marsian Scanner"
+
+		"X8700 Ion Thruster"
+		"X8200 Ion Steering"
+		"X5700 Ion Thruster" 7
+		"X5200 Ion Steering" 7
+#		"Orca Plasma Steering"
+		Hyperdrive 2
+		Ramscoop
+
+#	engine -89 353
+#	engine 89 353
+
+	gun -113 -352
+	gun 113 -352
+	gun -130 -352
+	gun 130 -352
+
+	turret -20 -323 "Marsian Triple Electron Turret"
+	turret 20 -323 "Marsian Triple Electron Turret"
+	turret -56 -323 "Marsian Triple Electron Turret"
+	turret 56 -323 "Marsian Triple Electron Turret"
+
+	turret -126 -228 "Marsian Anti-Missile Turret"
+	turret 126 -228 "Marsian Anti-Missile Turret"
+	turret -128 -186 "Marsian Triple Electron Turret"
+	turret 128 -186 "Marsian Triple Electron Turret"
+	turret -130 -143 "Marsian Triple Electron Turret"
+	turret 130 -143 "Marsian Triple Electron Turret"
+	turret -132 -100 "Marsian Anti-Missile Turret"
+	turret 132 -100 "Marsian Anti-Missile Turret"
+	turret -133 -58 "Marsian Triple Electron Turret"
+	turret 133 -58 "Marsian Triple Electron Turret"
+	turret -134 -15 "Marsian Triple Electron Turret"
+	turret 134 -15 "Marsian Triple Electron Turret"
+	turret -134 28 "Marsian Triple Electron Turret"
+	turret 134 28 "Marsian Triple Electron Turret"
+	turret -134 70 "Marsian Triple Electron Turret"
+	turret 134 70 "Marsian Triple Electron Turret"
+	turret -134 113 "Marsian Anti-Missile Turret"
+	turret 134 113 "Marsian Anti-Missile Turret"
+	turret -133 155 "Marsian Triple Electron Turret"
+	turret 133 155 "Marsian Triple Electron Turret"
+	turret -132 198 "Marsian Triple Electron Turret"
+	turret 132 198 "Marsian Triple Electron Turret"
+	turret -130 241 "Marsian Anti-Missile Turret"
+	turret 130 241 "Marsian Anti-Missile Turret"
+
+	drone -210 -174 left
+	drone 210 -174 right
+	drone -210 3.5 left
+	drone 210 3.5 right
+	drone -210 181 left
+	drone 210 181 right
+
+	drone -210 -174 left
+	drone 210 -174 right
+	drone -210 3.5 left
+	drone 210 3.5 right
+	drone -210 181 left
+	drone 210 181 right
+
+	drone -210 -174 left
+	drone 210 -174 right
+#	drone -210 3.5 left
+#	drone 210 3.5 right
+	drone -210 181 left
+	drone 210 181 right
+
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+	fighter -210 3.5 left
+	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+
+	fighter -210 -174 left
+	fighter 210 -174 right
+#	fighter -210 3.5 left
+#	fighter 210 3.5 right
+	fighter -210 181 left
+	fighter 210 181 right
+
+
+
+	explode "small explosion" 10
+	explode "medium explosion" 20
+	description `The Marsian Relict "G3 Loril" Large Carrier is the largest G3 ship. It features six large bays with a total capacity of 100 fighters and 16 drones. To protect this valuable complement, it comes with 4 front guns and 28 turret mounts.`
+	description `With full complement, one of these ships probably can solely drive an assault against an entire fleet of Korath automata ships.`
+
+
+
 # new classification as of 24.04.17 - defined as generation 2 afterwards
 # Light Freighter
 # SS Fuel Tanker : Support Ship Fuel Tanker
@@ -2237,6 +2474,7 @@ ship "FS City"
 		"LP144a Battery Pack"
 		"D94-YV Shield Generator"
 		"D41-HY Shield Generator"
+		"Bunk Room"
 
 		"X8700 Ion Thruster"
 		"X8200 Ion Steering" 2
