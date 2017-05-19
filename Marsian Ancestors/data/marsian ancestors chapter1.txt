@@ -238,21 +238,21 @@ mission "Marsian Home: settlement discovered"
 
 			label improvesituation
 			apply
-				"Marsian Home: help offered"++
+				"Marsian Home: help offered" ++
 				"Marsian Home: improvesituation" = -1
 			`	You write a few nice words emphasizing your interest in their work. You ask about their current situation, if they feel comfortable or if they eventually need a trip back home.`
 				decline
 
 			label morepeople
 			apply
-				"Marsian Home: help offered"++
+				"Marsian Home: help offered" ++
 				"Marsian Home: morepeople" = -1
 			`	You write a few nice words emphasizing your interest in their work and that you would be willing to transport more people to their site if that would help.`
 				decline
 
 			label fundraising
 			apply
-				"Marsian Home: help offered"++
+				"Marsian Home: help offered" ++
 				"Marsian Home: fundraising" = -1
 			`	You write a few nice words emphasizing your interest in their work and that you wonder who pays them with no local authority present.`
 				decline
@@ -288,6 +288,7 @@ mission "Newsletter: Marsian technology: spaceport discovered"
 
 
 mission "EventHandler: Marsian technology: spaceport operating"
+# The author decided against a separate newsletter mission in this case - informing about the reopening of the spaceport is of higher importance
 	invisible
 	landing
 	to offer
@@ -379,6 +380,7 @@ mission "EventHandler: Marsian technology: first outfitter operating"
 		"Marsian Home: working points" -= 30
 		event "Marsian Home: tiny outfits"
 		event "Marsian technology timer: basic human outfits" 14
+		event "Marsian technology timer: small outfits" 35
 		fail "EventHandler: Marsian technology: first outfitter operating"
 #		decline
 
@@ -401,14 +403,72 @@ mission "EventHandler: Marsian technology: basic human outfits"
 	landing
 	to offer
 		has "event: Marsian technology timer: basic human outfits"
-		# 10 (initially 5) for the spaceport + initially 20 for the tiny outfitter + some excess capacities
+		# 10 (initially 5) for the spaceport + 40 (initially 20) for the tiny outfitter + some excess capacities [+20 excess x1.5 training points, plus training the other new workers]
 		"Marsian Home: engineering points" >= 20
-		"Marsian Home: workers" >= 60
+		"Marsian Home: working points" >= 60
+		"Marsian Home: workers" >= 70
 	on offer
 		"Marsian Home: engineering points" -= 20
+		"Marsian Home: working points" -= 60
 		event "Marsian Home: basic human outfits"
 		fail "EventHandler: Marsian technology: basic human outfits"
 #		decline
+
+# mission "Newsletter: Marsian Home: basic human outfits"
+# The author decided against creating this one
+
+
+
+mission "EventHandler: Marsian technology: small outfits"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: small outfits"
+		# 10 (initially 5) for the spaceport + 40 (initially 20) for the tiny outfitter + some excess capacities [+20 excess x1.5 training points, plus training existing workers]
+		"Marsian Home: science points" >= 20
+		"Marsian Home: engineering points" >= 40
+		"Marsian Home: working points" >= 120
+		"Marsian Home: workers" >= 90
+	on offer
+		"Marsian Home: science points" -= 20
+		"Marsian Home: engineering points" -= 40
+		"Marsian Home: working points" -= 120
+		event "Marsian Home: small outfits"
+		fail "EventHandler: Marsian technology: small outfits"
+#		decline
+
+
+
+mission "Newsletter: Marsian Home: small outfits"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "event: Marsian Home: small outfits"
+	on offer
+		conversation
+			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! Our tiny outfitter now offers a few more outfits."`
+				decline
+
+
+
+mission "EventHandler: Marsian technology: advanced human outfits"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: advanced human outfits"
+		# 10 (initially 5) for the spaceport + 40 (+ 30/20-40 excess) for the tiny outfitter + some excess capacities [+30 excess x1.5 training points, plus training existing workers]
+		"Marsian Home: engineering points" >= 60
+		"Marsian Home: working points" >= 150
+		"Marsian Home: workers" >= 110
+	on offer
+		"Marsian Home: engineering points" -= 60
+		"Marsian Home: working points" -= 150
+		event "Marsian Home: advanced human outfits"
+		fail "EventHandler: Marsian technology: advanced human outfits"
+#		decline
+
+# mission "Newsletter: Marsian Home: advanced human outfits"
+# The author decided against creating this one
 
 
 
@@ -477,28 +537,303 @@ mission "EventHandler: Marsian technology: first shipyard operating"
 		has "event: Marsian technology timer: first shipyard operating"
 		"Marsian Home: science points" >= 20
 		"Marsian Home: engineering points" >= 20
-		"Marsian Home: working points" >= 100
-		# 10 (initially 5) for the spaceport + 40 (initially 20) for the tiny outfitter + initially 50 for the small shipyard [x3 training points]
-		"Marsian Home: workers" >= 150
+		"Marsian Home: working points" >= 150
+		# 10 for the spaceport + 40 (+ 20/20-40 excess) for the tiny outfitter + initially 50 for the small shipyard [x3 training points]
+		"Marsian Home: workers" >= 120
 	on offer
 		"Marsian Home: science points" -= 20
 		"Marsian Home: engineering points" -= 20
 		"Marsian Home: working points" -= 150
-		event "Marsian Home: support ships"
+		event "Marsian Home: g1 support ships"
+		event "Marsian technology timer: basic human ships" 21
+		event "Marsian technology timer: g1 interceptors" 35
+		event "Marsian technology timer: g1 warships" 63
+		event "Marsian technology timer: g1 capital ships" 90
 		fail "EventHandler: Marsian technology: first shipyard operating"
 #		decline
 
 
 
-mission "Newsletter: Marsian Home: Tiny Outfits"
+mission "Newsletter: Marsian Home: g1 support ships"
 	landing
 	to offer
 		has "Marsian technology newsletter subscription"
-		has "event: Marsian Home: Tiny Outfits"
+		has "event: Marsian Home: g1 support ships"
 	on offer
 		conversation
-			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! We finally have enough trained workers here to operate that tiny outfitter site now."`
+			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! We finally have enough trained workers here to operate that first shipyard facility now."`
 				decline
+
+
+
+mission "EventHandler: Marsian technology: basic human ships"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: basic human ships"
+		# 10 for the spaceport + 40 (+ 30/20-40 excess) for the tiny outfitter + 80 (initially 50) for the small shipyard + some excess capacities [+20 x3 training points]
+		"Marsian Home: engineering points" >= 20
+		"Marsian Home: working points" >= 150
+		"Marsian Home: workers" >= 180
+	on offer
+		"Marsian Home: engineering points" -= 20
+		"Marsian Home: working points" -= 150
+		event "Marsian Home: basic human ships"
+		fail "EventHandler: Marsian technology: basic human ships"
+#		decline
+
+# mission "Newsletter: Marsian Home: basic human ships"
+# The author decided against creating this one
+
+
+
+mission "EventHandler: Marsian technology: g1 interceptors"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: g1 interceptors"
+		"Marsian Home: science points" >= 40
+		"Marsian Home: engineering points" >= 40
+		"Marsian Home: working points" >= 360
+		# 10 for the spaceport + 40 (+ 40/20-40 excess) for the tiny outfitter + 80 (+ 20/20 excess) for the small shipyard + some excess capacities [+20 x3 training points]
+		"Marsian Home: workers" >= 210
+	on offer
+		"Marsian Home: science points" -= 40
+		"Marsian Home: engineering points" -= 40
+		"Marsian Home: working points" -= 360
+		event "Marsian Home: g1 interceptors"
+		fail "EventHandler: Marsian technology: g1 interceptors"
+#		decline
+
+
+
+mission "Newsletter: Marsian Home: g1 interceptors"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "event: Marsian Home: g1 interceptors"
+	on offer
+		conversation
+			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! We finished testing the first fighters and interceptors of those ancestors and started production of both in that shipyard facility."`
+				decline
+
+
+
+mission "EventHandler: Marsian technology: g1 warships"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: g1 warships"
+		has "event: stack core for sale"
+		"Marsian Home: science points" >= 60
+		"Marsian Home: engineering points" >= 100
+		"Marsian Home: working points" >= 600
+		# 10 for the spaceport + 40 (+ 40/20-40 excess) for the tiny outfitter + 80 (+ 30/20-40 excess) for the small shipyard + some excess capacities [+40 x4 training points]
+		"Marsian Home: workers" >= 240
+	on offer
+		"Marsian Home: science points" -= 60
+		"Marsian Home: engineering points" -= 100
+		"Marsian Home: working points" -= 600
+		event "Marsian Home: g1 warships"
+		fail "EventHandler: Marsian technology: g1 warships"
+#		decline
+
+
+
+mission "Newsletter: Marsian Home: g1 warships"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "event: Marsian Home: g1 warships"
+	on offer
+		conversation
+			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! Those warships we recovered look pretty interesting to us. We starting producing them in that shipyard facility."`
+				decline
+
+
+
+mission "EventHandler: Marsian technology: g1 capital ships"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: g1 capital ships"
+		has "event: Marsian Home: g1 military outfits"
+		has "event: stack core for sale"
+		"Marsian Home: science points" >= 80
+		"Marsian Home: engineering points" >= 240
+		"Marsian Home: working points" >= 920
+		# 10 for the spaceport + 40 (+ 40/20-40 excess) for the tiny outfitter
+		# + 30 (initially 20) for the second outfitter
+		# + 80 (+ 60/20-80 excess) for the small shipyard + some excess capacities [+90 x4 training points]
+		"Marsian Home: workers" >= 350
+	on offer
+		"Marsian Home: science points" -= 80
+		"Marsian Home: engineering points" -= 240
+		"Marsian Home: working points" -= 920
+		event "Marsian Home: g1 capital ships"
+		fail "EventHandler: Marsian technology: g1 capital ships"
+#		decline
+
+
+
+mission "Newsletter: Marsian Home: g1 capital ships"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "event: Marsian Home: g1 capital ships"
+	on offer
+		conversation
+			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! We finally started production of the first carrier ship. But we have not yet found most of the outfits which the ancestors used for them so we have to equip them with currently available outfits."`
+				decline
+
+
+
+mission "EventHandler: Marsian technology: second outfitter discovered"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: second outfitter discovered"
+		"Marsian Home: archeology points" >= 30
+		"Marsian Home: science points" >= 40
+	on offer
+		"Marsian Home: archeology points" -= 30
+		"Marsian Home: science points" -= 40
+		event "Marsian technology timer: second outfitter analyzed" 63
+		event "Marsian technology timer: second shipyard discovered" 42
+		fail "EventHandler: Marsian technology: second outfitter discovered"
+#		decline
+
+
+
+mission "Newsletter: Marsian technology: second outfitter discovered"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "EventHandler: Marsian technology: second outfitter discovered: offered"
+	on offer
+		conversation
+			`You receive a message from the scientists on Marsian Home: "Hi there, Captain <last>! We have good news for you. It seems we have found parts of another outfitter complex. We will again try to recover any blueprints and machinery we can."`
+				decline
+
+
+
+mission "EventHandler: Marsian technology: second outfitter analyzed"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: second outfitter analyzed"
+		"Marsian Home: science points" >= 120
+		"Marsian Home: engineering points" >= 30
+	on offer
+		"Marsian Home: science points" -= 120
+		"Marsian Home: engineering points" -= 30
+		event "Marsian technology timer: second outfitter operating" 14
+		fail "EventHandler: Marsian technology: second outfitter analyzed"
+#		decline
+
+
+
+mission "Newsletter: Marsian technology: second outfitter analyzed"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "EventHandler: Marsian technology: second outfitter analyzed: offered"
+	on offer
+		conversation
+			`You receive a message from the scientists on Marsian Home: "Hi there, Captain <last>! We are happy to announce that we were able to recover the first outfit blueprints and can put them into production again as soon as we have enough trained workers here. We need to teach them a few things."`
+				decline
+
+
+
+mission "EventHandler: Marsian technology: second outfitter operating"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: second outfitter operating"
+		"Marsian Home: science points" >= 20
+		"Marsian Home: engineering points" >= 30
+		"Marsian Home: working points" >= 40
+		# 10 for the spaceport + 40 (+ 40/20-40 excess) for the tiny outfitter
+		# + initially 20 for the second outfitter [x2 training points]
+		# + 80 (+ 60/20-80 excess) for the small shipyard
+		"Marsian Home: workers" >= 250
+	on offer
+		"Marsian Home: science points" -= 20
+		"Marsian Home: engineering points" -= 30
+		"Marsian Home: working points" -= 40
+		event "Marsian Home: g1 military outfits"
+		event "Marsian technology timer: g2 military outfits" 21
+		event "Marsian technology timer: g3 military outfits" 49
+		fail "EventHandler: Marsian technology: second outfitter operating"
+#		decline
+
+
+
+mission "Newsletter: Marsian Home: g1 military outfits"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "event: Marsian Home: g1 military outfits"
+	on offer
+		conversation
+			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! We finally have the first military outfit in production."`
+				decline
+
+
+
+mission "EventHandler: Marsian technology: g2 military outfits"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: g2 military outfits"
+		# 10 (initially 5) for the spaceport + 40 (initially 20) for the tiny outfitter + some excess capacities [+20 excess x1.5 training points, plus training the other new workers]
+		"Marsian Home: engineering points" >= 20
+		"Marsian Home: working points" >= 60
+		"Marsian Home: workers" >= 70
+	on offer
+		"Marsian Home: engineering points" -= 20
+		"Marsian Home: working points" -= 60
+		event "Marsian Home: g2 military outfits"
+		fail "EventHandler: Marsian technology: g2 military outfits"
+#		decline
+
+# mission "Newsletter: Marsian Home: basic human outfits"
+# The author decided against creating this one
+
+
+
+mission "EventHandler: Marsian technology: g3 military outfits"
+	invisible
+	landing
+	to offer
+		has "event: Marsian technology timer: g3 military outfits"
+		# 10 (initially 5) for the spaceport + 40 (initially 20) for the tiny outfitter + some excess capacities [+20 excess x1.5 training points, plus training existing workers]
+		"Marsian Home: engineering points" >= 40
+		"Marsian Home: working points" >= 120
+		"Marsian Home: workers" >= 90
+	on offer
+		"Marsian Home: engineering points" -= 40
+		"Marsian Home: working points" -= 120
+		event "Marsian Home: g3 military outfits"
+		fail "EventHandler: Marsian technology: g3 military outfits"
+#		decline
+
+
+
+mission "Newsletter: Marsian Home: g3 military outfits"
+	landing
+	to offer
+		has "Marsian technology newsletter subscription"
+		has "event: Marsian Home: g3 military outfits"
+	on offer
+		conversation
+			`You receive the next message from the scientists on Marsian Home: "Hi there, Captain <last>! Our outfitter now offers EMP blasters."`
+				decline
+
+
+
+
+
 
 
 

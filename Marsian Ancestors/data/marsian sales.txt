@@ -15,7 +15,7 @@
 
 
 
-outfitter "Marsian Relicts: Tiny Outfits"	# [G2] AHD 20 Miner, ATV 960 series
+outfitter "Marsian Relicts: Tiny Outfits"		# [G2] AHD 20 Miner, ATV 960 series
 	"Tiny Solar Panel"
 	"D01-AA Shield Generator"
 	"X0700 Ion Thruster"
@@ -28,11 +28,81 @@ outfitter "Marsian Relicts: Tiny Outfits"	# [G2] AHD 20 Miner, ATV 960 series
 
 
 
-outfitter "Marsian Relicts: Small Outfits"	# G1 Drone
+outfitter "Marsian Relicts: Small Outfits"		# G1 Drone
 	"Mini Core"
 	"D06-GT Shield Generator"
 
 	"Small Anti-Missile Turret"
+
+
+
+outfitter "Advanced Human Outfits"			# G1 Support Ships
+	"X4700 Ion Thruster"
+	"X4200 Ion Steering"
+	"X5700 Ion Thruster"
+	"X5200 Ion Steering"
+	"Ramscoop"
+
+	"Fission Reactor"
+	"Heavy Anti-Missile Turret"
+
+
+outfitter "Marsian Relicts: G1 Military Outfits"	# G1 Capital Ships (Carrier)
+	"Marsian Anti-Missile Turret"
+
+
+
+outfitter "Marsian Relicts: G2 Military Outfits"	# G2 Warships
+	"Marsian Scanner"				# G2 Light Warship
+	"Marsian Triple Electron Turret"		# G2 Heavy Warship
+
+
+
+outfitter "Marsian Relicts: G3 Military Outfits"
+	"Large EMP Blaster"				# G3 Loril
+	"Capital EMP Blaster"				# G3 Faril
+
+outfitter "Marsian Relicts: Megaliner Outfits"		# G3 Capital Ships
+	"Stack Mega Core"				# G3 Loril
+	"Stack Metro Core"				# G3 Feril
+
+	"X8700 Ion Thruster"
+	"X8200 Ion Steering"
+
+
+
+outfitter "Marsian Relicts: G1i Human Outfits"		# G1 Interceptors
+	"S3 Thermionic"
+	"Heavy Laser"
+
+outfitter "Marsian Relicts: G1w Human Outfits"		# G1 Warships
+	"Fusion Reactor"
+	"Stack Core"
+
+	"D67-TM Shield Generator"
+	"D94-YV Shield Generator"
+	"Impala Plasma Steering"
+	"Orca Plasma Steering"
+	"Orca Plasma Thruster"
+	"Tyrant Plasma Steering"
+
+	"Electron Beam"
+	"Electron Turret"
+	"Heavy Laser Turret"
+
+outfitter "Marsian Relicts: G2i Human Outfits"		# G2 Interceptors
+	"Breeder Reactor"
+
+outfitter "Marsian Relicts: G2w Human Outfits"		# G2 Warships
+	"Liquid Helium Cooler"
+	"Large Radar Jammer"
+
+outfitter "Marsian Relicts: G3i Human Outfits"		# G3 Interceptors
+	"NT-200 Nucleovoltaic"
+	"LP288a Battery Pack"				# G3 Caroi
+
+	"D14-RN Shield Generator"
+
 
 
 

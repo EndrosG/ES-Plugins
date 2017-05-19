@@ -501,9 +501,8 @@ ship "MaRe G1 Carrier"
 
 	outfits
 		"Electron Beam" 12
-#		"Electron Turret" 4
-		"Marsian Anti-Missile Turret" 4
 		"Electron Turret" 6
+		"Marsian Anti-Missile Turret" 4
 
 		"Stack Core" 3
 		"LP036a Battery Pack"
