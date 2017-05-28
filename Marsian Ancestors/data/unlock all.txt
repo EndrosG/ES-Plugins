@@ -5,6 +5,7 @@ planet "Marsian Home"
 	outfitter "Advanced Human Outfits"
 	outfitter "Marsian Relicts: G1 Military Outfits"
 	outfitter "Marsian Relicts: G2 Military Outfits"
+	outfitter "Marsian Relicts: G2 Capital Outfits"
 	outfitter "Marsian Relicts: G3 Military Outfits"
 
 	outfitter "Marsian Relicts: Megaliner Outfits"
@@ -30,6 +31,8 @@ planet "Marsian Home"
 	shipyard "Marsian Relicts: G2 Colony Ships (Heavy)"
 	shipyard "Marsian Relicts: G2 Colony Ships (Capital)"
 
+	shipyard "Marsian Relicts: Cubes"
+	shipyard "Marsian Relicts: Cubes XXL"
 
 
 # compatibility to "Wrzlprnft/world-forge" plugin
@@ -39,6 +42,7 @@ planet Forge
 	outfitter "Advanced Human Outfits"
 	outfitter "Marsian Relicts: G1 Military Outfits"
 	outfitter "Marsian Relicts: G2 Military Outfits"
+	outfitter "Marsian Relicts: G2 Capital Outfits"
 	outfitter "Marsian Relicts: G3 Military Outfits"
 
 	outfitter "Marsian Relicts: Megaliner Outfits"
@@ -63,3 +67,6 @@ planet Forge
 	shipyard "Marsian Relicts: G2 Colony Ships (Medium)"
 	shipyard "Marsian Relicts: G2 Colony Ships (Heavy)"
 	shipyard "Marsian Relicts: G2 Colony Ships (Capital)"
+
+	shipyard "Marsian Relicts: Cubes"
+	shipyard "Marsian Relicts: Cubes XXL"

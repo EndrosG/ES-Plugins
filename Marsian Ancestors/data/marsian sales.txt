@@ -56,18 +56,17 @@ outfitter "Marsian Relicts: G2 Military Outfits"	# G2 Warships
 	"Marsian Scanner"				# G2 Light Warship
 	"Marsian Triple Electron Turret"		# G2 Heavy Warship
 
+outfitter "Marsian Relicts: G2 Capital Outfits"		# G2 Capital Ships
+	"Marsian City Core"				# G2 Cruiser+Carrier
+							# G2 FS City
+	"Marsian Metro Core"				# G2 TS Metroliner
+	"X8700 Ion Thruster"				# G2 FS City
+	"X8200 Ion Steering"
 
 
 outfitter "Marsian Relicts: G3 Military Outfits"
 	"Large EMP Blaster"				# G3 Loril
 	"Capital EMP Blaster"				# G3 Faril
-
-outfitter "Marsian Relicts: Megaliner Outfits"		# G3 Capital Ships
-	"Stack Mega Core"				# G3 Loril
-	"Stack Metro Core"				# G3 Feril
-
-	"X8700 Ion Thruster"
-	"X8200 Ion Steering"
 
 
 
@@ -107,12 +106,12 @@ outfitter "Marsian Relicts: G3i Human Outfits"		# G3 Interceptors
 
 
 outfitter "Marsian Relicts: Megaliner Outfits"
-	"Cargo Extension"
-	"Cargo Facility"
-	"Cargo Module"
+	"Cargo Extension"			# not used at all (not anymore)
+	"Cargo Facility"			# not used at all (not anymore)
+	"Cargo Module"				# not used at all (not anymore)
 	"Stack Core"
-	"Stack Mega Core"
-	"Stack Metro Core"
+	"Marsian City Core"
+	"Marsian Metro Core"
 
 	"Marsian Anti-Missile Turret"
 	"Marsian Triple Electron Turret"
@@ -133,9 +132,9 @@ outfitter "Marsian Relicts: Megaliner Outfits"
 
 outfitter "Marsian Relicts: Military Outfits"
 	"Barracks"
-	"Bunk Hostel"
-	"Bunk Hotel"
-	"Bunk Resort"
+	"Bunk Hostel"				# not used at all (not anymore)
+	"Bunk Hotel"				# not used at all (not anymore)
+	"Bunk Resort"				# not used at all (not anymore)
 	"Cargo Extension"
 	"Stack Core"
 	"Stack Mega Core"
@@ -144,14 +143,14 @@ outfitter "Marsian Relicts: Military Outfits"
 	"Marsian Anti-Missile Turret"
 	"Marsian Triple Electron Turret"
 
-	"Hull Expansion"
-	"Hull Extension"
-	"Defense Beam Turret LR1200"
-	"Defense Beam Turret LR1800"
-	"Defense Beam Turret LR2400"
-	"Attack Beam Turret LR2000"
-	"Attack Beam Turret LR3000"
-	"Attack Beam Turret LR4000"
+	"Hull Expansion"			# not used at all (not anymore)
+	"Hull Extension"			# not used at all (not anymore)
+	"Defense Beam Turret LR1200"			# G4 MaCuFi Alpha & Freight Cube 255
+	"Defense Beam Turret LR1800"			# not used at all
+	"Defense Beam Turret LR2400"			# formerly in Freight Cube 127
+	"Attack Beam Turret LR2000"			# not used at all
+	"Attack Beam Turret LR3000"			# not used at all
+	"Attack Beam Turret LR4000"			# Freight Cube 255 Ultra
 
 	"Small Pulse Laser"
 	"Medium Pulse Laser"
@@ -188,8 +187,8 @@ outfitter "Marsian Relicts: Military Outfits"
 
 
 outfitter "Marsian Relicts: Cube Outfits"
-	"Stack Mega Core"
-	"Stack Metro Core"
+	"Marsian City Core"
+	"Marsian Metro Core"
 	"Standard Cube Core"
 	"Tactical Cube Core"
 	"Spheric Heatpump"
@@ -314,44 +313,6 @@ shipyard "Marsian Relicts: G3 Capital Ships"
 	"MaRe G3 Loril"		# "MaRe G3 Large Carrier Mk IV"
 	"MaRe G3 Faril"		# "MaRe G3 Carrier Mk IV"
 	"MaRe G3 Feril"		# "MaRe G3 Carrier Mk V"
-
-
-
-shipyard "Marsian Relicts: Megaliner"
-	"Military Freighter"
-	"Hauler III-10"
-	"Hauler III-100"
-	"Maxx 11-0-4-1"
-	"Maxx 27-0-8-1"
-	"Maxx 38-0-10-1"
-	"Maxx 49-0-12-1"
-	"Freightliner"
-	"Megaliner"
-
-
-
-shipyard "Marsian Relicts: Metropolis"
-	"Metroliner"
-	"Metropolis"
-
-
-
-shipyard "Marsian Relicts: Military"
-	"Blackbird Assault Ship"
-	"Assault Cruiser"
-	"Light Cruiser"
-	"Marsian Carrier"
-	# "Marsian Carrier Mk I"
-	# "Marsian Carrier Mk II"
-	"MCD Classic"
-	"MCD Flivver"
-	"MCD Fury"
-	"MFi Fury"
-	"MFi Quicksilver"
-	"MFi Gunboat"
-	"MFi Frigate Mk I"
-	"MFi Frigate Mk II"
-	"MFi Corvette"
 
 
 

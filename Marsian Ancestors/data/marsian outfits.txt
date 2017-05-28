@@ -13,6 +13,8 @@
 # Copyright (c) 2016-2017 by Endros Gunderberg, www.endros.de	  #
 # ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### #
 
+
+
 outfit "Bunk Room in Cargo Space"
 	category "Systems"
 	cost 40000
@@ -79,7 +81,7 @@ outfit "Cargo Extension"
 	cost 250000
 	thumbnail "outfit/red screwdriver"
 	"mass" 25
-	"cargo space" 120
+	"cargo space" 135
 	"outfit space" -160
 	unplunderable 1
 	description "This is simply a larger version of the cargo expansion. Just with a lower mass overhead according to the larger size."
@@ -220,7 +222,7 @@ outfit "Mini Core"
 	"heat generation" 10.5
 	description "The Mini Core is a very small fission reactor, mostly found on Marsian drones and fighters. It is not as efficient as a small korath generator."
 
-outfit "Stack Mega Core"
+outfit "Marsian City Core"
 	category "Power"
 	cost 31e+6
 	thumbnail "outfit/stack core"
@@ -229,9 +231,9 @@ outfit "Stack Mega Core"
 	"outfit space" -800
 	"energy generation" 160
 	"heat generation" 360
-	description "The Stack Mega Core was created by Endros primarily as a power source for the Megaliners. It is a XXL version of the regular Stack Core of the Free Worlds and thus still a fission reactor."
+	description "The Marsian City Core was created by Endros primarily as a power source for the G2 Capital Ships beginning with the FS City. It is a XXL version of the regular Stack Core of the Free Worlds and thus still a fission reactor."
 
-outfit "Stack Metro Core"
+outfit "Marsian Metro Core"
 	category "Power"
 	cost 140e+6
 	thumbnail "outfit/plasma core"
@@ -240,7 +242,7 @@ outfit "Stack Metro Core"
 	"outfit space" -2000
 	"energy generation" 500
 	"heat generation" 1350
-	description "The Stack Metro Core was created by Endros primarily as a power source for the Metroliners. Unlike the other stack cores, this one is a fusion reactor."
+	description "The Marsian Metro Core was created by Endros primarily as a power source for the larger G2 Colony Ships including the TS Metroliner. Unlike the city core, this one is a fusion reactor."
 
 outfit "Standard Cube Core"
 	category "Power"
@@ -268,13 +270,14 @@ outfit "Tactical Cube Core"
 	description "	This might be the largest mobile power source in the game at all. It costs far more than an entire major fleet!"
 
 
+
 outfit "Spheric Heatpump"
 	category "Systems"
-	cost 49e+6
+	cost 39e+6			# formerly 49e+6 ; now: 20m for the generator components and 19m for the cooling components
 	thumbnail "outfit/marsian cooler"
 	"mass" 360
 	"outfit space" -360
-	"energy generation" 120
+	"energy generation" 48		# formerly 120
 	"cooling" 840
 	description "These wonderful heatpumps create electric power from excess heat of your ship."
 	description "	As most other cube outfits too, these ones are too large to fit into most human ships."

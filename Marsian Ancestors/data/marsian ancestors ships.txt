@@ -900,7 +900,6 @@ ship "MaRe G2 Heavy Warship"
 		"Marsian Triple Electron Turret" 4
 
 		"Stack Core" 5
-#		"Stack Mega Core"
 		"LP036a Battery Pack"
 		"Liquid Helium Cooler"
 		"D67-TM Shield Generator"
@@ -997,8 +996,7 @@ ship "MaRe G2 Cruiser"
 		"Marsian Anti-Missile Turret" 4
 		"Marsian Triple Electron Turret" 6
 
-#		"Stack Core"
-		"Stack Mega Core"
+		"Marsian City Core"
 		"LP072a Battery Pack"
 		"D67-TM Shield Generator"
 		"D94-YV Shield Generator" 3
@@ -1112,8 +1110,7 @@ ship "MaRe G2 Carrier"
 		"Marsian Anti-Missile Turret" 6
 		"Marsian Triple Electron Turret" 6
 
-#		"Stack Core"
-		"Stack Mega Core"
+		"Marsian City Core"
 		"LP072a Battery Pack"
 #		"D41-HY Shield Generator"
 		"D94-YV Shield Generator" 4
@@ -1859,7 +1856,7 @@ ship "MaRe G3 Loril"
 		"Marsian Triple Electron Turret" 20
 		"Marsian Anti-Missile Turret" 8
 
-		"Stack Mega Core" 2
+		"Marsian City Core" 2
 		"LP288a Battery Pack"
 #		"D67-TM Shield Generator"
 		"D94-YV Shield Generator" 16
@@ -2095,7 +2092,7 @@ ship "MaRe G3 Faril"
 		"Marsian Triple Electron Turret" 20
 		"Marsian Anti-Missile Turret" 6
 
-		"Stack Mega Core" 2
+		"Marsian City Core" 2
 		"LP288a Battery Pack" 2
 #		"D67-TM Shield Generator"
 		"D94-YV Shield Generator" 98	# 51
@@ -2226,8 +2223,8 @@ ship "MaRe G3 Feril"
 		"Marsian Triple Electron Turret" 24
 		"Marsian Anti-Missile Turret" 6
 
-#		"Stack Mega Core" 3
-		"Stack Metro Core"
+#		"Marsian City Core" 3
+		"Marsian Metro Core"
 		"LP288a Battery Pack" 3
 		"D14-RN Shield Generator"
 		"D94-YV Shield Generator" 108
@@ -2748,7 +2745,7 @@ ship "FS City"
 	outfits
 		"Marsian Anti-Missile Turret" 7
 
-		"Stack Mega Core"
+		"Marsian City Core"
 		"LP144a Battery Pack"
 		"D94-YV Shield Generator"
 		"D41-HY Shield Generator"
@@ -2858,8 +2855,8 @@ ship "TS Metroliner"
 	outfits
 		"Marsian Anti-Missile Turret" 6
 
-#		"Stack Mega Core" 3
-		"Stack Metro Core"
+#		"Marsian City Core" 3
+		"Marsian Metro Core"
 		"LP288a Battery Pack"
 		"D94-YV Shield Generator" 51
 
@@ -3060,7 +3057,7 @@ ship "CS 4 City"
 	outfits
 		"Marsian Anti-Missile Turret" 8
 
-		"Stack Mega Core" 2
+		"Marsian City Core" 2
 		"LP288a Battery Pack"
 		"D94-YV Shield Generator" 32
 
@@ -3114,7 +3111,7 @@ ship "CS 5 Large City"
 	outfits
 		"Marsian Anti-Missile Turret" 10
 
-		"Stack Metro Core" 3
+		"Marsian Metro Core" 3
 		"LP288a Battery Pack" 3
 		"D94-YV Shield Generator" 102
 
@@ -3180,7 +3177,7 @@ ship "CS 6 Metropolis Segment"
 		"Marsian Triple Electron Turret" 4
 		"Marsian Anti-Missile Turret" 8
 
-		"Stack Metro Core" 13
+		"Marsian Metro Core" 13
 		"LP288a Battery Pack" 13
 		"D94-YV Shield Generator" 257
 
@@ -3251,7 +3248,7 @@ ship "CS 7 Metropolis"
 		"Marsian Triple Electron Turret" 6
 		"Marsian Anti-Missile Turret" 30
 
-		"Stack Metro Core" 80
+		"Marsian Metro Core" 80
 		"LP288a Battery Pack" 80
 		"D94-YV Shield Generator" 1275 # 257
 
@@ -3346,7 +3343,7 @@ ship "CS 8 Conurbation"
 		"Marsian Triple Electron Turret" 10
 		"Marsian Anti-Missile Turret" 50
 
-		"Stack Metro Core" 240
+		"Marsian Metro Core" 240
 		"LP288a Battery Pack" 240
 		"D94-YV Shield Generator" 3825 # 1275
 
@@ -3467,7 +3464,7 @@ ship "CS 9 Megalopolis"
 		"Marsian Triple Electron Turret" 16
 		"Marsian Anti-Missile Turret" 80
 
-		"Stack Metro Core" 700
+		"Marsian Metro Core" 700
 		"LP288a Battery Pack" 700
 		"D94-YV Shield Generator" 12750
 
@@ -3860,7 +3857,7 @@ ship "Freight Cube 39"
 		"Marsian Triple Electron Turret" 2
 		"Marsian Anti-Missile Turret" 4
 
-		"Stack Mega Core"
+		"Marsian City Core"
 		"D95-EE Shield Generator" 3
 
 		"X8700 Ion Thruster"
@@ -3924,8 +3921,8 @@ ship "Freight Cube 83"
 		"Capital Pulse Laser Turret" 2
 		"Marsian Anti-Missile Turret" 8
 
-		"Stack Metro Core" 2
-		"Stack Mega Core"
+		"Marsian Metro Core" 2
+		"Marsian City Core"
 		"D95-EE Shield Generator" 20
 
 		"X8700 Ion Thruster" 10
@@ -4070,7 +4067,7 @@ ship "Freight Cube 127"
 		"Marsian Anti-Missile Turret" 8
 #		"Defense Beam Turret LR2400" 8
 
-		"Stack Metro Core" 9
+		"Marsian Metro Core" 9
 		"D96-FF Shield Generator" 50
 
 		"X8700 Ion Thruster" 40
@@ -4267,8 +4264,8 @@ ship "Freight Cube 255"
 		"Marsian Anti-Missile Turret" 28
 		"Defense Beam Turret LR1200" 8
 
-		"Stack Metro Core" 100
-		"Stack Mega Core" 0
+		"Marsian Metro Core" 100
+		"Marsian City Core" 0
 		"Supercapacitor"
 		"D97-GG Shield Generator" 625
 		"D95-EE Shield Generator" 1
